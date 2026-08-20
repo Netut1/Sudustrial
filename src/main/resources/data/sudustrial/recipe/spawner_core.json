@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "atomic_tnt_cores",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "key": {
+    "A": "sudustrial:zombie_tnt_tier_10",
+    "B": "sudustrial:creeper_tnt_tier_10",
+    "C": "sudustrial:sheep_tnt_tier_10",
+    "D": "sudustrial:shulker_tnt_tier_10",
+    "E": "sudustrial:piglin_brute_tnt_tier_10",
+    "F": "sudustrial:pig_tnt_tier_10",
+    "G": "sudustrial:cow_tnt_tier_10",
+    "H": "sudustrial:chicken_tnt_tier_10",
+    "I": "sudustrial:bee_tnt_tier_10"
+  },
+  "result": {
+    "id": "sudustrial:spawner_core",
+    "count": 1
+  }
+}

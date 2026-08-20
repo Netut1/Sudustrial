@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "chicken_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:chicken_tnt_tier_8"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:chicken_tnt_tier_9"
+  }
+}

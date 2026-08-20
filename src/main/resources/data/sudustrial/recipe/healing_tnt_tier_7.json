@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "healing_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:healing_tnt_tier_6"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:healing_tnt_tier_7"
+  }
+}

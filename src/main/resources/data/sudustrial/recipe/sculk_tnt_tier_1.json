@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "sculk_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:sculk"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:sculk_tnt_tier_1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "slow_falling_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:slow_falling_tnt_tier_1"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:slow_falling_tnt_tier_2"
+  }
+}

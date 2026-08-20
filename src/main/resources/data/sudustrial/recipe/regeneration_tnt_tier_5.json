@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "regeneration_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:regeneration_tnt_tier_4"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:regeneration_tnt_tier_5"
+  }
+}

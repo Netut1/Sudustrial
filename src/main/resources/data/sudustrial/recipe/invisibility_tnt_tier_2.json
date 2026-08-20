@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "invisibility_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:invisibility_tnt_tier_1"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:invisibility_tnt_tier_2"
+  }
+}

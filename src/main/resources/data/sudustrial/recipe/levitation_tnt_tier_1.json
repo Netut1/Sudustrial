@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "levitation_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:feather"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:levitation_tnt_tier_1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "atomic_tnt_cores",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "key": {
+    "A": "sudustrial:invisibility_tnt_tier_10",
+    "B": "sudustrial:turtle_master_tnt_tier_10",
+    "C": "sudustrial:healing_tnt_tier_10",
+    "D": "sudustrial:harm_tnt_tier_10",
+    "E": "sudustrial:slow_falling_tnt_tier_10",
+    "F": "sudustrial:night_vision_tnt_tier_10",
+    "G": "sudustrial:blindness_tnt_tier_10",
+    "H": "sudustrial:levitation_tnt_tier_10",
+    "I": "sudustrial:wither_tnt_tier_10"
+  },
+  "result": {
+    "id": "sudustrial:effect_core_omega",
+    "count": 1
+  }
+}

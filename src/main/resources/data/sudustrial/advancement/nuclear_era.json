@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "sudustrial:nuclear_tnt"
+    },
+    "title": {
+      "translate": "advancement.sudustrial.nuclear_era.title"
+    },
+    "description": {
+      "translate": "advancement.sudustrial.nuclear_era.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "recipes": [
+      "sudustrial:nuclear_tnt"
+    ]
+  },
+  "criteria": {
+    "c_elem": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:elemental_core"] }] } },
+    "c_spaw": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:spawner_core"] }] } },
+    "c_eff_1": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:effect_core_alpha"] }] } },
+    "c_eff_2": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:effect_core_omega"] }] } },
+    "c_mins": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:mining_sphere_core"] }] } },
+    "c_minc": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:mining_column_core"] }] } },
+    "c_stan": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:standard_core"] }] } },
+    "c_mass": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:massive_core"] }] } }
+    },
+  "requirements": [
+    [
+      "c_elem", "c_spaw", "c_eff_1", "c_eff_2", "c_mins", "c_minc", "c_stan", "c_mass"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "jump_boost_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:jump_boost_tnt_tier_5"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:jump_boost_tnt_tier_6"
+  }
+}

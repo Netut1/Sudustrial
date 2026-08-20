@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "harm_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:harm_tnt_tier_4"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:harm_tnt_tier_5"
+  }
+}

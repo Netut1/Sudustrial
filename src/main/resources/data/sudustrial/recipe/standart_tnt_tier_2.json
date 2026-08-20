@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:tnt"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:standart_tnt_tier_2"
+  }
+}

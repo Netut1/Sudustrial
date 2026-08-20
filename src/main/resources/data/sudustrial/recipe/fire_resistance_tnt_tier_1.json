@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "fire_resistance_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:magma_cream"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:fire_resistance_tnt_tier_1"
+  }
+}

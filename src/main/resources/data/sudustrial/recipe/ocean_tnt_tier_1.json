@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "ocean_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:prismarine_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:ocean_tnt_tier_1"
+  }
+}

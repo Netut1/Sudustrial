@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "piglin_brute_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:raw_gold"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:piglin_brute_tnt_tier_1"
+  }
+}

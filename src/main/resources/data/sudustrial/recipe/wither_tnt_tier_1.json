@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wither_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:wither_skeleton_skull"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:wither_tnt_tier_1"
+  }
+}

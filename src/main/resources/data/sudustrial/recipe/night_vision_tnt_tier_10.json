@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "night_vision_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:night_vision_tnt_tier_9"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:night_vision_tnt_tier_10"
+  }
+}

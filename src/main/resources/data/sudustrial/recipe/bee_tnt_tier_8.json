@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "bee_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:bee_tnt_tier_7"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:bee_tnt_tier_8"
+  }
+}

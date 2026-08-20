@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "atomic_tnt_cores",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "key": {
+    "A": "sudustrial:fire_tnt_tier_10",
+    "B": "sudustrial:wood_tnt_tier_10",
+    "C": "sudustrial:swamp_tnt_tier_10",
+    "D": "sudustrial:sculk_tnt_tier_10",
+    "E": "sudustrial:earth_tnt_tier_10",
+    "F": "sudustrial:electric_tnt_tier_10",
+    "G": "sudustrial:ender_tnt_tier_10",
+    "H": "sudustrial:ocean_tnt_tier_10",
+    "I": "sudustrial:ice_tnt_tier_10"
+  },
+  "result": {
+    "id": "sudustrial:elemental_core",
+    "count": 1
+  }
+}

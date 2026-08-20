@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "mining_sphere_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:iron_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:mining_sphere_tnt_tier_1"
+  }
+}

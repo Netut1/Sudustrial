@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "fire_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:fire_charge"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:fire_tnt_tier_1"
+  }
+}

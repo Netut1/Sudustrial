@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ABC",
+    "D#E",
+    "FGH"
+  ],
+  "key": {
+    "#": "minecraft:heart_of_the_sea",
+    "A": "sudustrial:elemental_core",
+    "B": "sudustrial:standard_core",
+    "C": "sudustrial:spawner_core",
+    "D": "sudustrial:mining_sphere_core",
+    "E": "sudustrial:mining_column_core",
+    "F": "sudustrial:effect_core_alpha",
+    "G": "sudustrial:massive_core",
+    "H": "sudustrial:effect_core_omega"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:nuclear_tnt"
+  }
+}

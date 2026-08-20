@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "slowness_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:slowness_tnt_tier_6"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:slowness_tnt_tier_7"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "sheep_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:sheep_tnt_tier_8"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:sheep_tnt_tier_9"
+  }
+}

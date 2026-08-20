@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sudustrial:item/effect_core_alpha"
+  }
+}

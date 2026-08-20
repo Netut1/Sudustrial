@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "speed_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:speed_tnt_tier_9"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:speed_tnt_tier_10"
+  }
+}

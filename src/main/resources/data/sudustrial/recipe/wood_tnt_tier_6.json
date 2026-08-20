@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wood_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:wood_tnt_tier_5"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:wood_tnt_tier_6"
+  }
+}

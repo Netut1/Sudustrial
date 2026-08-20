@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "atomic_tnt_cores",
+  "ingredient": "sudustrial:standart_tnt_tier_10",
+  "result": "sudustrial:standard_core",
+  "experience": 5.0,
+  "cookingtime": 400
+}

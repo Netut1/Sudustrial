@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pig_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:porkchop"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:pig_tnt_tier_1"
+  }
+}

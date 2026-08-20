@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "atomic_tnt_cores",
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "key": {
+    "A": "sudustrial:jump_boost_tnt_tier_10",
+    "B": "sudustrial:fire_resistance_tnt_tier_10",
+    "C": "sudustrial:speed_tnt_tier_10",
+    "D": "sudustrial:slowness_tnt_tier_10",
+    "E": "sudustrial:water_breathing_tnt_tier_10",
+    "F": "sudustrial:poison_tnt_tier_10",
+    "G": "sudustrial:regeneration_tnt_tier_10",
+    "H": "sudustrial:strength_tnt_tier_10",
+    "I": "sudustrial:weakness_tnt_tier_10"
+  },
+  "result": {
+    "id": "sudustrial:effect_core_alpha",
+    "count": 1
+  }
+}

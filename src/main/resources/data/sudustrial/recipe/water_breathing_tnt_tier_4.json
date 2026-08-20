@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "water_breathing_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:water_breathing_tnt_tier_3"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:water_breathing_tnt_tier_4"
+  }
+}

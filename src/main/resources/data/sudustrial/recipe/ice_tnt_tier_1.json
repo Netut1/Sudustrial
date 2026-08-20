@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "ice_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:ice"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:ice_tnt_tier_1"
+  }
+}

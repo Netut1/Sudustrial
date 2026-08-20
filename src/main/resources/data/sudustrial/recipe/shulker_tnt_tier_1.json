@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "shulker_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:shulker_shell"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:shulker_tnt_tier_1"
+  }
+}

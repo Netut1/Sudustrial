@@ -1,0 +1,74 @@
+{
+  "display": {
+    "icon": {
+      "id": "sudustrial:massive_tnt_tier_1"
+    },
+    "title": {
+      "translate": "advancement.sudustrial.unlock_custom_tnt_tier_1.title"
+    },
+    "description": {
+      "translate": "advancement.sudustrial.unlock_custom_tnt_tier_1.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "recipes": [
+      "sudustrial:jump_boost_tnt_tier_1",
+      "sudustrial:fire_resistance_tnt_tier_1",
+      "sudustrial:speed_tnt_tier_1",
+      "sudustrial:slowness_tnt_tier_1",
+      "sudustrial:water_breathing_tnt_tier_1",
+      "sudustrial:poison_tnt_tier_1",
+      "sudustrial:regeneration_tnt_tier_1",
+      "sudustrial:strength_tnt_tier_1",
+      "sudustrial:weakness_tnt_tier_1",
+      "sudustrial:invisibility_tnt_tier_1",
+      "sudustrial:turtle_master_tnt_tier_1",
+      "sudustrial:healing_tnt_tier_1",
+      "sudustrial:harm_tnt_tier_1",
+      "sudustrial:slow_falling_tnt_tier_1",
+      "sudustrial:night_vision_tnt_tier_1",
+      "sudustrial:blindness_tnt_tier_1",
+      "sudustrial:levitation_tnt_tier_1",
+      "sudustrial:wither_tnt_tier_1",
+      "sudustrial:fire_tnt_tier_1",
+      "sudustrial:wood_tnt_tier_1",
+      "sudustrial:swamp_tnt_tier_1",
+      "sudustrial:sculk_tnt_tier_1",
+      "sudustrial:earth_tnt_tier_1",
+      "sudustrial:electric_tnt_tier_1",
+      "sudustrial:ender_tnt_tier_1",
+      "sudustrial:ocean_tnt_tier_1",
+      "sudustrial:ice_tnt_tier_1",
+      "sudustrial:mining_sphere_tnt_tier_1",
+      "sudustrial:mining_column_tnt_tier_1",
+      "sudustrial:zombie_tnt_tier_1",
+      "sudustrial:creeper_tnt_tier_1",
+      "sudustrial:sheep_tnt_tier_1",
+      "sudustrial:shulker_tnt_tier_1",
+      "sudustrial:piglin_brute_tnt_tier_1",
+      "sudustrial:pig_tnt_tier_1",
+      "sudustrial:cow_tnt_tier_1",
+      "sudustrial:chicken_tnt_tier_1",
+      "sudustrial:bee_tnt_tier_1",
+      "sudustrial:party_tnt",
+      "sudustrial:massive_tnt_tier_1",
+      "sudustrial:standart_tnt_tier_2"
+    ]
+  },
+  "criteria": {
+    "has_tnt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:tnt"]
+          }
+        ]
+      }
+    }
+  }
+}

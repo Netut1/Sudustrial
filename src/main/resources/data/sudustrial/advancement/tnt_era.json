@@ -1,0 +1,234 @@
+{
+  "display": {
+    "icon": {
+      "id": "sudustrial:massive_core"
+    },
+    "title": {
+      "translate": "advancement.sudustrial.tnt_era.title"
+    },
+    "description": {
+      "translate": "advancement.sudustrial.tnt_era.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "recipes": [
+      "sudustrial:jump_boost_tnt_tier_2", "sudustrial:jump_boost_tnt_tier_3", "sudustrial:jump_boost_tnt_tier_4",
+      "sudustrial:jump_boost_tnt_tier_5", "sudustrial:jump_boost_tnt_tier_6", "sudustrial:jump_boost_tnt_tier_7",
+      "sudustrial:jump_boost_tnt_tier_8", "sudustrial:jump_boost_tnt_tier_9", "sudustrial:jump_boost_tnt_tier_10",
+
+      "sudustrial:fire_resistance_tnt_tier_2", "sudustrial:fire_resistance_tnt_tier_3", "sudustrial:fire_resistance_tnt_tier_4",
+      "sudustrial:fire_resistance_tnt_tier_5", "sudustrial:fire_resistance_tnt_tier_6", "sudustrial:fire_resistance_tnt_tier_7",
+      "sudustrial:fire_resistance_tnt_tier_8", "sudustrial:fire_resistance_tnt_tier_9", "sudustrial:fire_resistance_tnt_tier_10",
+
+      "sudustrial:speed_tnt_tier_2", "sudustrial:speed_tnt_tier_3", "sudustrial:speed_tnt_tier_4",
+      "sudustrial:speed_tnt_tier_5", "sudustrial:speed_tnt_tier_6", "sudustrial:speed_tnt_tier_7",
+      "sudustrial:speed_tnt_tier_8", "sudustrial:speed_tnt_tier_9", "sudustrial:speed_tnt_tier_10",
+
+      "sudustrial:slowness_tnt_tier_2", "sudustrial:slowness_tnt_tier_3", "sudustrial:slowness_tnt_tier_4",
+      "sudustrial:slowness_tnt_tier_5", "sudustrial:slowness_tnt_tier_6", "sudustrial:slowness_tnt_tier_7",
+      "sudustrial:slowness_tnt_tier_8", "sudustrial:slowness_tnt_tier_9", "sudustrial:slowness_tnt_tier_10",
+
+      "sudustrial:water_breathing_tnt_tier_2", "sudustrial:water_breathing_tnt_tier_3", "sudustrial:water_breathing_tnt_tier_4",
+      "sudustrial:water_breathing_tnt_tier_5", "sudustrial:water_breathing_tnt_tier_6", "sudustrial:water_breathing_tnt_tier_7",
+      "sudustrial:water_breathing_tnt_tier_8", "sudustrial:water_breathing_tnt_tier_9", "sudustrial:water_breathing_tnt_tier_10",
+
+      "sudustrial:poison_tnt_tier_2", "sudustrial:poison_tnt_tier_3", "sudustrial:poison_tnt_tier_4",
+      "sudustrial:poison_tnt_tier_5", "sudustrial:poison_tnt_tier_6", "sudustrial:poison_tnt_tier_7",
+      "sudustrial:poison_tnt_tier_8", "sudustrial:poison_tnt_tier_9", "sudustrial:poison_tnt_tier_10",
+
+      "sudustrial:regeneration_tnt_tier_2", "sudustrial:regeneration_tnt_tier_3", "sudustrial:regeneration_tnt_tier_4",
+      "sudustrial:regeneration_tnt_tier_5", "sudustrial:regeneration_tnt_tier_6", "sudustrial:regeneration_tnt_tier_7",
+      "sudustrial:regeneration_tnt_tier_8", "sudustrial:regeneration_tnt_tier_9", "sudustrial:regeneration_tnt_tier_10",
+
+      "sudustrial:strength_tnt_tier_2", "sudustrial:strength_tnt_tier_3", "sudustrial:strength_tnt_tier_4",
+      "sudustrial:strength_tnt_tier_5", "sudustrial:strength_tnt_tier_6", "sudustrial:strength_tnt_tier_7",
+      "sudustrial:strength_tnt_tier_8", "sudustrial:strength_tnt_tier_9", "sudustrial:strength_tnt_tier_10",
+
+      "sudustrial:weakness_tnt_tier_2", "sudustrial:weakness_tnt_tier_3", "sudustrial:weakness_tnt_tier_4",
+      "sudustrial:weakness_tnt_tier_5", "sudustrial:weakness_tnt_tier_6", "sudustrial:weakness_tnt_tier_7",
+      "sudustrial:weakness_tnt_tier_8", "sudustrial:weakness_tnt_tier_9", "sudustrial:weakness_tnt_tier_10",
+
+      "sudustrial:invisibility_tnt_tier_2", "sudustrial:invisibility_tnt_tier_3", "sudustrial:invisibility_tnt_tier_4",
+      "sudustrial:invisibility_tnt_tier_5", "sudustrial:invisibility_tnt_tier_6", "sudustrial:invisibility_tnt_tier_7",
+      "sudustrial:invisibility_tnt_tier_8", "sudustrial:invisibility_tnt_tier_9", "sudustrial:invisibility_tnt_tier_10",
+
+      "sudustrial:turtle_master_tnt_tier_2", "sudustrial:turtle_master_tnt_tier_3", "sudustrial:turtle_master_tnt_tier_4",
+      "sudustrial:turtle_master_tnt_tier_5", "sudustrial:turtle_master_tnt_tier_6", "sudustrial:turtle_master_tnt_tier_7",
+      "sudustrial:turtle_master_tnt_tier_8", "sudustrial:turtle_master_tnt_tier_9", "sudustrial:turtle_master_tnt_tier_10",
+
+      "sudustrial:healing_tnt_tier_2", "sudustrial:healing_tnt_tier_3", "sudustrial:healing_tnt_tier_4",
+      "sudustrial:healing_tnt_tier_5", "sudustrial:healing_tnt_tier_6", "sudustrial:healing_tnt_tier_7",
+      "sudustrial:healing_tnt_tier_8", "sudustrial:healing_tnt_tier_9", "sudustrial:healing_tnt_tier_10",
+
+      "sudustrial:harm_tnt_tier_2", "sudustrial:harm_tnt_tier_3", "sudustrial:harm_tnt_tier_4",
+      "sudustrial:harm_tnt_tier_5", "sudustrial:harm_tnt_tier_6", "sudustrial:harm_tnt_tier_7",
+      "sudustrial:harm_tnt_tier_8", "sudustrial:harm_tnt_tier_9", "sudustrial:harm_tnt_tier_10",
+
+      "sudustrial:slow_falling_tnt_tier_2", "sudustrial:slow_falling_tnt_tier_3", "sudustrial:slow_falling_tnt_tier_4",
+      "sudustrial:slow_falling_tnt_tier_5", "sudustrial:slow_falling_tnt_tier_6", "sudustrial:slow_falling_tnt_tier_7",
+      "sudustrial:slow_falling_tnt_tier_8", "sudustrial:slow_falling_tnt_tier_9", "sudustrial:slow_falling_tnt_tier_10",
+
+      "sudustrial:night_vision_tnt_tier_2", "sudustrial:night_vision_tnt_tier_3", "sudustrial:night_vision_tnt_tier_4",
+      "sudustrial:night_vision_tnt_tier_5", "sudustrial:night_vision_tnt_tier_6", "sudustrial:night_vision_tnt_tier_7",
+      "sudustrial:night_vision_tnt_tier_8", "sudustrial:night_vision_tnt_tier_9", "sudustrial:night_vision_tnt_tier_10",
+
+      "sudustrial:blindness_tnt_tier_2", "sudustrial:blindness_tnt_tier_3", "sudustrial:blindness_tnt_tier_4",
+      "sudustrial:blindness_tnt_tier_5", "sudustrial:blindness_tnt_tier_6", "sudustrial:blindness_tnt_tier_7",
+      "sudustrial:blindness_tnt_tier_8", "sudustrial:blindness_tnt_tier_9", "sudustrial:blindness_tnt_tier_10",
+
+      "sudustrial:levitation_tnt_tier_2", "sudustrial:levitation_tnt_tier_3", "sudustrial:levitation_tnt_tier_4",
+      "sudustrial:levitation_tnt_tier_5", "sudustrial:levitation_tnt_tier_6", "sudustrial:levitation_tnt_tier_7",
+      "sudustrial:levitation_tnt_tier_8", "sudustrial:levitation_tnt_tier_9", "sudustrial:levitation_tnt_tier_10",
+
+      "sudustrial:wither_tnt_tier_2", "sudustrial:wither_tnt_tier_3", "sudustrial:wither_tnt_tier_4",
+      "sudustrial:wither_tnt_tier_5", "sudustrial:wither_tnt_tier_6", "sudustrial:wither_tnt_tier_7",
+      "sudustrial:wither_tnt_tier_8", "sudustrial:wither_tnt_tier_9", "sudustrial:wither_tnt_tier_10",
+
+      "sudustrial:fire_tnt_tier_2", "sudustrial:fire_tnt_tier_3", "sudustrial:fire_tnt_tier_4",
+      "sudustrial:fire_tnt_tier_5", "sudustrial:fire_tnt_tier_6", "sudustrial:fire_tnt_tier_7",
+      "sudustrial:fire_tnt_tier_8", "sudustrial:fire_tnt_tier_9", "sudustrial:fire_tnt_tier_10",
+
+      "sudustrial:wood_tnt_tier_2", "sudustrial:wood_tnt_tier_3", "sudustrial:wood_tnt_tier_4",
+      "sudustrial:wood_tnt_tier_5", "sudustrial:wood_tnt_tier_6", "sudustrial:wood_tnt_tier_7",
+      "sudustrial:wood_tnt_tier_8", "sudustrial:wood_tnt_tier_9", "sudustrial:wood_tnt_tier_10",
+
+      "sudustrial:swamp_tnt_tier_2", "sudustrial:swamp_tnt_tier_3", "sudustrial:swamp_tnt_tier_4",
+      "sudustrial:swamp_tnt_tier_5", "sudustrial:swamp_tnt_tier_6", "sudustrial:swamp_tnt_tier_7",
+      "sudustrial:swamp_tnt_tier_8", "sudustrial:swamp_tnt_tier_9", "sudustrial:swamp_tnt_tier_10",
+
+      "sudustrial:sculk_tnt_tier_2", "sudustrial:sculk_tnt_tier_3", "sudustrial:sculk_tnt_tier_4",
+      "sudustrial:sculk_tnt_tier_5", "sudustrial:sculk_tnt_tier_6", "sudustrial:sculk_tnt_tier_7",
+      "sudustrial:sculk_tnt_tier_8", "sudustrial:sculk_tnt_tier_9", "sudustrial:sculk_tnt_tier_10",
+
+      "sudustrial:earth_tnt_tier_2", "sudustrial:earth_tnt_tier_3", "sudustrial:earth_tnt_tier_4",
+      "sudustrial:earth_tnt_tier_5", "sudustrial:earth_tnt_tier_6", "sudustrial:earth_tnt_tier_7",
+      "sudustrial:earth_tnt_tier_8", "sudustrial:earth_tnt_tier_9", "sudustrial:earth_tnt_tier_10",
+
+      "sudustrial:electric_tnt_tier_2", "sudustrial:electric_tnt_tier_3", "sudustrial:electric_tnt_tier_4",
+      "sudustrial:electric_tnt_tier_5", "sudustrial:electric_tnt_tier_6", "sudustrial:electric_tnt_tier_7",
+      "sudustrial:electric_tnt_tier_8", "sudustrial:electric_tnt_tier_9", "sudustrial:electric_tnt_tier_10",
+
+      "sudustrial:ender_tnt_tier_2", "sudustrial:ender_tnt_tier_3", "sudustrial:ender_tnt_tier_4",
+      "sudustrial:ender_tnt_tier_5", "sudustrial:ender_tnt_tier_6", "sudustrial:ender_tnt_tier_7",
+      "sudustrial:ender_tnt_tier_8", "sudustrial:ender_tnt_tier_9", "sudustrial:ender_tnt_tier_10",
+
+      "sudustrial:ocean_tnt_tier_2", "sudustrial:ocean_tnt_tier_3", "sudustrial:ocean_tnt_tier_4",
+      "sudustrial:ocean_tnt_tier_5", "sudustrial:ocean_tnt_tier_6", "sudustrial:ocean_tnt_tier_7",
+      "sudustrial:ocean_tnt_tier_8", "sudustrial:ocean_tnt_tier_9", "sudustrial:ocean_tnt_tier_10",
+
+      "sudustrial:ice_tnt_tier_2", "sudustrial:ice_tnt_tier_3", "sudustrial:ice_tnt_tier_4",
+      "sudustrial:ice_tnt_tier_5", "sudustrial:ice_tnt_tier_6", "sudustrial:ice_tnt_tier_7",
+      "sudustrial:ice_tnt_tier_8", "sudustrial:ice_tnt_tier_9", "sudustrial:ice_tnt_tier_10",
+
+      "sudustrial:mining_sphere_tnt_tier_2", "sudustrial:mining_sphere_tnt_tier_3", "sudustrial:mining_sphere_tnt_tier_4",
+      "sudustrial:mining_sphere_tnt_tier_5", "sudustrial:mining_sphere_tnt_tier_6", "sudustrial:mining_sphere_tnt_tier_7",
+      "sudustrial:mining_sphere_tnt_tier_8", "sudustrial:mining_sphere_tnt_tier_9", "sudustrial:mining_sphere_tnt_tier_10",
+
+      "sudustrial:mining_column_tnt_tier_2", "sudustrial:mining_column_tnt_tier_3", "sudustrial:mining_column_tnt_tier_4",
+      "sudustrial:mining_column_tnt_tier_5", "sudustrial:mining_column_tnt_tier_6", "sudustrial:mining_column_tnt_tier_7",
+      "sudustrial:mining_column_tnt_tier_8", "sudustrial:mining_column_tnt_tier_9", "sudustrial:mining_column_tnt_tier_10",
+
+      "sudustrial:zombie_tnt_tier_2", "sudustrial:zombie_tnt_tier_3", "sudustrial:zombie_tnt_tier_4",
+      "sudustrial:zombie_tnt_tier_5", "sudustrial:zombie_tnt_tier_6", "sudustrial:zombie_tnt_tier_7",
+      "sudustrial:zombie_tnt_tier_8", "sudustrial:zombie_tnt_tier_9", "sudustrial:zombie_tnt_tier_10",
+
+      "sudustrial:creeper_tnt_tier_2", "sudustrial:creeper_tnt_tier_3", "sudustrial:creeper_tnt_tier_4",
+      "sudustrial:creeper_tnt_tier_5", "sudustrial:creeper_tnt_tier_6", "sudustrial:creeper_tnt_tier_7",
+      "sudustrial:creeper_tnt_tier_8", "sudustrial:creeper_tnt_tier_9", "sudustrial:creeper_tnt_tier_10",
+
+      "sudustrial:sheep_tnt_tier_2", "sudustrial:sheep_tnt_tier_3", "sudustrial:sheep_tnt_tier_4",
+      "sudustrial:sheep_tnt_tier_5", "sudustrial:sheep_tnt_tier_6", "sudustrial:sheep_tnt_tier_7",
+      "sudustrial:sheep_tnt_tier_8", "sudustrial:sheep_tnt_tier_9", "sudustrial:sheep_tnt_tier_10",
+
+      "sudustrial:shulker_tnt_tier_2", "sudustrial:shulker_tnt_tier_3", "sudustrial:shulker_tnt_tier_4",
+      "sudustrial:shulker_tnt_tier_5", "sudustrial:shulker_tnt_tier_6", "sudustrial:shulker_tnt_tier_7",
+      "sudustrial:shulker_tnt_tier_8", "sudustrial:shulker_tnt_tier_9", "sudustrial:shulker_tnt_tier_10",
+
+      "sudustrial:piglin_brute_tnt_tier_2", "sudustrial:piglin_brute_tnt_tier_3", "sudustrial:piglin_brute_tnt_tier_4",
+      "sudustrial:piglin_brute_tnt_tier_5", "sudustrial:piglin_brute_tnt_tier_6", "sudustrial:piglin_brute_tnt_tier_7",
+      "sudustrial:piglin_brute_tnt_tier_8", "sudustrial:piglin_brute_tnt_tier_9", "sudustrial:piglin_brute_tnt_tier_10",
+
+      "sudustrial:pig_tnt_tier_2", "sudustrial:pig_tnt_tier_3", "sudustrial:pig_tnt_tier_4",
+      "sudustrial:pig_tnt_tier_5", "sudustrial:pig_tnt_tier_6", "sudustrial:pig_tnt_tier_7",
+      "sudustrial:pig_tnt_tier_8", "sudustrial:pig_tnt_tier_9", "sudustrial:pig_tnt_tier_10",
+
+      "sudustrial:cow_tnt_tier_2", "sudustrial:cow_tnt_tier_3", "sudustrial:cow_tnt_tier_4",
+      "sudustrial:cow_tnt_tier_5", "sudustrial:cow_tnt_tier_6", "sudustrial:cow_tnt_tier_7",
+      "sudustrial:cow_tnt_tier_8", "sudustrial:cow_tnt_tier_9", "sudustrial:cow_tnt_tier_10",
+
+      "sudustrial:chicken_tnt_tier_2", "sudustrial:chicken_tnt_tier_3", "sudustrial:chicken_tnt_tier_4",
+      "sudustrial:chicken_tnt_tier_5", "sudustrial:chicken_tnt_tier_6", "sudustrial:chicken_tnt_tier_7",
+      "sudustrial:chicken_tnt_tier_8", "sudustrial:chicken_tnt_tier_9", "sudustrial:chicken_tnt_tier_10",
+
+      "sudustrial:bee_tnt_tier_2", "sudustrial:bee_tnt_tier_3", "sudustrial:bee_tnt_tier_4",
+      "sudustrial:bee_tnt_tier_5", "sudustrial:bee_tnt_tier_6", "sudustrial:bee_tnt_tier_7",
+      "sudustrial:bee_tnt_tier_8", "sudustrial:bee_tnt_tier_9", "sudustrial:bee_tnt_tier_10",
+
+      "sudustrial:massive_tnt_tier_2", "sudustrial:massive_tnt_tier_3", "sudustrial:massive_tnt_tier_4",
+      "sudustrial:massive_tnt_tier_5", "sudustrial:massive_tnt_tier_6", "sudustrial:massive_tnt_tier_7",
+      "sudustrial:massive_tnt_tier_8", "sudustrial:massive_tnt_tier_9", "sudustrial:massive_tnt_tier_10",
+
+      "sudustrial:standart_tnt_tier_3", "sudustrial:standart_tnt_tier_4", "sudustrial:standart_tnt_tier_5",
+      "sudustrial:standart_tnt_tier_6", "sudustrial:standart_tnt_tier_7", "sudustrial:standart_tnt_tier_8",
+      "sudustrial:standart_tnt_tier_9", "sudustrial:standart_tnt_tier_10",
+
+      "sudustrial:elemental_core", "sudustrial:spawner_core", "sudustrial:effect_core_alpha", "sudustrial:effect_core_omega",
+      "sudustrial:mining_sphere_core", "sudustrial:mining_column_core", "sudustrial:standard_core", "sudustrial:massive_core"
+    ]
+  },
+  "criteria": {
+    "c_tnt": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:standart_tnt_tier_2"] }] } },
+    "c_jump": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:jump_boost_tnt_tier_1"] }] } },
+    "c_fire_res": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:fire_resistance_tnt_tier_1"] }] } },
+    "c_speed": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:speed_tnt_tier_1"] }] } },
+    "c_slowness": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:slowness_tnt_tier_1"] }] } },
+    "c_water": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:water_breathing_tnt_tier_1"] }] } },
+    "c_poison": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:poison_tnt_tier_1"] }] } },
+    "c_regen": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:regeneration_tnt_tier_1"] }] } },
+    "c_strength": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:strength_tnt_tier_1"] }] } },
+    "c_weakness": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:weakness_tnt_tier_1"] }] } },
+    "c_invis": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:invisibility_tnt_tier_1"] }] } },
+    "c_turtle": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:turtle_master_tnt_tier_1"] }] } },
+    "c_healing": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:healing_tnt_tier_1"] }] } },
+    "c_harm": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:harm_tnt_tier_1"] }] } },
+    "c_slow_fall": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:slow_falling_tnt_tier_1"] }] } },
+    "c_night": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:night_vision_tnt_tier_1"] }] } },
+    "c_blind": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:blindness_tnt_tier_1"] }] } },
+    "c_levit": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:levitation_tnt_tier_1"] }] } },
+    "c_wither": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:wither_tnt_tier_1"] }] } },
+    "c_fire": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:fire_tnt_tier_1"] }] } },
+    "c_wood": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:wood_tnt_tier_1"] }] } },
+    "c_swamp": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:swamp_tnt_tier_1"] }] } },
+    "c_sculk": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:sculk_tnt_tier_1"] }] } },
+    "c_earth": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:earth_tnt_tier_1"] }] } },
+    "c_electric": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:electric_tnt_tier_1"] }] } },
+    "c_ender": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:ender_tnt_tier_1"] }] } },
+    "c_ocean": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:ocean_tnt_tier_1"] }] } },
+    "c_ice": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:ice_tnt_tier_1"] }] } },
+    "c_sphere": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:mining_sphere_tnt_tier_1"] }] } },
+    "c_column": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:mining_column_tnt_tier_1"] }] } },
+    "c_zombie": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:zombie_tnt_tier_1"] }] } },
+    "c_creeper": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:creeper_tnt_tier_1"] }] } },
+    "c_sheep": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:sheep_tnt_tier_1"] }] } },
+    "c_shulker": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:shulker_tnt_tier_1"] }] } },
+    "c_piglin": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:piglin_brute_tnt_tier_1"] }] } },
+    "c_pig": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:pig_tnt_tier_1"] }] } },
+    "c_cow": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:cow_tnt_tier_1"] }] } },
+    "c_chicken": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:chicken_tnt_tier_1"] }] } },
+    "c_bee": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:bee_tnt_tier_1"] }] } },
+    "c_massive": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:massive_tnt_tier_1"] }] } }
+  },
+  "requirements": [
+    [
+      "c_tnt", "c_jump", "c_fire_res", "c_speed", "c_slowness", "c_water", "c_poison", "c_regen", "c_strength",
+      "c_weakness", "c_invis", "c_turtle", "c_healing", "c_harm", "c_slow_fall", "c_night", "c_blind", "c_levit",
+      "c_wither", "c_fire", "c_wood", "c_swamp", "c_sculk", "c_earth", "c_electric", "c_ender", "c_ocean", "c_ice",
+      "c_sphere", "c_column", "c_zombie", "c_creeper", "c_sheep", "c_shulker", "c_piglin", "c_pig", "c_cow",
+      "c_chicken", "c_bee", "c_massive"
+    ]
+  ]
+}

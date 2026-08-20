@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "zombie_tnt",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "&": "minecraft:tnt",
+    "#": "minecraft:rotten_flesh"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:zombie_tnt_tier_1"
+  }
+}

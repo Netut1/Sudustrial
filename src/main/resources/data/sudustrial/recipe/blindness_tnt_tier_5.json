@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "blindness_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:blindness_tnt_tier_4"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:blindness_tnt_tier_5"
+  }
+}

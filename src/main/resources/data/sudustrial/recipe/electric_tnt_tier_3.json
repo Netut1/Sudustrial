@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "electric_tnt",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sudustrial:electric_tnt_tier_2"
+  },
+  "result": {
+    "count": 1,
+    "id": "sudustrial:electric_tnt_tier_3"
+  }
+}
