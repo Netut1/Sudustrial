@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image.png" width="1500">
+  <img src="icon.png" width="1500">
 </p>
 
 # Sudustrial
