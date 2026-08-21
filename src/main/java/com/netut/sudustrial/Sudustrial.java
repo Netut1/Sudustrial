@@ -1,6 +1,7 @@
 package com.netut.sudustrial;
 
-import com.netut.sudustrial.action.NuclearExplosionManager;
+import com.netut.sudustrial.action.tnt.explosion.optimization.nuclear.NuclearExplosionManager;
+import com.netut.sudustrial.action.tnt.revival.nuclear.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.*;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,6 +27,7 @@ public class Sudustrial implements ModInitializer {
 		ModCreativeTabs.registerCreativeTabs();
 		ModEntities.registerModEntities();
 		NuclearExplosionManager.init();
+		NuclearDecayCarryOver.init();
 		LOGGER.info("Hello Fabric world!");
 	}
 

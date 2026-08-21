@@ -1,8 +1,8 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.block.tnt_type.*;
-import com.netut.sudustrial.item.tnt_atomic.CoreItemType;
+import com.netut.sudustrial.block.tnt.type.*;
+import com.netut.sudustrial.item.tnt.nuclear.CoreItemType;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

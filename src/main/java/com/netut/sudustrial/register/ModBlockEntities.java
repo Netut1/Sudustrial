@@ -1,7 +1,7 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.block.tnt_atomic_blocks.NuclearCoreBlockEntity;
+import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

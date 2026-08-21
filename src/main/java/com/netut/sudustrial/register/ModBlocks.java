@@ -1,9 +1,10 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.block.tnt_block.*;
-import com.netut.sudustrial.block.tnt_type.*;
-import com.netut.sudustrial.block.tnt_atomic_blocks.*;
+import com.netut.sudustrial.block.tnt.nuclear_block.NuclearAirBlock;
+import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlock;
+import com.netut.sudustrial.block.tnt.state_block.*;
+import com.netut.sudustrial.block.tnt.type.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -153,7 +154,7 @@ public class ModBlocks {
         NUCLEAR_AIR = new NuclearAirBlock(nuclearAirProperties);
         Registry.register(BuiltInRegistries.BLOCK, nuclearAirKey, NUCLEAR_AIR);
 
-        // Ядро: добываемый не кубический блок с предметом
+        // Ядро: добываемый кубический блок с предметом
         Identifier nuclearCoreLoc = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "nuclear_core");
         ResourceKey<Block> nuclearCoreBlockKey = ResourceKey.create(Registries.BLOCK, nuclearCoreLoc);
         ResourceKey<Item> nuclearCoreItemKey = ResourceKey.create(Registries.ITEM, nuclearCoreLoc);

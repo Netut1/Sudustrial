@@ -3,13 +3,13 @@
 	"id": "sudustrial",
 	"version": "${version}",
 	"name": "sudustrial",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mode ia about some things that I would like to see in Minecraft and what I can programming on my own.",
 	"authors": [
-		"Me!"
+		"Netut"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Netut1/Sudustrial",
+		"sources": "https://github.com/Netut1/Sudustrial"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/sudustrial/icon.png",

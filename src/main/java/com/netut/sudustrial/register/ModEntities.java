@@ -1,7 +1,7 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.entity.CustomTntEntity;
+import com.netut.sudustrial.entity.tnt.CustomTntEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

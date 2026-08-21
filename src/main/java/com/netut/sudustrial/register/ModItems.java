@@ -1,7 +1,7 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.item.tnt_atomic.CoreItemType;
+import com.netut.sudustrial.item.tnt.nuclear.CoreItemType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

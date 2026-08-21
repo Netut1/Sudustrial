@@ -1,7 +1,7 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.effect.NuclearDecayEffect;
+import com.netut.sudustrial.effect.tnt.nuclear.NuclearDecayEffect;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,7 +17,7 @@ public class ModMobEffects {
             Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "nuclear_decay")
     );
 
-    // Цвет иконки/частиц в интерфейсе — ядовито-зелёный. Поменяешь под свою палитру одной строкой.
+    // Цвет частиц — ядовито-зелёный.
     public static Holder<MobEffect> NUCLEAR_DECAY;
 
     public static void registerModMobEffects() {
