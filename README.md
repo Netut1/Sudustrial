@@ -1,4 +1,7 @@
-![icon.png](src/main/resources/assets/sudustrial/icon.png)
+<p align="center">
+  <img src="image.png" width="1500">
+</p>
+
 # Sudustrial
 
 |[ CurseForge ]()|[ Modrinth ]()|
