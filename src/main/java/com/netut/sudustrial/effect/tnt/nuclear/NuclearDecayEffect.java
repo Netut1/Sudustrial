@@ -14,6 +14,7 @@ import org.jspecify.annotations.NonNull;
 public class NuclearDecayEffect extends MobEffect {
     private static final int INTERVAL_TICKS = 400; // раз в 20 секунд
     private static final double HEALTH_LOSS_PER_INTERVAL = 1.0D;
+    private static final double MAX_PENALTY_MAGNITUDE = 19.0D;
 
     public static final Identifier DECAY_MODIFIER_ID = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "nuclear_decay");
 
@@ -42,9 +43,11 @@ public class NuclearDecayEffect extends MobEffect {
                 maxHealthAttribute.removeModifier(DECAY_MODIFIER_ID);
             }
 
+            double newPenalty = Math.max(-MAX_PENALTY_MAGNITUDE, currentPenalty - HEALTH_LOSS_PER_INTERVAL);
+
             AttributeModifier modifier = new AttributeModifier(
                     DECAY_MODIFIER_ID,
-                    currentPenalty - HEALTH_LOSS_PER_INTERVAL,
+                    newPenalty,
                     AttributeModifier.Operation.ADD_VALUE
             );
             maxHealthAttribute.addPermanentModifier(modifier);

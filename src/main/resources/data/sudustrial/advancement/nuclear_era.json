@@ -16,7 +16,7 @@
   },
   "rewards": {
     "recipes": [
-      "sudustrial:nuclear_tnt"
+      "sudustrial:nuclear_tnt", "sudustrial:nuclear_antidote"
     ]
   },
   "criteria": {

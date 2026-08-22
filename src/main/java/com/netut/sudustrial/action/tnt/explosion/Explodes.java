@@ -6,6 +6,7 @@ import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlockEntity;
 import com.netut.sudustrial.block.tnt.type.*;
 import com.netut.sudustrial.entity.tnt.CustomTntEntity;
 import com.netut.sudustrial.register.ModBlocks;
+import com.netut.sudustrial.register.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -81,7 +82,7 @@ public class Explodes {
 
     public static void partyExplode(ServerLevel level, CustomTntEntity entity) {
         level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-                SoundEvents.GENERIC_EXPLODE.value(), SoundSource.BLOCKS,
+                ModSounds.PARTY_EXPLODE, SoundSource.BLOCKS,
                 4.0F, (1.0F + (level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.2F) * 0.7F);
     }
 

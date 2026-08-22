@@ -23,11 +23,13 @@ public class Sudustrial implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModMobEffects.registerModMobEffects();
+		ModAttachments.registerModAttachments();
 		ModBlockEntities.registerModBlockEntities();
 		ModCreativeTabs.registerCreativeTabs();
 		ModEntities.registerModEntities();
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
+		ModSounds.registerModSounds();
 		LOGGER.info("Hello Fabric world!");
 	}
 

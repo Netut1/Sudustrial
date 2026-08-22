@@ -15,7 +15,7 @@ public enum MiningTntType implements StringRepresentable {
     SPHERE_TIER_9("mining_sphere_tnt_tier_9", 28, false),
     SPHERE_TIER_10("mining_sphere_tnt_tier_10", 32, false),
 
-    COLUMN_TIER_1("mining_column_tnt_tier_1", 2, true), // radius=2 дает область 5x5 (от -2 до +2)
+    COLUMN_TIER_1("mining_column_tnt_tier_1", 2, true), // radius = 2 дает область 5x5 (от -2 до +2)
     COLUMN_TIER_2("mining_column_tnt_tier_2", 4, true),
     COLUMN_TIER_3("mining_column_tnt_tier_3", 6, true),
     COLUMN_TIER_4("mining_column_tnt_tier_4", 8, true),

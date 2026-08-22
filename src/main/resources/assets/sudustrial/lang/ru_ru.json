@@ -5,7 +5,6 @@
   "advancement.sudustrial.unlock_custom_tnt_tier_1.description": "Создай первый кастомный динамит",
   "advancement.sudustrial.tnt_era.title": "Динамитная эра",
   "advancement.sudustrial.tnt_era.description": "Привет, {Динамитный} Мир!",
-
   "advancement.sudustrial.nuclear_era.title" : "-КАБУМ? -Да, Рико, КАБУМ",
   "advancement.sudustrial.nuclear_era.description": "Это самолет? Нет, это бомба, большая бомба.",
 
@@ -824,5 +823,6 @@
   "item.sudustrial.nuclear_tnt": "Ядерная бомба",
   "item.sudustrial.nuclear_core": "Ядро",
 
-  "effect.sudustrial.nuclear_decay": "Радиация"
+  "effect.sudustrial.nuclear_decay": "Радиация",
+  "item.sudustrial.nuclear_antidote": "Зелье против радиации"
 }

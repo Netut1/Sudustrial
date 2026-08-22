@@ -38,13 +38,14 @@ public class ModCreativeTabs {
                 for (MiningTntType type : MiningTntType.values()) {
                     output.accept(ModBlocks.MINING_TNT_ITEMS.get(type));
                 }
-                for (CoreItemType type : CoreItemType.values()) {
-                    output.accept(ModItems.CORE_ITEMS.get(type));
-                }
                 for (NuclearTntType type : NuclearTntType.values()) {
                     output.accept(ModBlocks.NUCLEAR_TNT_ITEMS.get(type));
                 }
+                for (CoreItemType type : CoreItemType.values()) {
+                    output.accept(ModItems.CORE_ITEMS.get(type));
+                }
                 output.accept(ModBlocks.NUCLEAR_CORE_ITEM);
+                output.accept(ModItems.NUCLEAR_ANTIDOTE);
             })
             .build();
 

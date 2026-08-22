@@ -823,5 +823,6 @@
   "item.sudustrial.nuclear_tnt": "Nuclear TNT",
   "item.sudustrial.nuclear_core": "Nuclear Core",
 
-  "effect.sudustrial.nuclear_decay": "Radiation"
+  "effect.sudustrial.nuclear_decay": "Radiation",
+  "item.sudustrial.nuclear_antidote": "Anti-radiation potion"
 }

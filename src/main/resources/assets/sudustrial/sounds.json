@@ -1,0 +1,8 @@
+{
+  "party_explode": {
+    "subtitle": "subtitles.sudustrial.party_explode",
+    "sounds": [
+      "sudustrial:party_explode"
+    ]
+  }
+}

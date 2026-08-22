@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GSG",
+    "SGS",
+    "GSG"
+  ],
+  "key": {
+    "G": "minecraft:dragon_breath",
+    "S": {
+      "fabric:type": "fabric:components",
+      "base": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:strong_healing"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "sudustrial:nuclear_antidote",
+    "count": 1
+  }
+}

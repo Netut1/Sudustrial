@@ -13,13 +13,24 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 import org.jspecify.annotations.NonNull;
 
 public class NuclearCoreBlock extends Block implements EntityBlock {
     private static final int DECORATIVE_SPHERE_RADIUS = 4;
-    private static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    public static final VoxelShape SHAPE = Shapes.or(
+            Block.box(2, 2, 2, 14, 14, 14),   // Внешняя оболочка
+            Block.box(0, 0, 0, 4, 4, 4),      // угол (0,0,0)
+            Block.box(12, 0, 0, 16, 4, 4),    // угол (16,0,0)
+            Block.box(0, 12, 0, 4, 16, 4),    // угол (0,16,0)
+            Block.box(0, 0, 12, 4, 4, 16),    // угол (0,0,16)
+            Block.box(12, 12, 0, 16, 16, 4),  // угол (16,16,0)
+            Block.box(12, 0, 12, 16, 4, 16),  // угол (16,0,12)
+            Block.box(0, 12, 12, 4, 16, 16),  // угол (0,16,16)
+            Block.box(12, 12, 12, 16, 16, 16) // угол (16,16,16)
+    );
 
     public NuclearCoreBlock(Properties properties) {
         super(properties);

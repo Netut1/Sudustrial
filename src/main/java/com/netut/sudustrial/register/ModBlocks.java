@@ -161,6 +161,8 @@ public class ModBlocks {
 
         BlockBehaviour.Properties nuclearCoreProperties = BlockBehaviour.Properties.of()
                 .strength(100.0F, 1200.0F)
+                .noOcclusion()
+                .lightLevel(state -> 3)
                 .setId(nuclearCoreBlockKey);
         NUCLEAR_CORE_BLOCK = new NuclearCoreBlock(nuclearCoreProperties);
         Registry.register(BuiltInRegistries.BLOCK, nuclearCoreBlockKey, NUCLEAR_CORE_BLOCK);
