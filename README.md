@@ -7,9 +7,8 @@ This mod is built on Fabric.
 It was created to experiment with various game mechanics and offers a way to expand the 
 gameplay experience.
 
-### Table of Contents
+## Table of Contents
 + Overview
-+ The TNT system
 + Requirements
 + Installation
 
@@ -18,6 +17,16 @@ A Fabric mod for Minecraft built around one idea: make something interesting. It
 different mechanics, their overrides and surprises.
 
 ### The TNT system
+#### Description
+By creating dynamite and discovering the beauty of destruction, you will unlock mysterious patterns.
+As you explore the dark corners of these worlds, you will uncover the majestic secrets of this 
+power—ranging from the simple truth of total destruction to the act of creation or the revealing of 
+hidden things, from summoning to enchantment. Continuing your exploration, you will eventually witness 
+true might: you will come face to face with the Core. Seizing it—and paying a heavy price—will grant you 
+incomparable power, but it will also force you to confront the danger involved. Will you master this power 
+and reclaim your former life, or will you falter halfway? The choice is yours alone.
+
+#### Overview
 Sudustrial adds a single custom TNT entity that behaves completely differently depending on what 
 block triggered it. Instead of dozens of unrelated explosive block classes, every variant — from 
 a firework-quiet Party TNT to a Nuclear TNT, each with its own explosion algorithm tuned for 
