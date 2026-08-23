@@ -3,6 +3,8 @@ package com.netut.sudustrial.action.tnt.explosion.optimization;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.status.ChunkStatus;
 import net.minecraft.world.phys.Vec3;
 
@@ -50,6 +52,21 @@ public class ExplosionOptimizer {
                         level.getChunkSource().blockChanged(minPos);
                         level.getChunkSource().blockChanged(maxPos);
                     }
+                }
+            }
+        }
+    }
+
+    public static void waterRemove(ServerLevel level, BlockPos  center, int radius) {
+        BlockPos minPos = center.offset(-radius, -radius, -radius);
+        BlockPos maxPos = center.offset(radius, radius, radius);
+        int rSq = radius * radius;
+
+        for (BlockPos pos : BlockPos.betweenClosed(minPos, maxPos)) {
+            if (center.distSqr(pos) <= rSq) {
+                BlockState state = level.getBlockState(pos);
+                if (state.is(Blocks.WATER)) {
+                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), 2);
                 }
             }
         }

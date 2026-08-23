@@ -141,6 +141,7 @@ public class Explodes {
         }
 
         NuclearExplosionManager.start(level, center, radius);
+        ExplosionOptimizer.waterRemove(level, center, radius);
     }
 
     public static void elementalExplode(ServerLevel level, CustomTntEntity entity, ElementalTntType type) {

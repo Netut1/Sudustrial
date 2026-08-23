@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NuclearExplosionTask {
-    private static final int NEW_COLUMNS_PER_TICK = 50;
+    private static final int NEW_COLUMNS_PER_TICK = 100;
     private static final int SECTIONS_PER_TICK = 100;
 
     // Ширина приграничной полосы в блоках, где имеет смысл проверять соседей на воду снаружи радиуса.
@@ -182,7 +182,7 @@ public class NuclearExplosionTask {
                         if (pos.equals(center)) continue;
 
                         BlockState current = level.getBlockState(pos);
-                        if (current.is(ModBlocks.NUCLEAR_AIR) || current.getBlock().getExplosionResistance() < 1200.0 || current.isAir()) continue;
+                        if (current.is(ModBlocks.NUCLEAR_AIR) || current.getBlock().getExplosionResistance() > 1199.0 || current.isAir()) continue;
 
                         // Только у самого края сферы проверяем не граничит ли эта клетка с водой снаружи радиуса.
                         if (distSq >= surfaceThresholdSq && isAdjacentToExternalFluid(x, y, z, neighborPos)) {
