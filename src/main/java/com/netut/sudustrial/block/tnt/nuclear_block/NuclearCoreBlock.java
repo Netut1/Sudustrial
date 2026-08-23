@@ -1,9 +1,11 @@
 package com.netut.sudustrial.block.tnt.nuclear_block;
 
+import com.netut.sudustrial.action.DelayedTaskScheduler;
 import com.netut.sudustrial.register.ModBlockEntities;
 import com.netut.sudustrial.register.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -54,16 +56,51 @@ public class NuclearCoreBlock extends Block implements EntityBlock {
 
     private void placeDecorativeSphere(ServerLevel level, BlockPos center) {
         int rSq = DECORATIVE_SPHERE_RADIUS * DECORATIVE_SPHERE_RADIUS;
-        BlockState nuclearAirState = ModBlocks.NUCLEAR_AIR.defaultBlockState();
+        BlockState baseNuclearAirState = ModBlocks.NUCLEAR_AIR.defaultBlockState();
         BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
 
         for (int x = -DECORATIVE_SPHERE_RADIUS; x <= DECORATIVE_SPHERE_RADIUS; x++) {
             for (int y = -DECORATIVE_SPHERE_RADIUS; y <= DECORATIVE_SPHERE_RADIUS; y++) {
                 for (int z = -DECORATIVE_SPHERE_RADIUS; z <= DECORATIVE_SPHERE_RADIUS; z++) {
-                    if (x * x + y * y + z * z <= rSq) {
+                    int distSq = x * x + y * y + z * z;
+                    if (distSq <= rSq) {
                         pos.set(center.getX() + x, center.getY() + y, center.getZ() + z);
                         if (!pos.equals(center)) {
-                            level.setBlock(pos, nuclearAirState, 2);
+                            int geometricDistance = Math.max(1, (int) Math.ceil(Math.sqrt(distSq)));
+                            BlockState stateToPlace = baseNuclearAirState.setValue(NuclearAirBlock.DISTANCE, geometricDistance);
+                            level.setBlock(pos, stateToPlace, 2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @Override
+    protected void affectNeighborsAfterRemoval(@NonNull BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, boolean movedByPiston) {
+        BlockPos corePos = pos.immutable();
+        DelayedTaskScheduler.schedule(level, 100, () -> sweepDecorativeSphere(level, corePos));
+        super.affectNeighborsAfterRemoval(state, level, pos, movedByPiston);
+    }
+
+    private void sweepDecorativeSphere(ServerLevel level, BlockPos center) {
+        int sweepRadius = DECORATIVE_SPHERE_RADIUS + 1;
+        int rSq = sweepRadius * sweepRadius;
+        RandomSource random = level.getRandom();
+
+        for (int x = -sweepRadius; x <= sweepRadius; x++) {
+            for (int y = -sweepRadius; y <= sweepRadius; y++) {
+                for (int z = -sweepRadius; z <= sweepRadius; z++) {
+                    if (x * x + y * y + z * z <= rSq) {
+                        BlockPos strayPos = new BlockPos(center.getX() + x, center.getY() + y, center.getZ() + z);
+                        if (level.getBlockState(strayPos).is(ModBlocks.NUCLEAR_AIR)) {
+                            int extraDelay = random.nextInt(30);
+                            DelayedTaskScheduler.schedule(level, extraDelay, () -> {
+                                // Перепроверяем на случай, если блок уже кто-то убрал за это время
+                                if (level.getBlockState(strayPos).is(ModBlocks.NUCLEAR_AIR)) {
+                                    level.removeBlock(strayPos, false);
+                                }
+                            });
                         }
                     }
                 }

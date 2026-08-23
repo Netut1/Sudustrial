@@ -1,5 +1,6 @@
 package com.netut.sudustrial;
 
+import com.netut.sudustrial.action.DelayedTaskScheduler;
 import com.netut.sudustrial.action.tnt.explosion.optimization.nuclear.NuclearExplosionManager;
 import com.netut.sudustrial.action.tnt.revival.nuclear.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.*;
@@ -29,6 +30,7 @@ public class Sudustrial implements ModInitializer {
 		ModEntities.registerModEntities();
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
+		DelayedTaskScheduler.init();
 		ModSounds.registerModSounds();
 		LOGGER.info("Hello Fabric world!");
 	}
