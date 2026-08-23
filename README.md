@@ -43,7 +43,7 @@ every TNT type can make bigger BOOM.
 
 ## Requirements
 + Minecraft 26.2
-+ Fabric Loader
++ Fabric Loader 0.19.3
 + Fabric API
 
 ## Installation
