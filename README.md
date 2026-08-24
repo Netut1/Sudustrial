@@ -1,7 +1,7 @@
-![icon.png](src/main/resources/assets/sudustrial/icon.png)
+![icon.png](src/main/resources/assets/sudustrial/big_icon.png)
 # Sudustrial
 
-|[ CurseForge ](https://www.curseforge.com/minecraft/mc-mods/sudustrial)|[ Modrinth ](https://modrinth.com/mod/sudustrial)|
+|[ CurseForge ](https://www.curseforge.com/minecraft/mc-mods/sudustrial)|[ Modrinth ](https://modrinth.com/mod/sudustrial)|[Minecraft Inside]()|
 
 This mod is built on Fabric. 
 It was created to experiment with various game mechanics and offers a way to expand the 
