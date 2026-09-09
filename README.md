@@ -1,4 +1,5 @@
 <img src="src/main/resources/assets/sudustrial/icon.png" width="100%" alt="Sudustrial Icon">
+
 # Sudustrial
 
 |[ CurseForge ](https://www.curseforge.com/minecraft/mc-mods/sudustrial)|[ Modrinth ](https://modrinth.com/mod/sudustrial)|[ Minecraft Inside ](https://minecraft-inside.ru/abyss/195686-sudustrial.html)|
