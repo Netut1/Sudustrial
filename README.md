@@ -1,4 +1,3 @@
-![icon.png](src/main/resources/assets/sudustrial/icon.png)
 <img src="src/main/resources/assets/sudustrial/icon.png" width="100%" alt="Sudustrial Icon">
 # Sudustrial
 
