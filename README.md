@@ -1,4 +1,4 @@
-![icon.png](src/main/resources/assets/sudustrial/big_icon.png)
+![icon.png](src/main/resources/assets/sudustrial/icon.png)
 # Sudustrial
 
 |[ CurseForge ](https://www.curseforge.com/minecraft/mc-mods/sudustrial)|[ Modrinth ](https://modrinth.com/mod/sudustrial)|[ Minecraft Inside ](https://minecraft-inside.ru/abyss/195686-sudustrial.html)|
@@ -40,6 +40,16 @@ what it's supposed to do:
 
 More than forty different types of TNT with ten tier each other. The ten highest tiers of nearly 
 every TNT type can make bigger BOOM.
+
+### The Potion System
+#### Description
+
+You always need plenty of potions, and you’ve always had to choose between resources and the potions themselves. 
+But what if the knowledge of alchemy wasn't just about brewing, but also about mixing? By mastering the witch's 
+craft, you can now learn not only to create potions, which isn't difficult, but also to combine them.
+#### Overview
+Sudustrial adds a special cauldron for mixing potions. This allows you to combine up to four different 
+types of effects into a single potion. The rest is entirely up to you, your resources, and your imagination.
 
 ## Requirements
 + Minecraft 26.2
