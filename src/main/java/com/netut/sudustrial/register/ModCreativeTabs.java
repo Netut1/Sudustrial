@@ -18,6 +18,10 @@ public class ModCreativeTabs {
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "sudustrial_tnt_tab")
     );
+    public static final ResourceKey<CreativeModeTab> SUDUSTRIAL_POTION_AND_FOOD_TAB_KEY = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "sudustrial_potion_and_food_tab")
+    );
 
     public static final CreativeModeTab SUDUSTRIAL_TNT_TAB = FabricCreativeModeTab.builder()
             .icon(() -> new ItemStack(ModBlocks.TNT_ITEMS.get(TntType.STANDARD_TIER_2)))
@@ -45,11 +49,20 @@ public class ModCreativeTabs {
                     output.accept(ModItems.CORE_ITEMS.get(type));
                 }
                 output.accept(ModBlocks.NUCLEAR_CORE_ITEM);
+            })
+            .build();
+
+    public static final CreativeModeTab SUDUSTRIAL_POTION_AND_FOOD_TAB = FabricCreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModBlocks.TNT_ITEMS.get(TntType.STANDARD_TIER_2)))
+            .title(Component.translatable("poison_and_food_tab.sudustrial"))
+            .displayItems((displayParameters, output) -> {
                 output.accept(ModItems.NUCLEAR_ANTIDOTE);
+                output.accept(ModBlocks.POTION_CAULDRON_ITEM);
             })
             .build();
 
     public static void registerCreativeTabs() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, SUDUSTRIAL_TNT_TAB_KEY, SUDUSTRIAL_TNT_TAB);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, SUDUSTRIAL_POTION_AND_FOOD_TAB_KEY, SUDUSTRIAL_POTION_AND_FOOD_TAB);
     }
 }

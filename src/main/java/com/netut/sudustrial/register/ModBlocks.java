@@ -1,6 +1,7 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
+import com.netut.sudustrial.block.cauldron.PotionCauldronBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearAirBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlock;
 import com.netut.sudustrial.block.tnt.state_block.*;
@@ -41,6 +42,9 @@ public class ModBlocks {
     public static Block NUCLEAR_AIR;
     public static Block NUCLEAR_CORE_BLOCK;
     public static Item NUCLEAR_CORE_ITEM;
+
+    public static Block POTION_CAULDRON_BLOCK;
+    public static Item POTION_CAULDRON_ITEM;
 
     public static void registerModBlocks() {
         for (TntType type : TntType.values()) {
@@ -170,5 +174,20 @@ public class ModBlocks {
         Item.Properties nuclearCoreItemProperties = new Item.Properties().setId(nuclearCoreItemKey);
         NUCLEAR_CORE_ITEM = new BlockItem(NUCLEAR_CORE_BLOCK, nuclearCoreItemProperties);
         Registry.register(BuiltInRegistries.ITEM, nuclearCoreItemKey, NUCLEAR_CORE_ITEM);
+
+        // Таинственное зелье
+        Identifier cauldronLoc = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "potion_cauldron");
+        ResourceKey<Block> cauldronBlockKey = ResourceKey.create(Registries.BLOCK, cauldronLoc);
+        ResourceKey<Item> cauldronItemKey = ResourceKey.create(Registries.ITEM, cauldronLoc);
+
+        BlockBehaviour.Properties cauldronProperties = BlockBehaviour.Properties.of()
+                .strength(2.0F, 6.0F)
+                .setId(cauldronBlockKey);
+        POTION_CAULDRON_BLOCK = new PotionCauldronBlock(cauldronProperties);
+        Registry.register(BuiltInRegistries.BLOCK, cauldronBlockKey, POTION_CAULDRON_BLOCK);
+
+        Item.Properties cauldronItemProperties = new Item.Properties().setId(cauldronItemKey);
+        POTION_CAULDRON_ITEM = new BlockItem(POTION_CAULDRON_BLOCK, cauldronItemProperties);
+        Registry.register(BuiltInRegistries.ITEM, cauldronItemKey, POTION_CAULDRON_ITEM);
     }
 }

@@ -1,6 +1,7 @@
 package com.netut.sudustrial.block.tnt.nuclear_block;
 
 import com.netut.sudustrial.action.DelayedTaskScheduler;
+import com.netut.sudustrial.entity.tnt.nuclear.NuclearCoreBlockEntity;
 import com.netut.sudustrial.register.ModBlockEntities;
 import com.netut.sudustrial.register.ModBlocks;
 import net.minecraft.core.BlockPos;

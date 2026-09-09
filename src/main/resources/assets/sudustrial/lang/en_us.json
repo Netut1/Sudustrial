@@ -1,5 +1,6 @@
 {
   "tnt_tab.sudustrial": "Sudustrial Explosives",
+  "poison_and_food_tab.sudustrial": "Sudustrial Poisons and food",
 
   "advancement.sudustrial.unlock_custom_tnt_tier_1.title": "Custom TNT",
   "advancement.sudustrial.unlock_custom_tnt_tier_1.description": "Craft first custom TNT",
@@ -824,5 +825,9 @@
   "item.sudustrial.nuclear_core": "Nuclear Core",
 
   "effect.sudustrial.nuclear_decay": "Radiation",
-  "item.sudustrial.nuclear_antidote": "Anti-radiation potion"
+  "item.sudustrial.nuclear_antidote": "Anti-radiation potion",
+
+  "block.sudustrial.potion_cauldron": "Potion Cauldron",
+  "item.sudustrial.potion_cauldron": "Potion Cauldron",
+  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Mysterious potion"
 }

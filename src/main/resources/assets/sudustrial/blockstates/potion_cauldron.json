@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "effect_count=0": { "model": "sudustrial:block/potion_cauldron_0" },
+    "effect_count=1": { "model": "sudustrial:block/potion_cauldron_1" },
+    "effect_count=2": { "model": "sudustrial:block/potion_cauldron_2" },
+    "effect_count=3": { "model": "sudustrial:block/potion_cauldron_3" },
+    "effect_count=4": { "model": "sudustrial:block/potion_cauldron_4" }
+  }
+}

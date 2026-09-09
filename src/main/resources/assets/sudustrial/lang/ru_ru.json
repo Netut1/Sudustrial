@@ -1,5 +1,6 @@
 {
   "tnt_tab.sudustrial": "Sudustrial Динамиты",
+  "poison_and_food_tab.sudustrial": "Sudustrial Зелья и еда",
 
   "advancement.sudustrial.unlock_custom_tnt_tier_1.title": "Кастомные динамиты",
   "advancement.sudustrial.unlock_custom_tnt_tier_1.description": "Создай первый кастомный динамит",
@@ -824,5 +825,9 @@
   "item.sudustrial.nuclear_core": "Ядро",
 
   "effect.sudustrial.nuclear_decay": "Радиация",
-  "item.sudustrial.nuclear_antidote": "Антирадиационное зелье"
+  "item.sudustrial.nuclear_antidote": "Антирадиационное зелье",
+
+  "block.sudustrial.potion_cauldron": "Котел для смешивания зелий",
+  "item.sudustrial.potion_cauldron": "Котел для смешивания зелий",
+  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Таинственное зелье"
 }
