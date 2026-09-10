@@ -182,6 +182,7 @@ public class ModBlocks {
 
         BlockBehaviour.Properties cauldronProperties = BlockBehaviour.Properties.of()
                 .strength(2.0F, 6.0F)
+                .noOcclusion()
                 .setId(cauldronBlockKey);
         POTION_CAULDRON_BLOCK = new PotionCauldronBlock(cauldronProperties);
         Registry.register(BuiltInRegistries.BLOCK, cauldronBlockKey, POTION_CAULDRON_BLOCK);

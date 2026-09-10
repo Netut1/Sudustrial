@@ -7,7 +7,8 @@
     "bottom": "minecraft:block/cauldron_bottom",
     "side": "minecraft:block/cauldron_side",
     "inside": "minecraft:block/cauldron_inner",
-    "overlay": "sudustrial:block/potion_cauldron_overlay"
+    "overlay": "sudustrial:block/potion_cauldron_overlay",
+    "fluid": "sudustrial:block/potion_cauldron_liquid"
   },
   "elements": [
     {
@@ -414,9 +415,6 @@
           "texture": "#overlay",
           "cullface": "north"
         },
-        "east": {
-          "texture": "#overlay"
-        },
         "south": {
           "texture": "#overlay",
           "cullface": "south"
@@ -450,9 +448,6 @@
         "south": {
           "texture": "#overlay",
           "cullface": "south"
-        },
-        "west": {
-          "texture": "#overlay"
         }
       }
     },
@@ -471,9 +466,6 @@
         "north": {
           "texture": "#overlay",
           "cullface": "north"
-        },
-        "south": {
-          "texture": "#overlay"
         }
       }
     },
@@ -489,13 +481,18 @@
         16
       ],
       "faces": {
-        "north": {
-          "texture": "#overlay"
-        },
         "south": {
           "texture": "#overlay",
           "cullface": "south"
         }
+      }
+    },
+    {
+      "from": [ 2, 3, 2 ],
+      "to": [ 14, 6, 14 ],
+      "faces": {
+        "up":    { "texture": "#fluid", "tintindex": 0 },
+        "down":  { "texture": "#fluid", "tintindex": 0 }
       }
     }
   ]

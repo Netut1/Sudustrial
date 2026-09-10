@@ -21,8 +21,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import org.jetbrains.annotations.Nullable;
 import org.jspecify.annotations.NonNull;
 
@@ -31,6 +33,14 @@ import java.util.Optional;
 
 public class PotionCauldronBlock extends Block implements EntityBlock {
     public static final IntegerProperty EFFECT_COUNT = IntegerProperty.create("effect_count", 0, PotionCauldronBlockEntity.MAX_EFFECTS);
+
+    private static final VoxelShape INSIDE = box(2.0D, 4.0D, 2.0D, 14.0D, 16.0D, 14.0D);
+    private static final VoxelShape LEG_NORTH_WEST = box(0.0D, 0.0D, 0.0D, 4.0D, 3.0D, 4.0D);
+    private static final VoxelShape LEG_SOUTH_WEST = box(0.0D, 0.0D, 12.0D, 4.0D, 3.0D, 16.0D);
+    private static final VoxelShape LEG_NORTH_EAST = box(12.0D, 0.0D, 0.0D, 16.0D, 3.0D, 4.0D);
+    private static final VoxelShape LEG_SOUTH_EAST = box(12.0D, 0.0D, 12.0D, 16.0D, 3.0D, 16.0D);
+    private static final VoxelShape HOLLOW_BOWL = Shapes.join(box(0.0D, 3.0D, 0.0D, 16.0D, 16.0D, 16.0D), INSIDE, BooleanOp.ONLY_FIRST);
+    private static final VoxelShape CAULDRON_SHAPE = Shapes.or(HOLLOW_BOWL, LEG_NORTH_WEST, LEG_SOUTH_WEST, LEG_NORTH_EAST, LEG_SOUTH_EAST);
 
     public PotionCauldronBlock(Properties properties) {
         super(properties);
@@ -46,7 +56,7 @@ public class PotionCauldronBlock extends Block implements EntityBlock {
     @Override
     @NonNull
     protected VoxelShape getShape(@NonNull BlockState state, @NonNull BlockGetter level, @NonNull BlockPos pos, @NonNull CollisionContext context) {
-        return super.getShape(state, level, pos, context); // обычный кубический котёл — форму не трогаем
+        return CAULDRON_SHAPE;
     }
 
     @Override
