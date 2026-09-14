@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:orange_concrete_stairs",
+      "sudustrial:orange_concrete_slab",
+      "sudustrial:orange_concrete_stairs_from_stonecutting",
+      "sudustrial:orange_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_orange_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:orange_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orange_concrete"
+    ]
+  ]
+}

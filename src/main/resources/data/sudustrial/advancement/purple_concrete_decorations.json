@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:purple_concrete_stairs",
+      "sudustrial:purple_concrete_slab",
+      "sudustrial:purple_concrete_stairs_from_stonecutting",
+      "sudustrial:purple_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_purple_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:purple_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_purple_concrete"
+    ]
+  ]
+}

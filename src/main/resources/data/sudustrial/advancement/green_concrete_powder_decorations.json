@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:green_concrete_powder_stairs",
+      "sudustrial:green_concrete_powder_slab",
+      "sudustrial:green_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:green_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_green_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:green_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_green_concrete_powder"
+    ]
+  ]
+}

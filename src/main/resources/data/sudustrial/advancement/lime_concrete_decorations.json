@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:lime_concrete_stairs",
+      "sudustrial:lime_concrete_slab",
+      "sudustrial:lime_concrete_stairs_from_stonecutting",
+      "sudustrial:lime_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_lime_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lime_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lime_concrete"
+    ]
+  ]
+}

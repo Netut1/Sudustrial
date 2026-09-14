@@ -1,20 +1,25 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
+import com.netut.sudustrial.action.GetVanillaColorfulBlocks;
 import com.netut.sudustrial.block.cauldron.PotionCauldronBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearAirBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlock;
 import com.netut.sudustrial.block.tnt.state_block.*;
 import com.netut.sudustrial.block.tnt.type.*;
+import com.netut.sudustrial.register.registers.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.HashMap;
@@ -45,6 +50,16 @@ public class ModBlocks {
 
     public static Block POTION_CAULDRON_BLOCK;
     public static Item POTION_CAULDRON_ITEM;
+
+    public static final Map<DyeColor, Block> CONCRETE_STAIR = new HashMap<>();
+    public static final Map<DyeColor, Item> CONCRETE_STAIR_ITEM = new HashMap<>();
+    public static final Map<DyeColor, Block> CONCRETE_SLAB = new HashMap<>();
+    public static final Map<DyeColor, Item> CONCRETE_SLAB_ITEM = new HashMap<>();
+
+    public static final Map<DyeColor, Block> CONCRETE_POWDER_STAIR = new HashMap<>();
+    public static final Map<DyeColor, Item> CONCRETE_POWDER_STAIR_ITEM = new HashMap<>();
+    public static final Map<DyeColor, Block> CONCRETE_POWDER_SLAB = new HashMap<>();
+    public static final Map<DyeColor, Item> CONCRETE_POWDER_SLAB_ITEM = new HashMap<>();
 
     public static void registerModBlocks() {
         for (TntType type : TntType.values()) {
@@ -190,5 +205,49 @@ public class ModBlocks {
         Item.Properties cauldronItemProperties = new Item.Properties().setId(cauldronItemKey);
         POTION_CAULDRON_ITEM = new BlockItem(POTION_CAULDRON_BLOCK, cauldronItemProperties);
         Registry.register(BuiltInRegistries.ITEM, cauldronItemKey, POTION_CAULDRON_ITEM);
+
+        //Бетон и цемент
+        for (DyeColor color : DyeColor.values()) {
+            String colorName = color.getName();
+            Block baseConcreteBlock = GetVanillaColorfulBlocks.getVanillaConcrete(color);
+            RegistersStair.registerStair(
+                    colorName + "_concrete_stairs",
+                    baseConcreteBlock,
+                    color,
+                    CONCRETE_STAIR,
+                    CONCRETE_STAIR_ITEM
+            );
+            RegistersSlab.registerSlab(
+                    colorName + "_concrete_slab",
+                    baseConcreteBlock,
+                    color,
+                    CONCRETE_SLAB,
+                    CONCRETE_SLAB_ITEM
+            );
+        }
+        for (DyeColor color : DyeColor.values()) {
+            String colorName = color.getName();
+            Block basePowderBlock = GetVanillaColorfulBlocks.getVanillaConcretePowder(color);
+
+            Block concreteStair = CONCRETE_STAIR.get(color);
+            Block concreteSlab = CONCRETE_SLAB.get(color);
+
+            RegistersStair.registerPowderStair(
+                    colorName + "_concrete_powder_stairs",
+                    basePowderBlock,
+                    concreteStair,
+                    color,
+                    CONCRETE_POWDER_STAIR,
+                    CONCRETE_POWDER_STAIR_ITEM
+            );
+            RegistersSlab.registerPowderSlab(
+                    colorName + "_concrete_powder_slab",
+                    basePowderBlock,
+                    concreteSlab,
+                    color,
+                    CONCRETE_POWDER_SLAB,
+                    CONCRETE_POWDER_SLAB_ITEM
+            );
+        }
     }
 }

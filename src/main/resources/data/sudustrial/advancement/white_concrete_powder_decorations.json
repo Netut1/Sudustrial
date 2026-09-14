@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:white_concrete_powder_stairs",
+      "sudustrial:white_concrete_powder_slab",
+      "sudustrial:white_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:white_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_white_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:white_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_white_concrete_powder"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:white_concrete_powder"
+  },
+  "result": {
+    "count": 6,
+    "id": "sudustrial:white_concrete_powder_slab"
+  }
+}

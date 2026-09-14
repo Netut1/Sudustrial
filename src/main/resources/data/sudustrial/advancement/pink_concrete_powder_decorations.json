@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:pink_concrete_powder_stairs",
+      "sudustrial:pink_concrete_powder_slab",
+      "sudustrial:pink_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:pink_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_pink_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pink_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pink_concrete_powder"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:red_concrete_powder_stairs",
+      "sudustrial:red_concrete_powder_slab",
+      "sudustrial:red_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:red_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_red_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_red_concrete_powder"
+    ]
+  ]
+}

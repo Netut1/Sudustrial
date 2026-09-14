@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:brown_concrete_stairs",
+      "sudustrial:brown_concrete_slab",
+      "sudustrial:brown_concrete_stairs_from_stonecutting",
+      "sudustrial:brown_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_brown_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brown_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_brown_concrete"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:light_blue_concrete_powder"
+  },
+  "result": {
+    "count": 6,
+    "id": "sudustrial:light_blue_concrete_powder_slab"
+  }
+}

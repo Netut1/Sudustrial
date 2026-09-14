@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:magenta_concrete_powder_stairs",
+      "sudustrial:magenta_concrete_powder_slab",
+      "sudustrial:magenta_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:magenta_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_magenta_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:magenta_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_magenta_concrete_powder"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:light_blue_concrete_powder_stairs",
+      "sudustrial:light_blue_concrete_powder_slab",
+      "sudustrial:light_blue_concrete_powder_stairs_from_stonecutting",
+      "sudustrial:light_blue_concrete_powder_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_light_blue_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:light_blue_concrete_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_light_blue_concrete_powder"
+    ]
+  ]
+}

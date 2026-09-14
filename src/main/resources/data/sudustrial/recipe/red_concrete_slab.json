@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:red_concrete"
+  },
+  "result": {
+    "count": 6,
+    "id": "sudustrial:red_concrete_slab"
+  }
+}

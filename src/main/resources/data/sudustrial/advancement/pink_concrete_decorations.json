@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:pink_concrete_stairs",
+      "sudustrial:pink_concrete_slab",
+      "sudustrial:pink_concrete_stairs_from_stonecutting",
+      "sudustrial:pink_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_pink_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pink_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pink_concrete"
+    ]
+  ]
+}

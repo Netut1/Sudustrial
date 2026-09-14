@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bee_tnt",
   "pattern": [
-    "& &",
-    "&#&",
-    "&&&"
+    "@$@",
+    "%#%",
+    " @ "
   ],
   "key": {
-    "&": "minecraft:iron_ingot",
-    "#": "minecraft:cauldron"
+    "#": "minecraft:cauldron",
+    "%": "minecraft:lapis_lazuli",
+    "@": "minecraft:magma_cream",
+    "$": "minecraft:amethyst_shard"
   },
   "result": {
     "count": 1,

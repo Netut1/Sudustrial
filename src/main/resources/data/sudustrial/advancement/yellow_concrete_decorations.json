@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:yellow_concrete_stairs",
+      "sudustrial:yellow_concrete_slab",
+      "sudustrial:yellow_concrete_stairs_from_stonecutting",
+      "sudustrial:yellow_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_yellow_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:yellow_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_yellow_concrete"
+    ]
+  ]
+}

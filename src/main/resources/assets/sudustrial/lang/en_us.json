@@ -1,6 +1,7 @@
 {
   "tnt_tab.sudustrial": "Sudustrial Explosives",
   "poison_and_food_tab.sudustrial": "Sudustrial Poisons and food",
+  "concrete_tab.sudustrial": "Concrete and powder concrete",
 
   "advancement.sudustrial.unlock_custom_tnt_tier_1.title": "Custom TNT",
   "advancement.sudustrial.unlock_custom_tnt_tier_1.description": "Craft first custom TNT",
@@ -29,6 +30,7 @@
   "item.sudustrial.jump_boost_tnt_tier_9": "Jump Boost TNT IX",
   "block.sudustrial.jump_boost_tnt_tier_10": "Jump Boost TNT X",
   "item.sudustrial.jump_boost_tnt_tier_10": "Jump Boost TNT X",
+
   "block.sudustrial.fire_resistance_tnt_tier_1": "Fire Resistance TNT",
   "item.sudustrial.fire_resistance_tnt_tier_1": "Fire Resistance TNT",
   "block.sudustrial.fire_resistance_tnt_tier_2": "Fire Resistance TNT II",
@@ -49,6 +51,7 @@
   "item.sudustrial.fire_resistance_tnt_tier_9": "Fire Resistance TNT IX",
   "block.sudustrial.fire_resistance_tnt_tier_10": "Fire Resistance TNT X",
   "item.sudustrial.fire_resistance_tnt_tier_10": "Fire Resistance TNT X",
+
   "block.sudustrial.speed_tnt_tier_1": "Speed TNT",
   "item.sudustrial.speed_tnt_tier_1": "Speed TNT",
   "block.sudustrial.speed_tnt_tier_2": "Speed TNT II",
@@ -69,6 +72,7 @@
   "item.sudustrial.speed_tnt_tier_9": "Speed TNT IX",
   "block.sudustrial.speed_tnt_tier_10": "Speed TNT X",
   "item.sudustrial.speed_tnt_tier_10": "Speed TNT X",
+
   "block.sudustrial.slowness_tnt_tier_1": "Slowness TNT",
   "item.sudustrial.slowness_tnt_tier_1": "Slowness TNT",
   "block.sudustrial.slowness_tnt_tier_2": "Slowness TNT II",
@@ -89,6 +93,7 @@
   "item.sudustrial.slowness_tnt_tier_9": "Slowness TNT IX",
   "block.sudustrial.slowness_tnt_tier_10": "Slowness TNT X",
   "item.sudustrial.slowness_tnt_tier_10": "Slowness TNT X",
+
   "block.sudustrial.water_breathing_tnt_tier_1": "Water Breathing TNT",
   "item.sudustrial.water_breathing_tnt_tier_1": "Water Breathing TNT",
   "block.sudustrial.water_breathing_tnt_tier_2": "Water Breathing TNT II",
@@ -109,6 +114,7 @@
   "item.sudustrial.water_breathing_tnt_tier_9": "Water Breathing TNT IX",
   "block.sudustrial.water_breathing_tnt_tier_10": "Water Breathing TNT X",
   "item.sudustrial.water_breathing_tnt_tier_10": "Water Breathing TNT X",
+
   "block.sudustrial.poison_tnt_tier_1": "Poison TNT",
   "item.sudustrial.poison_tnt_tier_1": "Poison TNT",
   "block.sudustrial.poison_tnt_tier_2": "Poison TNT II",
@@ -129,6 +135,7 @@
   "item.sudustrial.poison_tnt_tier_9": "Poison TNT IX",
   "block.sudustrial.poison_tnt_tier_10": "Poison TNT X",
   "item.sudustrial.poison_tnt_tier_10": "Poison TNT X",
+
   "block.sudustrial.regeneration_tnt_tier_1": "Regeneration TNT",
   "item.sudustrial.regeneration_tnt_tier_1": "Regeneration TNT",
   "block.sudustrial.regeneration_tnt_tier_2": "Regeneration TNT II",
@@ -149,6 +156,7 @@
   "item.sudustrial.regeneration_tnt_tier_9": "Regeneration TNT IX",
   "block.sudustrial.regeneration_tnt_tier_10": "Regeneration TNT X",
   "item.sudustrial.regeneration_tnt_tier_10": "Regeneration TNT X",
+
   "block.sudustrial.strength_tnt_tier_1": "Strength TNT",
   "item.sudustrial.strength_tnt_tier_1": "Strength TNT",
   "block.sudustrial.strength_tnt_tier_2": "Strength TNT II",
@@ -169,6 +177,7 @@
   "item.sudustrial.strength_tnt_tier_9": "Strength TNT IX",
   "block.sudustrial.strength_tnt_tier_10": "Strength TNT X",
   "item.sudustrial.strength_tnt_tier_10": "Strength TNT X",
+
   "block.sudustrial.weakness_tnt_tier_1": "Weakness TNT",
   "item.sudustrial.weakness_tnt_tier_1": "Weakness TNT",
   "block.sudustrial.weakness_tnt_tier_2": "Weakness TNT II",
@@ -189,6 +198,7 @@
   "item.sudustrial.weakness_tnt_tier_9": "Weakness TNT IX",
   "block.sudustrial.weakness_tnt_tier_10": "Weakness TNT X",
   "item.sudustrial.weakness_tnt_tier_10": "Weakness TNT X",
+
   "block.sudustrial.invisibility_tnt_tier_1": "Invisibility TNT",
   "item.sudustrial.invisibility_tnt_tier_1": "Invisibility TNT",
   "block.sudustrial.invisibility_tnt_tier_2": "Invisibility TNT II",
@@ -209,6 +219,7 @@
   "item.sudustrial.invisibility_tnt_tier_9": "Invisibility TNT IX",
   "block.sudustrial.invisibility_tnt_tier_10": "Invisibility TNT X",
   "item.sudustrial.invisibility_tnt_tier_10": "Invisibility TNT X",
+
   "block.sudustrial.turtle_master_tnt_tier_1": "Turtle Master TNT",
   "item.sudustrial.turtle_master_tnt_tier_1": "Turtle Master TNT",
   "block.sudustrial.turtle_master_tnt_tier_2": "Turtle Master TNT II",
@@ -229,6 +240,7 @@
   "item.sudustrial.turtle_master_tnt_tier_9": "Turtle Master TNT IX",
   "block.sudustrial.turtle_master_tnt_tier_10": "Turtle Master TNT X",
   "item.sudustrial.turtle_master_tnt_tier_10": "Turtle Master TNT X",
+
   "block.sudustrial.healing_tnt_tier_1": "Healing TNT",
   "item.sudustrial.healing_tnt_tier_1": "Healing TNT",
   "block.sudustrial.healing_tnt_tier_2": "Healing TNT II",
@@ -249,6 +261,7 @@
   "item.sudustrial.healing_tnt_tier_9": "Healing TNT IX",
   "block.sudustrial.healing_tnt_tier_10": "Healing TNT X",
   "item.sudustrial.healing_tnt_tier_10": "Healing TNT X",
+
   "block.sudustrial.harm_tnt_tier_1": "Harming TNT",
   "item.sudustrial.harm_tnt_tier_1": "Harming TNT",
   "block.sudustrial.harm_tnt_tier_2": "Harming TNT II",
@@ -269,6 +282,7 @@
   "item.sudustrial.harm_tnt_tier_9": "Harming TNT IX",
   "block.sudustrial.harm_tnt_tier_10": "Harming TNT X",
   "item.sudustrial.harm_tnt_tier_10": "Harming TNT X",
+
   "block.sudustrial.slow_falling_tnt_tier_1": "Slow Falling TNT",
   "item.sudustrial.slow_falling_tnt_tier_1": "Slow Falling TNT",
   "block.sudustrial.slow_falling_tnt_tier_2": "Slow Falling TNT II",
@@ -289,6 +303,7 @@
   "item.sudustrial.slow_falling_tnt_tier_9": "Slow Falling TNT IX",
   "block.sudustrial.slow_falling_tnt_tier_10": "Slow Falling TNT X",
   "item.sudustrial.slow_falling_tnt_tier_10": "Slow Falling TNT X",
+
   "block.sudustrial.night_vision_tnt_tier_1": "Night Vision TNT",
   "item.sudustrial.night_vision_tnt_tier_1": "Night Vision TNT",
   "block.sudustrial.night_vision_tnt_tier_2": "Night Vision TNT II",
@@ -309,6 +324,7 @@
   "item.sudustrial.night_vision_tnt_tier_9": "Night Vision TNT IX",
   "block.sudustrial.night_vision_tnt_tier_10": "Night Vision TNT X",
   "item.sudustrial.night_vision_tnt_tier_10": "Night Vision TNT X",
+
   "block.sudustrial.blindness_tnt_tier_1": "Blindness TNT",
   "item.sudustrial.blindness_tnt_tier_1": "Blindness TNT",
   "block.sudustrial.blindness_tnt_tier_2": "Blindness TNT II",
@@ -329,6 +345,7 @@
   "item.sudustrial.blindness_tnt_tier_9": "Blindness TNT IX",
   "block.sudustrial.blindness_tnt_tier_10": "Blindness TNT X",
   "item.sudustrial.blindness_tnt_tier_10": "Blindness TNT X",
+
   "block.sudustrial.levitation_tnt_tier_1": "Levitation TNT",
   "item.sudustrial.levitation_tnt_tier_1": "Levitation TNT",
   "block.sudustrial.levitation_tnt_tier_2": "Levitation TNT II",
@@ -349,6 +366,7 @@
   "item.sudustrial.levitation_tnt_tier_9": "Levitation TNT IX",
   "block.sudustrial.levitation_tnt_tier_10": "Levitation TNT X",
   "item.sudustrial.levitation_tnt_tier_10": "Levitation TNT X",
+
   "block.sudustrial.wither_tnt_tier_1": "Wither TNT",
   "item.sudustrial.wither_tnt_tier_1": "Wither TNT",
   "block.sudustrial.wither_tnt_tier_2": "Wither TNT II",
@@ -369,6 +387,7 @@
   "item.sudustrial.wither_tnt_tier_9": "Wither TNT IX",
   "block.sudustrial.wither_tnt_tier_10": "Wither TNT X",
   "item.sudustrial.wither_tnt_tier_10": "Wither TNT X",
+
   "block.sudustrial.fire_tnt_tier_1": "Fire TNT",
   "item.sudustrial.fire_tnt_tier_1": "Fire TNT",
   "block.sudustrial.fire_tnt_tier_2": "Fire TNT II",
@@ -389,6 +408,7 @@
   "item.sudustrial.fire_tnt_tier_9": "Fire TNT IX",
   "block.sudustrial.fire_tnt_tier_10": "Fire TNT X",
   "item.sudustrial.fire_tnt_tier_10": "Fire TNT X",
+
   "block.sudustrial.wood_tnt_tier_1": "Wood TNT",
   "item.sudustrial.wood_tnt_tier_1": "Wood TNT",
   "block.sudustrial.wood_tnt_tier_2": "Wood TNT II",
@@ -409,6 +429,7 @@
   "item.sudustrial.wood_tnt_tier_9": "Wood TNT IX",
   "block.sudustrial.wood_tnt_tier_10": "Wood TNT X",
   "item.sudustrial.wood_tnt_tier_10": "Wood TNT X",
+
   "block.sudustrial.swamp_tnt_tier_1": "Swamp TNT",
   "item.sudustrial.swamp_tnt_tier_1": "Swamp TNT",
   "block.sudustrial.swamp_tnt_tier_2": "Swamp TNT II",
@@ -429,6 +450,7 @@
   "item.sudustrial.swamp_tnt_tier_9": "Swamp TNT IX",
   "block.sudustrial.swamp_tnt_tier_10": "Swamp TNT X",
   "item.sudustrial.swamp_tnt_tier_10": "Swamp TNT X",
+
   "block.sudustrial.sculk_tnt_tier_1": "Sculk TNT",
   "item.sudustrial.sculk_tnt_tier_1": "Sculk TNT",
   "block.sudustrial.sculk_tnt_tier_2": "Sculk TNT II",
@@ -449,6 +471,7 @@
   "item.sudustrial.sculk_tnt_tier_9": "Sculk TNT IX",
   "block.sudustrial.sculk_tnt_tier_10": "Sculk TNT X",
   "item.sudustrial.sculk_tnt_tier_10": "Sculk TNT X",
+
   "block.sudustrial.earth_tnt_tier_1": "Earth TNT",
   "item.sudustrial.earth_tnt_tier_1": "Earth TNT",
   "block.sudustrial.earth_tnt_tier_2": "Earth TNT II",
@@ -469,6 +492,7 @@
   "item.sudustrial.earth_tnt_tier_9": "Earth TNT IX",
   "block.sudustrial.earth_tnt_tier_10": "Earth TNT X",
   "item.sudustrial.earth_tnt_tier_10": "Earth TNT X",
+
   "block.sudustrial.electric_tnt_tier_1": "Electric TNT",
   "item.sudustrial.electric_tnt_tier_1": "Electric TNT",
   "block.sudustrial.electric_tnt_tier_2": "Electric TNT II",
@@ -489,6 +513,7 @@
   "item.sudustrial.electric_tnt_tier_9": "Electric TNT IX",
   "block.sudustrial.electric_tnt_tier_10": "Electric TNT X",
   "item.sudustrial.electric_tnt_tier_10": "Electric TNT X",
+
   "block.sudustrial.ender_tnt_tier_1": "Ender TNT",
   "item.sudustrial.ender_tnt_tier_1": "Ender TNT",
   "block.sudustrial.ender_tnt_tier_2": "Ender TNT II",
@@ -509,6 +534,7 @@
   "item.sudustrial.ender_tnt_tier_9": "Ender TNT IX",
   "block.sudustrial.ender_tnt_tier_10": "Ender TNT X",
   "item.sudustrial.ender_tnt_tier_10": "Ender TNT X",
+
   "block.sudustrial.ocean_tnt_tier_1": "Ocean TNT",
   "item.sudustrial.ocean_tnt_tier_1": "Ocean TNT",
   "block.sudustrial.ocean_tnt_tier_2": "Ocean TNT II",
@@ -529,6 +555,7 @@
   "item.sudustrial.ocean_tnt_tier_9": "Ocean TNT IX",
   "block.sudustrial.ocean_tnt_tier_10": "Ocean TNT X",
   "item.sudustrial.ocean_tnt_tier_10": "Ocean TNT X",
+
   "block.sudustrial.ice_tnt_tier_1": "Ice TNT",
   "item.sudustrial.ice_tnt_tier_1": "Ice TNT",
   "block.sudustrial.ice_tnt_tier_2": "Ice TNT II",
@@ -549,6 +576,7 @@
   "item.sudustrial.ice_tnt_tier_9": "Ice TNT IX",
   "block.sudustrial.ice_tnt_tier_10": "Ice TNT X",
   "item.sudustrial.ice_tnt_tier_10": "Ice TNT X",
+
   "block.sudustrial.mining_sphere_tnt_tier_1": "Mining Sphere TNT",
   "item.sudustrial.mining_sphere_tnt_tier_1": "Mining Sphere TNT",
   "block.sudustrial.mining_sphere_tnt_tier_2": "Mining Sphere TNT II",
@@ -569,6 +597,7 @@
   "item.sudustrial.mining_sphere_tnt_tier_9": "Mining Sphere TNT IX",
   "block.sudustrial.mining_sphere_tnt_tier_10": "Mining Sphere TNT X",
   "item.sudustrial.mining_sphere_tnt_tier_10": "Mining Sphere TNT X",
+
   "block.sudustrial.mining_column_tnt_tier_1": "Mining Shaft TNT",
   "item.sudustrial.mining_column_tnt_tier_1": "Mining Shaft TNT",
   "block.sudustrial.mining_column_tnt_tier_2": "Mining Shaft TNT II",
@@ -589,6 +618,7 @@
   "item.sudustrial.mining_column_tnt_tier_9": "Mining Shaft TNT IX",
   "block.sudustrial.mining_column_tnt_tier_10": "Mining Shaft TNT X",
   "item.sudustrial.mining_column_tnt_tier_10": "Mining Shaft TNT X",
+
   "block.sudustrial.zombie_tnt_tier_1": "Zombie TNT",
   "item.sudustrial.zombie_tnt_tier_1": "Zombie TNT",
   "block.sudustrial.zombie_tnt_tier_2": "Zombie TNT II",
@@ -609,6 +639,7 @@
   "item.sudustrial.zombie_tnt_tier_9": "Zombie TNT IX",
   "block.sudustrial.zombie_tnt_tier_10": "Zombie TNT X",
   "item.sudustrial.zombie_tnt_tier_10": "Zombie TNT X",
+
   "block.sudustrial.creeper_tnt_tier_1": "Creeper TNT",
   "item.sudustrial.creeper_tnt_tier_1": "Creeper TNT",
   "block.sudustrial.creeper_tnt_tier_2": "Creeper TNT II",
@@ -629,6 +660,7 @@
   "item.sudustrial.creeper_tnt_tier_9": "Creeper TNT IX",
   "block.sudustrial.creeper_tnt_tier_10": "Creeper TNT X",
   "item.sudustrial.creeper_tnt_tier_10": "Creeper TNT X",
+
   "block.sudustrial.sheep_tnt_tier_1": "Sheep TNT",
   "item.sudustrial.sheep_tnt_tier_1": "Sheep TNT",
   "block.sudustrial.sheep_tnt_tier_2": "Sheep TNT II",
@@ -649,6 +681,7 @@
   "item.sudustrial.sheep_tnt_tier_9": "Sheep TNT IX",
   "block.sudustrial.sheep_tnt_tier_10": "Sheep TNT X",
   "item.sudustrial.sheep_tnt_tier_10": "Sheep TNT X",
+
   "block.sudustrial.shulker_tnt_tier_1": "Shulker TNT",
   "item.sudustrial.shulker_tnt_tier_1": "Shulker TNT",
   "block.sudustrial.shulker_tnt_tier_2": "Shulker TNT II",
@@ -669,6 +702,7 @@
   "item.sudustrial.shulker_tnt_tier_9": "Shulker TNT IX",
   "block.sudustrial.shulker_tnt_tier_10": "Shulker TNT X",
   "item.sudustrial.shulker_tnt_tier_10": "Shulker TNT X",
+
   "block.sudustrial.piglin_brute_tnt_tier_1": "Piglin Brute TNT",
   "item.sudustrial.piglin_brute_tnt_tier_1": "Piglin Brute TNT",
   "block.sudustrial.piglin_brute_tnt_tier_2": "Piglin Brute TNT II",
@@ -689,6 +723,7 @@
   "item.sudustrial.piglin_brute_tnt_tier_9": "Piglin Brute TNT IX",
   "block.sudustrial.piglin_brute_tnt_tier_10": "Piglin Brute TNT X",
   "item.sudustrial.piglin_brute_tnt_tier_10": "Piglin Brute TNT X",
+
   "block.sudustrial.pig_tnt_tier_1": "Pig TNT",
   "item.sudustrial.pig_tnt_tier_1": "Pig TNT",
   "block.sudustrial.pig_tnt_tier_2": "Pig TNT II",
@@ -709,6 +744,7 @@
   "item.sudustrial.pig_tnt_tier_9": "Pig TNT IX",
   "block.sudustrial.pig_tnt_tier_10": "Pig TNT X",
   "item.sudustrial.pig_tnt_tier_10": "Pig TNT X",
+
   "block.sudustrial.cow_tnt_tier_1": "Cow TNT",
   "item.sudustrial.cow_tnt_tier_1": "Cow TNT",
   "block.sudustrial.cow_tnt_tier_2": "Cow TNT II",
@@ -729,6 +765,7 @@
   "item.sudustrial.cow_tnt_tier_9": "Cow TNT IX",
   "block.sudustrial.cow_tnt_tier_10": "Cow TNT X",
   "item.sudustrial.cow_tnt_tier_10": "Cow TNT X",
+
   "block.sudustrial.chicken_tnt_tier_1": "Chicken TNT",
   "item.sudustrial.chicken_tnt_tier_1": "Chicken TNT",
   "block.sudustrial.chicken_tnt_tier_2": "Chicken TNT II",
@@ -749,6 +786,7 @@
   "item.sudustrial.chicken_tnt_tier_9": "Chicken TNT IX",
   "block.sudustrial.chicken_tnt_tier_10": "Chicken TNT X",
   "item.sudustrial.chicken_tnt_tier_10": "Chicken TNT X",
+
   "block.sudustrial.bee_tnt_tier_1": "Bee TNT",
   "item.sudustrial.bee_tnt_tier_1": "Bee TNT",
   "block.sudustrial.bee_tnt_tier_2": "Bee TNT II",
@@ -769,6 +807,7 @@
   "item.sudustrial.bee_tnt_tier_9": "Bee TNT IX",
   "block.sudustrial.bee_tnt_tier_10": "Bee TNT X",
   "item.sudustrial.bee_tnt_tier_10": "Bee TNT X",
+
   "block.sudustrial.standart_tnt_tier_2": "TNT II",
   "item.sudustrial.standart_tnt_tier_2": "TNT II",
   "block.sudustrial.standart_tnt_tier_3": "TNT III",
@@ -787,6 +826,7 @@
   "item.sudustrial.standart_tnt_tier_9": "TNT IX",
   "block.sudustrial.standart_tnt_tier_10": "TNT X",
   "item.sudustrial.standart_tnt_tier_10": "TNT X",
+
   "block.sudustrial.massive_tnt_tier_1": "Massive TNT",
   "item.sudustrial.massive_tnt_tier_1": "Massive TNT",
   "block.sudustrial.massive_tnt_tier_2": "Massive TNT II",
@@ -807,6 +847,7 @@
   "item.sudustrial.massive_tnt_tier_9": "Massive TNT IX",
   "block.sudustrial.massive_tnt_tier_10": "Massive TNT X",
   "item.sudustrial.massive_tnt_tier_10": "Massive TNT X",
+
   "block.sudustrial.party_tnt": "Party TNT",
   "item.sudustrial.party_tnt": "Party TNT",
 
@@ -829,5 +870,165 @@
 
   "block.sudustrial.potion_cauldron": "Potion Cauldron",
   "item.sudustrial.potion_cauldron": "Potion Cauldron",
-  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Mysterious potion"
+  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Mysterious potion",
+
+  "block.sudustrial.white_concrete_stairs": "White Concrete Stairs",
+  "item.sudustrial.white_concrete_stairs": "White Concrete Stairs",
+  "block.sudustrial.white_concrete_slab": "White Concrete Slab",
+  "item.sudustrial.white_concrete_slab": "White Concrete Slab",
+
+  "block.sudustrial.orange_concrete_stairs": "Orange Concrete Stairs",
+  "item.sudustrial.orange_concrete_stairs": "Orange Concrete Stairs",
+  "block.sudustrial.orange_concrete_slab": "Orange Concrete Slab",
+  "item.sudustrial.orange_concrete_slab": "Orange Concrete Slab",
+
+  "block.sudustrial.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "item.sudustrial.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "block.sudustrial.magenta_concrete_slab": "Magenta Concrete Slab",
+  "item.sudustrial.magenta_concrete_slab": "Magenta Concrete Slab",
+
+  "block.sudustrial.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+  "item.sudustrial.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+  "block.sudustrial.light_blue_concrete_slab": "Light Blue Concrete Slab",
+  "item.sudustrial.light_blue_concrete_slab": "Light Blue Concrete Slab",
+
+  "block.sudustrial.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "item.sudustrial.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "block.sudustrial.yellow_concrete_slab": "Yellow Concrete Slab",
+  "item.sudustrial.yellow_concrete_slab": "Yellow Concrete Slab",
+
+  "block.sudustrial.lime_concrete_stairs": "Lime Concrete Stairs",
+  "item.sudustrial.lime_concrete_stairs": "Lime Concrete Stairs",
+  "block.sudustrial.lime_concrete_slab": "Lime Concrete Slab",
+  "item.sudustrial.lime_concrete_slab": "Lime Concrete Slab",
+
+  "block.sudustrial.pink_concrete_stairs": "Pink Concrete Stairs",
+  "item.sudustrial.pink_concrete_stairs": "Pink Concrete Stairs",
+  "block.sudustrial.pink_concrete_slab": "Pink Concrete Slab",
+  "item.sudustrial.pink_concrete_slab": "Pink Concrete Slab",
+
+  "block.sudustrial.gray_concrete_stairs": "Gray Concrete Stairs",
+  "item.sudustrial.gray_concrete_stairs": "Gray Concrete Stairs",
+  "block.sudustrial.gray_concrete_slab": "Gray Concrete Slab",
+  "item.sudustrial.gray_concrete_slab": "Gray Concrete Slab",
+
+  "block.sudustrial.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+  "item.sudustrial.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+  "block.sudustrial.light_gray_concrete_slab": "Light Gray Concrete Slab",
+  "item.sudustrial.light_gray_concrete_slab": "Light Gray Concrete Slab",
+
+  "block.sudustrial.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "item.sudustrial.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "block.sudustrial.cyan_concrete_slab": "Cyan Concrete Slab",
+  "item.sudustrial.cyan_concrete_slab": "Cyan Concrete Slab",
+
+  "block.sudustrial.purple_concrete_stairs": "Purple Concrete Stairs",
+  "item.sudustrial.purple_concrete_stairs": "Purple Concrete Stairs",
+  "block.sudustrial.purple_concrete_slab": "Purple Concrete Slab",
+  "item.sudustrial.purple_concrete_slab": "Purple Concrete Slab",
+
+  "block.sudustrial.blue_concrete_stairs": "Blue Concrete Stairs",
+  "item.sudustrial.blue_concrete_stairs": "Blue Concrete Stairs",
+  "block.sudustrial.blue_concrete_slab": "Blue Concrete Slab",
+  "item.sudustrial.blue_concrete_slab": "Blue Concrete Slab",
+
+  "block.sudustrial.brown_concrete_stairs": "Brown Concrete Stairs",
+  "item.sudustrial.brown_concrete_stairs": "Brown Concrete Stairs",
+  "block.sudustrial.brown_concrete_slab": "Brown Concrete Slab",
+  "item.sudustrial.brown_concrete_slab": "Brown Concrete Slab",
+
+  "block.sudustrial.green_concrete_stairs": "Green Concrete Stairs",
+  "item.sudustrial.green_concrete_stairs": "Green Concrete Stairs",
+  "block.sudustrial.green_concrete_slab": "Green Concrete Slab",
+  "item.sudustrial.green_concrete_slab": "Green Concrete Slab",
+
+  "block.sudustrial.red_concrete_stairs": "Red Concrete Stairs",
+  "item.sudustrial.red_concrete_stairs": "Red Concrete Stairs",
+  "block.sudustrial.red_concrete_slab": "Red Concrete Slab",
+  "item.sudustrial.red_concrete_slab": "Red Concrete Slab",
+
+  "block.sudustrial.black_concrete_stairs": "Black Concrete Stairs",
+  "item.sudustrial.black_concrete_stairs": "Black Concrete Stairs",
+  "block.sudustrial.black_concrete_slab": "Black Concrete Slab",
+  "item.sudustrial.black_concrete_slab": "Black Concrete Slab",
+
+  "block.sudustrial.white_concrete_powder_stairs": "White Concrete Powder Stairs",
+  "item.sudustrial.white_concrete_powder_stairs": "White Concrete Powder Stairs",
+  "block.sudustrial.white_concrete_powder_slab": "White Concrete Powder Slab",
+  "item.sudustrial.white_concrete_powder_slab": "White Concrete Powder Slab",
+
+  "block.sudustrial.orange_concrete_powder_stairs": "Orange Concrete Powder Stairs",
+  "item.sudustrial.orange_concrete_powder_stairs": "Orange Concrete Powder Stairs",
+  "block.sudustrial.orange_concrete_powder_slab": "Orange Concrete Powder Slab",
+  "item.sudustrial.orange_concrete_powder_slab": "Orange Concrete Powder Slab",
+
+  "block.sudustrial.magenta_concrete_powder_stairs": "Magenta Concrete Powder Stairs",
+  "item.sudustrial.magenta_concrete_powder_stairs": "Magenta Concrete Powder Stairs",
+  "block.sudustrial.magenta_concrete_powder_slab": "Magenta Concrete Powder Slab",
+  "item.sudustrial.magenta_concrete_powder_slab": "Magenta Concrete Powder Slab",
+
+  "block.sudustrial.light_blue_concrete_powder_stairs": "Light Blue Concrete Powder Stairs",
+  "item.sudustrial.light_blue_concrete_powder_stairs": "Light Blue Concrete Powder Stairs",
+  "block.sudustrial.light_blue_concrete_powder_slab": "Light Blue Concrete Powder Slab",
+  "item.sudustrial.light_blue_concrete_powder_slab": "Light Blue Concrete Powder Slab",
+
+  "block.sudustrial.yellow_concrete_powder_stairs": "Yellow Concrete Powder Stairs",
+  "item.sudustrial.yellow_concrete_powder_stairs": "Yellow Concrete Powder Stairs",
+  "block.sudustrial.yellow_concrete_powder_slab": "Yellow Concrete Powder Slab",
+  "item.sudustrial.yellow_concrete_powder_slab": "Yellow Concrete Powder Slab",
+
+  "block.sudustrial.lime_concrete_powder_stairs": "Lime Concrete Powder Stairs",
+  "item.sudustrial.lime_concrete_powder_stairs": "Lime Concrete Powder Stairs",
+  "block.sudustrial.lime_concrete_powder_slab": "Lime Concrete Powder Slab",
+  "item.sudustrial.lime_concrete_powder_slab": "Lime Concrete Powder Slab",
+
+  "block.sudustrial.pink_concrete_powder_stairs": "Pink Concrete Powder Stairs",
+  "item.sudustrial.pink_concrete_powder_stairs": "Pink Concrete Powder Stairs",
+  "block.sudustrial.pink_concrete_powder_slab": "Pink Concrete Powder Slab",
+  "item.sudustrial.pink_concrete_powder_slab": "Pink Concrete Powder Slab",
+
+  "block.sudustrial.gray_concrete_powder_stairs": "Gray Concrete Powder Stairs",
+  "item.sudustrial.gray_concrete_powder_stairs": "Gray Concrete Powder Stairs",
+  "block.sudustrial.gray_concrete_powder_slab": "Gray Concrete Powder Slab",
+  "item.sudustrial.gray_concrete_powder_slab": "Gray Concrete Powder Slab",
+
+  "block.sudustrial.light_gray_concrete_powder_stairs": "Light Gray Concrete Powder Stairs",
+  "item.sudustrial.light_gray_concrete_powder_stairs": "Light Gray Concrete Powder Stairs",
+  "block.sudustrial.light_gray_concrete_powder_slab": "Light Gray Concrete Powder Slab",
+  "item.sudustrial.light_gray_concrete_powder_slab": "Light Gray Concrete Powder Slab",
+
+  "block.sudustrial.cyan_concrete_powder_stairs": "Cyan Concrete Powder Stairs",
+  "item.sudustrial.cyan_concrete_powder_stairs": "Cyan Concrete Powder Stairs",
+  "block.sudustrial.cyan_concrete_powder_slab": "Cyan Concrete Powder Slab",
+  "item.sudustrial.cyan_concrete_powder_slab": "Cyan Concrete Powder Slab",
+
+  "block.sudustrial.purple_concrete_powder_stairs": "Purple Concrete Powder Stairs",
+  "item.sudustrial.purple_concrete_powder_stairs": "Purple Concrete Powder Stairs",
+  "block.sudustrial.purple_concrete_powder_slab": "Purple Concrete Powder Slab",
+  "item.sudustrial.purple_concrete_powder_slab": "Purple Concrete Powder Slab",
+
+  "block.sudustrial.blue_concrete_powder_stairs": "Blue Concrete Powder Stairs",
+  "item.sudustrial.blue_concrete_powder_stairs": "Blue Concrete Powder Stairs",
+  "block.sudustrial.blue_concrete_powder_slab": "Blue Concrete Powder Slab",
+  "item.sudustrial.blue_concrete_powder_slab": "Blue Concrete Powder Slab",
+
+  "block.sudustrial.brown_concrete_powder_stairs": "Brown Concrete Powder Stairs",
+  "item.sudustrial.brown_concrete_powder_stairs": "Brown Concrete Powder Stairs",
+  "block.sudustrial.brown_concrete_powder_slab": "Brown Concrete Powder Slab",
+  "item.sudustrial.brown_concrete_powder_slab": "Brown Concrete Powder Slab",
+
+  "block.sudustrial.green_concrete_powder_stairs": "Green Concrete Powder Stairs",
+  "item.sudustrial.green_concrete_powder_stairs": "Green Concrete Powder Stairs",
+  "block.sudustrial.green_concrete_powder_slab": "Green Concrete Powder Slab",
+  "item.sudustrial.green_concrete_powder_slab": "Green Concrete Powder Slab",
+
+  "block.sudustrial.red_concrete_powder_stairs": "Red Concrete Powder Stairs",
+  "item.sudustrial.red_concrete_powder_stairs": "Red Concrete Powder Stairs",
+  "block.sudustrial.red_concrete_powder_slab": "Red Concrete Powder Slab",
+  "item.sudustrial.red_concrete_powder_slab": "Red Concrete Powder Slab",
+
+  "block.sudustrial.black_concrete_powder_stairs": "Black Concrete Powder Stairs",
+  "item.sudustrial.black_concrete_powder_stairs": "Black Concrete Powder Stairs",
+  "block.sudustrial.black_concrete_powder_slab": "Black Concrete Powder Slab",
+  "item.sudustrial.black_concrete_powder_slab": "Black Concrete Powder Slab"
 }

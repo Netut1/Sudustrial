@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sudustrial:cyan_concrete_stairs",
+      "sudustrial:cyan_concrete_slab",
+      "sudustrial:cyan_concrete_stairs_from_stonecutting",
+      "sudustrial:cyan_concrete_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_cyan_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cyan_concrete"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cyan_concrete"
+    ]
+  ]
+}

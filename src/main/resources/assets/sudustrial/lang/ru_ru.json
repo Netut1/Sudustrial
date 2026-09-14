@@ -1,6 +1,7 @@
 {
   "tnt_tab.sudustrial": "Sudustrial Динамиты",
   "poison_and_food_tab.sudustrial": "Sudustrial Зелья и еда",
+  "concrete_tab.sudustrial": "Бетон и цемент",
 
   "advancement.sudustrial.unlock_custom_tnt_tier_1.title": "Кастомные динамиты",
   "advancement.sudustrial.unlock_custom_tnt_tier_1.description": "Создай первый кастомный динамит",
@@ -29,6 +30,7 @@
   "item.sudustrial.jump_boost_tnt_tier_9": "Динамит прыгучести IX",
   "block.sudustrial.jump_boost_tnt_tier_10": "Динамит прыгучести X",
   "item.sudustrial.jump_boost_tnt_tier_10": "Динамит прыгучести X",
+
   "block.sudustrial.fire_resistance_tnt_tier_1": "Динамит огнестойкости",
   "item.sudustrial.fire_resistance_tnt_tier_1": "Динамит огнестойкости",
   "block.sudustrial.fire_resistance_tnt_tier_2": "Динамит огнестойкости II",
@@ -49,6 +51,7 @@
   "item.sudustrial.fire_resistance_tnt_tier_9": "Динамит огнестойкости IX",
   "block.sudustrial.fire_resistance_tnt_tier_10": "Динамит огнестойкости X",
   "item.sudustrial.fire_resistance_tnt_tier_10": "Динамит огнестойкости X",
+
   "block.sudustrial.speed_tnt_tier_1": "Динамит скорости",
   "item.sudustrial.speed_tnt_tier_1": "Динамит скорости",
   "block.sudustrial.speed_tnt_tier_2": "Динамит скорости II",
@@ -69,6 +72,7 @@
   "item.sudustrial.speed_tnt_tier_9": "Динамит скорости IX",
   "block.sudustrial.speed_tnt_tier_10": "Динамит скорости X",
   "item.sudustrial.speed_tnt_tier_10": "Динамит скорости X",
+
   "block.sudustrial.slowness_tnt_tier_1": "Динамит медлительности",
   "item.sudustrial.slowness_tnt_tier_1": "Динамит медлительности",
   "block.sudustrial.slowness_tnt_tier_2": "Динамит медлительности II",
@@ -89,6 +93,7 @@
   "item.sudustrial.slowness_tnt_tier_9": "Динамит медлительности IX",
   "block.sudustrial.slowness_tnt_tier_10": "Динамит медлительности X",
   "item.sudustrial.slowness_tnt_tier_10": "Динамит медлительности X",
+
   "block.sudustrial.water_breathing_tnt_tier_1": "Динамит подводного дыхания",
   "item.sudustrial.water_breathing_tnt_tier_1": "Динамит подводного дыхания",
   "block.sudustrial.water_breathing_tnt_tier_2": "Динамит подводного дыхания II",
@@ -109,6 +114,7 @@
   "item.sudustrial.water_breathing_tnt_tier_9": "Динамит подводного дыхания IX",
   "block.sudustrial.water_breathing_tnt_tier_10": "Динамит подводного дыхания X",
   "item.sudustrial.water_breathing_tnt_tier_10": "Динамит подводного дыхания X",
+
   "block.sudustrial.poison_tnt_tier_1": "Динамит отравления",
   "item.sudustrial.poison_tnt_tier_1": "Динамит отравления",
   "block.sudustrial.poison_tnt_tier_2": "Динамит отравления II",
@@ -129,6 +135,7 @@
   "item.sudustrial.poison_tnt_tier_9": "Динамит отравления IX",
   "block.sudustrial.poison_tnt_tier_10": "Динамит отравления X",
   "item.sudustrial.poison_tnt_tier_10": "Динамит отравления X",
+
   "block.sudustrial.regeneration_tnt_tier_1": "Динамит регенерации",
   "item.sudustrial.regeneration_tnt_tier_1": "Динамит регенерации",
   "block.sudustrial.regeneration_tnt_tier_2": "Динамит регенерации II",
@@ -149,6 +156,7 @@
   "item.sudustrial.regeneration_tnt_tier_9": "Динамит регенерации IX",
   "block.sudustrial.regeneration_tnt_tier_10": "Динамит регенерации X",
   "item.sudustrial.regeneration_tnt_tier_10": "Динамит регенерации X",
+
   "block.sudustrial.strength_tnt_tier_1": "Динамит силы",
   "item.sudustrial.strength_tnt_tier_1": "Динамит силы",
   "block.sudustrial.strength_tnt_tier_2": "Динамит силы II",
@@ -169,6 +177,7 @@
   "item.sudustrial.strength_tnt_tier_9": "Динамит силы IX",
   "block.sudustrial.strength_tnt_tier_10": "Динамит силы X",
   "item.sudustrial.strength_tnt_tier_10": "Динамит силы X",
+
   "block.sudustrial.weakness_tnt_tier_1": "Динамит слабости",
   "item.sudustrial.weakness_tnt_tier_1": "Динамит слабости",
   "block.sudustrial.weakness_tnt_tier_2": "Динамит слабости II",
@@ -189,6 +198,7 @@
   "item.sudustrial.weakness_tnt_tier_9": "Динамит слабости IX",
   "block.sudustrial.weakness_tnt_tier_10": "Динамит слабости X",
   "item.sudustrial.weakness_tnt_tier_10": "Динамит слабости X",
+
   "block.sudustrial.invisibility_tnt_tier_1": "Динамит невидимости",
   "item.sudustrial.invisibility_tnt_tier_1": "Динамит невидимости",
   "block.sudustrial.invisibility_tnt_tier_2": "Динамит невидимости II",
@@ -209,6 +219,7 @@
   "item.sudustrial.invisibility_tnt_tier_9": "Динамит невидимости IX",
   "block.sudustrial.invisibility_tnt_tier_10": "Динамит невидимости X",
   "item.sudustrial.invisibility_tnt_tier_10": "Динамит невидимости X",
+
   "block.sudustrial.turtle_master_tnt_tier_1": "Динамит черепашьей силы",
   "item.sudustrial.turtle_master_tnt_tier_1": "Динамит черепашьей силы",
   "block.sudustrial.turtle_master_tnt_tier_2": "Динамит черепашьей силы II",
@@ -229,6 +240,7 @@
   "item.sudustrial.turtle_master_tnt_tier_9": "Динамит черепашьей силы IX",
   "block.sudustrial.turtle_master_tnt_tier_10": "Динамит черепашьей силы X",
   "item.sudustrial.turtle_master_tnt_tier_10": "Динамит черепашьей силы X",
+
   "block.sudustrial.healing_tnt_tier_1": "Динамит лечения",
   "item.sudustrial.healing_tnt_tier_1": "Динамит лечения",
   "block.sudustrial.healing_tnt_tier_2": "Динамит лечения II",
@@ -249,6 +261,7 @@
   "item.sudustrial.healing_tnt_tier_9": "Динамит лечения IX",
   "block.sudustrial.healing_tnt_tier_10": "Динамит лечения X",
   "item.sudustrial.healing_tnt_tier_10": "Динамит лечения X",
+
   "block.sudustrial.harm_tnt_tier_1": "Динамит урона",
   "item.sudustrial.harm_tnt_tier_1": "Динамит урона",
   "block.sudustrial.harm_tnt_tier_2": "Динамит урона II",
@@ -269,6 +282,7 @@
   "item.sudustrial.harm_tnt_tier_9": "Динамит урона IX",
   "block.sudustrial.harm_tnt_tier_10": "Динамит урона X",
   "item.sudustrial.harm_tnt_tier_10": "Динамит урона X",
+
   "block.sudustrial.slow_falling_tnt_tier_1": "Динамит плавного падения",
   "item.sudustrial.slow_falling_tnt_tier_1": "Динамит плавного падения",
   "block.sudustrial.slow_falling_tnt_tier_2": "Динамит плавного падения II",
@@ -289,6 +303,7 @@
   "item.sudustrial.slow_falling_tnt_tier_9": "Динамит плавного падения IX",
   "block.sudustrial.slow_falling_tnt_tier_10": "Динамит плавного падения X",
   "item.sudustrial.slow_falling_tnt_tier_10": "Динамит плавного падения X",
+
   "block.sudustrial.night_vision_tnt_tier_1": "Динамит ночного зрения",
   "item.sudustrial.night_vision_tnt_tier_1": "Динамит ночного зрения",
   "block.sudustrial.night_vision_tnt_tier_2": "Динамит ночного зрения II",
@@ -309,6 +324,7 @@
   "item.sudustrial.night_vision_tnt_tier_9": "Динамит ночного зрения IX",
   "block.sudustrial.night_vision_tnt_tier_10": "Динамит ночного зрения X",
   "item.sudustrial.night_vision_tnt_tier_10": "Динамит ночного зрения X",
+
   "block.sudustrial.blindness_tnt_tier_1": "Динамит слепоты",
   "item.sudustrial.blindness_tnt_tier_1": "Динамит слепоты",
   "block.sudustrial.blindness_tnt_tier_2": "Динамит слепоты II",
@@ -329,6 +345,7 @@
   "item.sudustrial.blindness_tnt_tier_9": "Динамит слепоты IX",
   "block.sudustrial.blindness_tnt_tier_10": "Динамит слепоты X",
   "item.sudustrial.blindness_tnt_tier_10": "Динамит слепоты X",
+
   "block.sudustrial.levitation_tnt_tier_1": "Динамит левитации",
   "item.sudustrial.levitation_tnt_tier_1": "Динамит левитации",
   "block.sudustrial.levitation_tnt_tier_2": "Динамит левитации II",
@@ -349,6 +366,7 @@
   "item.sudustrial.levitation_tnt_tier_9": "Динамит левитации IX",
   "block.sudustrial.levitation_tnt_tier_10": "Динамит левитации X",
   "item.sudustrial.levitation_tnt_tier_10": "Динамит левитации X",
+
   "block.sudustrial.wither_tnt_tier_1": "Динамит иссушения",
   "item.sudustrial.wither_tnt_tier_1": "Динамит иссушения",
   "block.sudustrial.wither_tnt_tier_2": "Динамит иссушения II",
@@ -369,6 +387,7 @@
   "item.sudustrial.wither_tnt_tier_9": "Динамит иссушения IX",
   "block.sudustrial.wither_tnt_tier_10": "Динамит иссушения X",
   "item.sudustrial.wither_tnt_tier_10": "Динамит иссушения X",
+
   "block.sudustrial.fire_tnt_tier_1": "Огненный динамит",
   "item.sudustrial.fire_tnt_tier_1": "Огненный динамит",
   "block.sudustrial.fire_tnt_tier_2": "Огненный динамит II",
@@ -389,6 +408,7 @@
   "item.sudustrial.fire_tnt_tier_9": "Огненный динамит IX",
   "block.sudustrial.fire_tnt_tier_10": "Огненный динамит X",
   "item.sudustrial.fire_tnt_tier_10": "Огненный динамит X",
+
   "block.sudustrial.wood_tnt_tier_1": "Древесный динамит",
   "item.sudustrial.wood_tnt_tier_1": "Древесный динамит",
   "block.sudustrial.wood_tnt_tier_2": "Древесный динамит II",
@@ -409,6 +429,7 @@
   "item.sudustrial.wood_tnt_tier_9": "Древесный динамит IX",
   "block.sudustrial.wood_tnt_tier_10": "Древесный динамит X",
   "item.sudustrial.wood_tnt_tier_10": "Древесный динамит X",
+
   "block.sudustrial.swamp_tnt_tier_1": "Болотный динамит",
   "item.sudustrial.swamp_tnt_tier_1": "Болотный динамит",
   "block.sudustrial.swamp_tnt_tier_2": "Болотный динамит II",
@@ -429,6 +450,7 @@
   "item.sudustrial.swamp_tnt_tier_9": "Болотный динамит IX",
   "block.sudustrial.swamp_tnt_tier_10": "Болотный динамит X",
   "item.sudustrial.swamp_tnt_tier_10": "Болотный динамит X",
+
   "block.sudustrial.sculk_tnt_tier_1": "Скалковый динамит",
   "item.sudustrial.sculk_tnt_tier_1": "Скалковый динамит",
   "block.sudustrial.sculk_tnt_tier_2": "Скалковый динамит II",
@@ -449,6 +471,7 @@
   "item.sudustrial.sculk_tnt_tier_9": "Скалковый динамит IX",
   "block.sudustrial.sculk_tnt_tier_10": "Скалковый динамит X",
   "item.sudustrial.sculk_tnt_tier_10": "Скалковый динамит X",
+
   "block.sudustrial.earth_tnt_tier_1": "Земляной динамит",
   "item.sudustrial.earth_tnt_tier_1": "Земляной динамит",
   "block.sudustrial.earth_tnt_tier_2": "Земляной динамит II",
@@ -469,6 +492,7 @@
   "item.sudustrial.earth_tnt_tier_9": "Земляной динамит IX",
   "block.sudustrial.earth_tnt_tier_10": "Земляной динамит X",
   "item.sudustrial.earth_tnt_tier_10": "Земляной динамит X",
+
   "block.sudustrial.electric_tnt_tier_1": "Электрический динамит",
   "item.sudustrial.electric_tnt_tier_1": "Электрический динамит",
   "block.sudustrial.electric_tnt_tier_2": "Электрический динамит II",
@@ -489,6 +513,7 @@
   "item.sudustrial.electric_tnt_tier_9": "Электрический динамит IX",
   "block.sudustrial.electric_tnt_tier_10": "Электрический динамит X",
   "item.sudustrial.electric_tnt_tier_10": "Электрический динамит X",
+
   "block.sudustrial.ender_tnt_tier_1": "Эндер-динамит",
   "item.sudustrial.ender_tnt_tier_1": "Эндер-динамит",
   "block.sudustrial.ender_tnt_tier_2": "Эндер-динамит II",
@@ -509,6 +534,7 @@
   "item.sudustrial.ender_tnt_tier_9": "Эндер-динамит IX",
   "block.sudustrial.ender_tnt_tier_10": "Эндер-динамит X",
   "item.sudustrial.ender_tnt_tier_10": "Эндер-динамит X",
+
   "block.sudustrial.ocean_tnt_tier_1": "Океанический динамит",
   "item.sudustrial.ocean_tnt_tier_1": "Океанический динамит",
   "block.sudustrial.ocean_tnt_tier_2": "Океанический динамит II",
@@ -529,6 +555,7 @@
   "item.sudustrial.ocean_tnt_tier_9": "Океанический динамит IX",
   "block.sudustrial.ocean_tnt_tier_10": "Океанический динамит X",
   "item.sudustrial.ocean_tnt_tier_10": "Океанический динамит X",
+
   "block.sudustrial.ice_tnt_tier_1": "Ледяной динамит",
   "item.sudustrial.ice_tnt_tier_1": "Ледяной динамит",
   "block.sudustrial.ice_tnt_tier_2": "Ледяной динамит II",
@@ -549,6 +576,7 @@
   "item.sudustrial.ice_tnt_tier_9": "Ледяной динамит IX",
   "block.sudustrial.ice_tnt_tier_10": "Ледяной динамит X",
   "item.sudustrial.ice_tnt_tier_10": "Ледяной динамит X",
+
   "block.sudustrial.mining_sphere_tnt_tier_1": "Сферический шахтёрский динамит",
   "item.sudustrial.mining_sphere_tnt_tier_1": "Сферический шахтёрский динамит",
   "block.sudustrial.mining_sphere_tnt_tier_2": "Сферический шахтёрский динамит II",
@@ -569,6 +597,7 @@
   "item.sudustrial.mining_sphere_tnt_tier_9": "Сферический шахтёрский динамит IX",
   "block.sudustrial.mining_sphere_tnt_tier_10": "Сферический шахтёрский динамит X",
   "item.sudustrial.mining_sphere_tnt_tier_10": "Сферический шахтёрский динамит X",
+
   "block.sudustrial.mining_column_tnt_tier_1": "Шахтовый шахтёрский динамит",
   "item.sudustrial.mining_column_tnt_tier_1": "Шахтовый шахтёрский динамит",
   "block.sudustrial.mining_column_tnt_tier_2": "Шахтовый шахтёрский динамит II",
@@ -589,6 +618,7 @@
   "item.sudustrial.mining_column_tnt_tier_9": "Шахтовый шахтёрский динамит IX",
   "block.sudustrial.mining_column_tnt_tier_10": "Шахтовый шахтёрский динамит X",
   "item.sudustrial.mining_column_tnt_tier_10": "Шахтовый шахтёрский динамит X",
+
   "block.sudustrial.zombie_tnt_tier_1": "Зомби-динамит",
   "item.sudustrial.zombie_tnt_tier_1": "Зомби-динамит",
   "block.sudustrial.zombie_tnt_tier_2": "Зомби-динамит II",
@@ -609,6 +639,7 @@
   "item.sudustrial.zombie_tnt_tier_9": "Зомби-динамит IX",
   "block.sudustrial.zombie_tnt_tier_10": "Зомби-динамит X",
   "item.sudustrial.zombie_tnt_tier_10": "Зомби-динамит X",
+
   "block.sudustrial.creeper_tnt_tier_1": "Крипер-динамит",
   "item.sudustrial.creeper_tnt_tier_1": "Крипер-динамит",
   "block.sudustrial.creeper_tnt_tier_2": "Крипер-динамит II",
@@ -629,6 +660,7 @@
   "item.sudustrial.creeper_tnt_tier_9": "Крипер-динамит IX",
   "block.sudustrial.creeper_tnt_tier_10": "Крипер-динамит X",
   "item.sudustrial.creeper_tnt_tier_10": "Крипер-динамит X",
+
   "block.sudustrial.sheep_tnt_tier_1": "Овечий динамит",
   "item.sudustrial.sheep_tnt_tier_1": "Овечий динамит",
   "block.sudustrial.sheep_tnt_tier_2": "Овечий динамит II",
@@ -649,6 +681,7 @@
   "item.sudustrial.sheep_tnt_tier_9": "Овечий динамит IX",
   "block.sudustrial.sheep_tnt_tier_10": "Овечий динамит X",
   "item.sudustrial.sheep_tnt_tier_10": "Овечий динамит X",
+
   "block.sudustrial.shulker_tnt_tier_1": "Шалкер-динамит",
   "item.sudustrial.shulker_tnt_tier_1": "Шалкер-динамит",
   "block.sudustrial.shulker_tnt_tier_2": "Шалкер-динамит II",
@@ -669,6 +702,7 @@
   "item.sudustrial.shulker_tnt_tier_9": "Шалкер-динамит IX",
   "block.sudustrial.shulker_tnt_tier_10": "Шалкер-динамит X",
   "item.sudustrial.shulker_tnt_tier_10": "Шалкер-динамит X",
+
   "block.sudustrial.piglin_brute_tnt_tier_1": "Динамит брутального пиглина",
   "item.sudustrial.piglin_brute_tnt_tier_1": "Динамит брутального пиглина",
   "block.sudustrial.piglin_brute_tnt_tier_2": "Динамит брутального пиглина II",
@@ -689,6 +723,7 @@
   "item.sudustrial.piglin_brute_tnt_tier_9": "Динамит брутального пиглина IX",
   "block.sudustrial.piglin_brute_tnt_tier_10": "Динамит брутального пиглина X",
   "item.sudustrial.piglin_brute_tnt_tier_10": "Динамит брутального пиглина X",
+
   "block.sudustrial.pig_tnt_tier_1": "Свиной динамит",
   "item.sudustrial.pig_tnt_tier_1": "Свиной динамит",
   "block.sudustrial.pig_tnt_tier_2": "Свиной динамит II",
@@ -709,6 +744,7 @@
   "item.sudustrial.pig_tnt_tier_9": "Свиной динамит IX",
   "block.sudustrial.pig_tnt_tier_10": "Свиной динамит X",
   "item.sudustrial.pig_tnt_tier_10": "Свиной динамит X",
+
   "block.sudustrial.cow_tnt_tier_1": "Коровий динамит",
   "item.sudustrial.cow_tnt_tier_1": "Коровий динамит",
   "block.sudustrial.cow_tnt_tier_2": "Коровий динамит II",
@@ -729,6 +765,7 @@
   "item.sudustrial.cow_tnt_tier_9": "Коровий динамит IX",
   "block.sudustrial.cow_tnt_tier_10": "Коровий динамит X",
   "item.sudustrial.cow_tnt_tier_10": "Коровий динамит X",
+
   "block.sudustrial.chicken_tnt_tier_1": "Куриный динамит",
   "item.sudustrial.chicken_tnt_tier_1": "Куриный динамит",
   "block.sudustrial.chicken_tnt_tier_2": "Куриный динамит II",
@@ -749,6 +786,7 @@
   "item.sudustrial.chicken_tnt_tier_9": "Куриный динамит IX",
   "block.sudustrial.chicken_tnt_tier_10": "Куриный динамит X",
   "item.sudustrial.chicken_tnt_tier_10": "Куриный динамит X",
+
   "block.sudustrial.bee_tnt_tier_1": "Пчелиный динамит",
   "item.sudustrial.bee_tnt_tier_1": "Пчелиный динамит",
   "block.sudustrial.bee_tnt_tier_2": "Пчелиный динамит II",
@@ -769,6 +807,7 @@
   "item.sudustrial.bee_tnt_tier_9": "Пчелиный динамит IX",
   "block.sudustrial.bee_tnt_tier_10": "Пчелиный динамит X",
   "item.sudustrial.bee_tnt_tier_10": "Пчелиный динамит X",
+
   "block.sudustrial.standart_tnt_tier_2": "Динамит II",
   "item.sudustrial.standart_tnt_tier_2": "Динамит II",
   "block.sudustrial.standart_tnt_tier_3": "Динамит III",
@@ -787,6 +826,7 @@
   "item.sudustrial.standart_tnt_tier_9": "Динамит IX",
   "block.sudustrial.standart_tnt_tier_10": "Динамит X",
   "item.sudustrial.standart_tnt_tier_10": "Динамит X",
+
   "block.sudustrial.massive_tnt_tier_1": "Массивный динамит",
   "item.sudustrial.massive_tnt_tier_1": "Массивный динамит",
   "block.sudustrial.massive_tnt_tier_2": "Массивный динамит II",
@@ -807,6 +847,7 @@
   "item.sudustrial.massive_tnt_tier_9": "Массивный динамит IX",
   "block.sudustrial.massive_tnt_tier_10": "Массивный динамит X",
   "item.sudustrial.massive_tnt_tier_10": "Массивный динамит X",
+
   "block.sudustrial.party_tnt": "Праздничный динамит",
   "item.sudustrial.party_tnt": "Праздничный динамит",
 
@@ -829,5 +870,165 @@
 
   "block.sudustrial.potion_cauldron": "Котел для смешивания зелий",
   "item.sudustrial.potion_cauldron": "Котел для смешивания зелий",
-  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Таинственное зелье"
+  "item.minecraft.potion.effect.sudustrial.mysterious_potion": "Таинственное зелье",
+
+  "block.sudustrial.white_concrete_stairs": "Белые бетонные ступени",
+  "item.sudustrial.white_concrete_stairs": "Белые бетонные ступени",
+  "block.sudustrial.white_concrete_slab": "Белый бетонный полублок",
+  "item.sudustrial.white_concrete_slab": "Белый бетонный полублок",
+
+  "block.sudustrial.orange_concrete_stairs": "Оранжевые бетонные ступени",
+  "item.sudustrial.orange_concrete_stairs": "Оранжевые бетонные ступени",
+  "block.sudustrial.orange_concrete_slab": "Оранжевый бетонный полублок",
+  "item.sudustrial.orange_concrete_slab": "Оранжевый бетонный полублок",
+
+  "block.sudustrial.magenta_concrete_stairs": "Пурпурные бетонные ступени",
+  "item.sudustrial.magenta_concrete_stairs": "Пурпурные бетонные ступени",
+  "block.sudustrial.magenta_concrete_slab": "Пурпурный бетонный полублок",
+  "item.sudustrial.magenta_concrete_slab": "Пурпурный бетонный полублок",
+
+  "block.sudustrial.light_blue_concrete_stairs": "Светло-синие бетонные ступени",
+  "item.sudustrial.light_blue_concrete_stairs": "Светло-синие бетонные ступени",
+  "block.sudustrial.light_blue_concrete_slab": "Светло-синий бетонный полублок",
+  "item.sudustrial.light_blue_concrete_slab": "Светло-синий бетонный полублок",
+
+  "block.sudustrial.yellow_concrete_stairs": "Жёлтые бетонные ступени",
+  "item.sudustrial.yellow_concrete_stairs": "Жёлтые бетонные ступени",
+  "block.sudustrial.yellow_concrete_slab": "Жёлтый бетонный полублок",
+  "item.sudustrial.yellow_concrete_slab": "Жёлтый бетонный полублок",
+
+  "block.sudustrial.lime_concrete_stairs": "Лаймовые бетонные ступени",
+  "item.sudustrial.lime_concrete_stairs": "Лаймовые бетонные ступени",
+  "block.sudustrial.lime_concrete_slab": "Лаймовый бетонный полублок",
+  "item.sudustrial.lime_concrete_slab": "Лаймовый бетонный полублок",
+
+  "block.sudustrial.pink_concrete_stairs": "Розовые бетонные ступени",
+  "item.sudustrial.pink_concrete_stairs": "Розовые бетонные ступени",
+  "block.sudustrial.pink_concrete_slab": "Розовый бетонный полублок",
+  "item.sudustrial.pink_concrete_slab": "Розовый бетонный полублок",
+
+  "block.sudustrial.gray_concrete_stairs": "Серые бетонные ступени",
+  "item.sudustrial.gray_concrete_stairs": "Серые бетонные ступени",
+  "block.sudustrial.gray_concrete_slab": "Серый бетонный полублок",
+  "item.sudustrial.gray_concrete_slab": "Серый бетонный полублок",
+
+  "block.sudustrial.light_gray_concrete_stairs": "Светло-серые бетонные ступени",
+  "item.sudustrial.light_gray_concrete_stairs": "Светло-серые бетонные ступени",
+  "block.sudustrial.light_gray_concrete_slab": "Светло-серый бетонный полублок",
+  "item.sudustrial.light_gray_concrete_slab": "Светло-серый бетонный полублок",
+
+  "block.sudustrial.cyan_concrete_stairs": "Бирюзовые бетонные ступени",
+  "item.sudustrial.cyan_concrete_stairs": "Бирюзовые бетонные ступени",
+  "block.sudustrial.cyan_concrete_slab": "Бирюзовый бетонный полублок",
+  "item.sudustrial.cyan_concrete_slab": "Бирюзовый бетонный полублок",
+
+  "block.sudustrial.purple_concrete_stairs": "Фиолетовые бетонные ступени",
+  "item.sudustrial.purple_concrete_stairs": "Фиолетовые бетонные ступени",
+  "block.sudustrial.purple_concrete_slab": "Фиолетовый бетонный полублок",
+  "item.sudustrial.purple_concrete_slab": "Фиолетовый бетонный полублок",
+
+  "block.sudustrial.blue_concrete_stairs": "Синие бетонные ступени",
+  "item.sudustrial.blue_concrete_stairs": "Синие бетонные ступени",
+  "block.sudustrial.blue_concrete_slab": "Синий бетонный полублок",
+  "item.sudustrial.blue_concrete_slab": "Синий бетонный полублок",
+
+  "block.sudustrial.brown_concrete_stairs": "Коричневые бетонные ступени",
+  "item.sudustrial.brown_concrete_stairs": "Коричневые бетонные ступени",
+  "block.sudustrial.brown_concrete_slab": "Коричневый бетонный полублок",
+  "item.sudustrial.brown_concrete_slab": "Коричневый бетонный полублок",
+
+  "block.sudustrial.green_concrete_stairs": "Зелёные бетонные ступени",
+  "item.sudustrial.green_concrete_stairs": "Зелёные бетонные ступени",
+  "block.sudustrial.green_concrete_slab": "Зелёный бетонный полублок",
+  "item.sudustrial.green_concrete_slab": "Зелёный бетонный полублок",
+
+  "block.sudustrial.red_concrete_stairs": "Красные бетонные ступени",
+  "item.sudustrial.red_concrete_stairs": "Красные бетонные ступени",
+  "block.sudustrial.red_concrete_slab": "Красный бетонный полублок",
+  "item.sudustrial.red_concrete_slab": "Красный бетонный полублок",
+
+  "block.sudustrial.black_concrete_stairs": "Чёрные бетонные ступени",
+  "item.sudustrial.black_concrete_stairs": "Чёрные бетонные ступени",
+  "block.sudustrial.black_concrete_slab": "Чёрный бетонный полублок",
+  "item.sudustrial.black_concrete_slab": "Чёрный бетонный полублок",
+
+  "block.sudustrial.white_concrete_powder_stairs": "Белые цементные ступени",
+  "item.sudustrial.white_concrete_powder_stairs": "Белые цементные ступени",
+  "block.sudustrial.white_concrete_powder_slab": "Белый цементный полублок",
+  "item.sudustrial.white_concrete_powder_slab": "Белый цементный полублок",
+
+  "block.sudustrial.orange_concrete_powder_stairs": "Оранжевые цементные ступени",
+  "item.sudustrial.orange_concrete_powder_stairs": "Оранжевые цементные ступени",
+  "block.sudustrial.orange_concrete_powder_slab": "Оранжевый цементный полублок",
+  "item.sudustrial.orange_concrete_powder_slab": "Оранжевый цементный полублок",
+
+  "block.sudustrial.magenta_concrete_powder_stairs": "Пурпурные цементные ступени",
+  "item.sudustrial.magenta_concrete_powder_stairs": "Пурпурные цементные ступени",
+  "block.sudustrial.magenta_concrete_powder_slab": "Пурпурный цементный полублок",
+  "item.sudustrial.magenta_concrete_powder_slab": "Пурпурный цементный полублок",
+
+  "block.sudustrial.light_blue_concrete_powder_stairs": "Светло-синие цементные ступени",
+  "item.sudustrial.light_blue_concrete_powder_stairs": "Светло-синие цементные ступени",
+  "block.sudustrial.light_blue_concrete_powder_slab": "Светло-синий цементный полублок",
+  "item.sudustrial.light_blue_concrete_powder_slab": "Светло-синий цементный полублок",
+
+  "block.sudustrial.yellow_concrete_powder_stairs": "Жёлтые цементные ступени",
+  "item.sudustrial.yellow_concrete_powder_stairs": "Жёлтые цементные ступени",
+  "block.sudustrial.yellow_concrete_powder_slab": "Жёлтый цементный полублок",
+  "item.sudustrial.yellow_concrete_powder_slab": "Жёлтый цементный полублок",
+
+  "block.sudustrial.lime_concrete_powder_stairs": "Лаймовые цементные ступени",
+  "item.sudustrial.lime_concrete_powder_stairs": "Лаймовые цементные ступени",
+  "block.sudustrial.lime_concrete_powder_slab": "Лаймовый цементный полублок",
+  "item.sudustrial.lime_concrete_powder_slab": "Лаймовый цементный полублок",
+
+  "block.sudustrial.pink_concrete_powder_stairs": "Розовые цементные ступени",
+  "item.sudustrial.pink_concrete_powder_stairs": "Розовые цементные ступени",
+  "block.sudustrial.pink_concrete_powder_slab": "Розовый цементный полублок",
+  "item.sudustrial.pink_concrete_powder_slab": "Розовый цементный полублок",
+
+  "block.sudustrial.gray_concrete_powder_stairs": "Серые цементные ступени",
+  "item.sudustrial.gray_concrete_powder_stairs": "Серые цементные ступени",
+  "block.sudustrial.gray_concrete_powder_slab": "Серый цементный полублок",
+  "item.sudustrial.gray_concrete_powder_slab": "Серый цементный полублок",
+
+  "block.sudustrial.light_gray_concrete_powder_stairs": "Светло-серые цементные ступени",
+  "item.sudustrial.light_gray_concrete_powder_stairs": "Светло-серые цементные ступени",
+  "block.sudustrial.light_gray_concrete_powder_slab": "Светло-серый цементный полублок",
+  "item.sudustrial.light_gray_concrete_powder_slab": "Светло-серый цементный полублок",
+
+  "block.sudustrial.cyan_concrete_powder_stairs": "Бирюзовые цементные ступени",
+  "item.sudustrial.cyan_concrete_powder_stairs": "Бирюзовые цементные ступени",
+  "block.sudustrial.cyan_concrete_powder_slab": "Бирюзовый цементный полублок",
+  "item.sudustrial.cyan_concrete_powder_slab": "Бирюзовый цементный полублок",
+
+  "block.sudustrial.purple_concrete_powder_stairs": "Фиолетовые цементные ступени",
+  "item.sudustrial.purple_concrete_powder_stairs": "Фиолетовые цементные ступени",
+  "block.sudustrial.purple_concrete_powder_slab": "Фиолетовый цементный полублок",
+  "item.sudustrial.purple_concrete_powder_slab": "Фиолетовый цементный полублок",
+
+  "block.sudustrial.blue_concrete_powder_stairs": "Синие цементные ступени",
+  "item.sudustrial.blue_concrete_powder_stairs": "Синие цементные ступени",
+  "block.sudustrial.blue_concrete_powder_slab": "Синий цементный полублок",
+  "item.sudustrial.blue_concrete_powder_slab": "Синий цементный полублок",
+
+  "block.sudustrial.brown_concrete_powder_stairs": "Коричневые цементные ступени",
+  "item.sudustrial.brown_concrete_powder_stairs": "Коричневые цементные ступени",
+  "block.sudustrial.brown_concrete_powder_slab": "Коричневый цементный полублок",
+  "item.sudustrial.brown_concrete_powder_slab": "Коричневый цементный полублок",
+
+  "block.sudustrial.green_concrete_powder_stairs": "Зелёные цементные ступени",
+  "item.sudustrial.green_concrete_powder_stairs": "Зелёные цементные ступени",
+  "block.sudustrial.green_concrete_powder_slab": "Зелёный цементный полублок",
+  "item.sudustrial.green_concrete_powder_slab": "Зелёный цементный полублок",
+
+  "block.sudustrial.red_concrete_powder_stairs": "Красные цементные ступени",
+  "item.sudustrial.red_concrete_powder_stairs": "Красные цементные ступени",
+  "block.sudustrial.red_concrete_powder_slab": "Красный цементный полублок",
+  "item.sudustrial.red_concrete_powder_slab": "Красный цементный полублок",
+
+  "block.sudustrial.black_concrete_powder_stairs": "Чёрные цементные ступени",
+  "item.sudustrial.black_concrete_powder_stairs": "Чёрные цементные ступени",
+  "block.sudustrial.black_concrete_powder_slab": "Чёрный цементный полублок",
+  "item.sudustrial.black_concrete_powder_slab": "Чёрный цементный полублок"
 }

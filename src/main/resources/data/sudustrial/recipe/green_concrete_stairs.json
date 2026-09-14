@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:green_concrete"
+  },
+  "result": {
+    "count": 4,
+    "id": "sudustrial:green_concrete_stairs"
+  }
+}
