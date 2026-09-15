@@ -1,4 +1,4 @@
-package com.netut.sudustrial.register.registers;
+package com.netut.sudustrial.register.concrete_register;
 
 import com.netut.sudustrial.Sudustrial;
 import com.netut.sudustrial.block.concrete.ConcretePowderStairBlock;

@@ -11,7 +11,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeTabs {
@@ -22,10 +21,6 @@ public class ModCreativeTabs {
     public static final ResourceKey<CreativeModeTab> SUDUSTRIAL_POTION_AND_FOOD_TAB_KEY = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "sudustrial_potion_and_food_tab")
-    );
-    public static final ResourceKey<CreativeModeTab> SUDUSTRIAL_CONCRETE_TAB_KEY = ResourceKey.create(
-            Registries.CREATIVE_MODE_TAB,
-            Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "sudustrial_concrete_tab")
     );
 
     public static final CreativeModeTab SUDUSTRIAL_TNT_TAB = FabricCreativeModeTab.builder()
@@ -66,38 +61,8 @@ public class ModCreativeTabs {
             })
             .build();
 
-    public static final CreativeModeTab SUDUSTRIAL_CONCRETE_TAB = FabricCreativeModeTab.builder()
-            .icon(() -> new ItemStack(ModBlocks.CONCRETE_STAIR.get(DyeColor.WHITE)))
-            .title(Component.translatable("concrete_tab.sudustrial"))
-            .displayItems((displayParameters, output) -> {
-                for (DyeColor color : DyeColor.values()) {
-                    if (ModBlocks.CONCRETE_STAIR.containsKey(color)) {
-                        output.accept(ModBlocks.CONCRETE_STAIR.get(color));
-                    }
-                }
-                for (DyeColor color : DyeColor.values()) {
-                    if (ModBlocks.CONCRETE_POWDER_STAIR.containsKey(color)) {
-                        output.accept(ModBlocks.CONCRETE_POWDER_STAIR.get(color));
-                    }
-                }
-
-                // Выводим все полублоки второй стопкой
-                for (DyeColor color : DyeColor.values()) {
-                    if (ModBlocks.CONCRETE_SLAB.containsKey(color)) {
-                        output.accept(ModBlocks.CONCRETE_SLAB.get(color));
-                    }
-                }
-                for (DyeColor color : DyeColor.values()) {
-                    if (ModBlocks.CONCRETE_POWDER_SLAB.containsKey(color)) {
-                        output.accept(ModBlocks.CONCRETE_POWDER_SLAB.get(color));
-                    }
-                }
-            })
-            .build();
-
     public static void registerCreativeTabs() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, SUDUSTRIAL_TNT_TAB_KEY, SUDUSTRIAL_TNT_TAB);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, SUDUSTRIAL_POTION_AND_FOOD_TAB_KEY, SUDUSTRIAL_POTION_AND_FOOD_TAB);
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, SUDUSTRIAL_CONCRETE_TAB_KEY, SUDUSTRIAL_CONCRETE_TAB);
     }
 }
