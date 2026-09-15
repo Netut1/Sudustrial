@@ -2,9 +2,9 @@ package com.netut.sudustrial.action.tnt.explosion;
 
 import com.netut.sudustrial.action.tnt.explosion.optimization.nuclear.NuclearExplosionManager;
 import com.netut.sudustrial.action.tnt.explosion.optimization.ExplosionOptimizer;
-import com.netut.sudustrial.entity.tnt.nuclear.NuclearCoreBlockEntity;
+import com.netut.sudustrial.entity.blockentity.tnt.nuclear.NuclearCoreBlockEntity;
 import com.netut.sudustrial.block.tnt.type.*;
-import com.netut.sudustrial.entity.tnt.CustomTntEntity;
+import com.netut.sudustrial.entity.blockentity.tnt.CustomTntEntity;
 import com.netut.sudustrial.register.ModBlocks;
 import com.netut.sudustrial.register.ModSounds;
 import net.minecraft.core.BlockPos;

@@ -1,8 +1,9 @@
 package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.entity.cauldron.PotionCauldronBlockEntity;
-import com.netut.sudustrial.entity.tnt.nuclear.NuclearCoreBlockEntity;
+import com.netut.sudustrial.entity.blockentity.cauldron.PotionCauldronBlockEntity;
+import com.netut.sudustrial.entity.blockentity.nest.DragonNestBlockEntity;
+import com.netut.sudustrial.entity.blockentity.tnt.nuclear.NuclearCoreBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -19,6 +20,7 @@ public class ModBlockEntities {
 
     public static BlockEntityType<NuclearCoreBlockEntity> NUCLEAR_CORE;
     public static BlockEntityType<PotionCauldronBlockEntity> POTION_CAULDRON;
+    public static BlockEntityType<DragonNestBlockEntity> DRAGON_NEST;
 
     // Вызывать ПОСЛЕ ModBlocks.registerModBlocks() — нужен уже зарегистрированный NUCLEAR_CORE_BLOCK
     public static void registerModBlockEntities() {
@@ -31,6 +33,11 @@ public class ModBlockEntities {
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceKey.create(Registries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "potion_cauldron")),
                 FabricBlockEntityTypeBuilder.create(PotionCauldronBlockEntity::new, ModBlocks.POTION_CAULDRON_BLOCK).build()
+        );
+        DRAGON_NEST = Registry.register(
+                BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                ResourceKey.create(Registries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "dragon_nest")),
+                FabricBlockEntityTypeBuilder.create(DragonNestBlockEntity::new, ModBlocks.DRAGON_NEST_BLOCK).build()
         );
     }
 }

@@ -1,7 +1,7 @@
 package com.netut.sudustrial.block.tnt.state_block;
 
 import com.netut.sudustrial.block.tnt.type.SpawnerTntType;
-import com.netut.sudustrial.entity.tnt.CustomTntEntity;
+import com.netut.sudustrial.entity.blockentity.tnt.CustomTntEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

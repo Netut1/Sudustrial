@@ -1,4 +1,4 @@
-package com.netut.sudustrial.entity.cauldron;
+package com.netut.sudustrial.entity.blockentity.cauldron;
 
 import com.netut.sudustrial.register.ModBlockEntities;
 import net.minecraft.core.BlockPos;

@@ -2,10 +2,12 @@ package com.netut.sudustrial.register;
 
 import com.netut.sudustrial.Sudustrial;
 import com.netut.sudustrial.block.cauldron.PotionCauldronBlock;
+import com.netut.sudustrial.block.nest.DragonNestBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearAirBlock;
 import com.netut.sudustrial.block.tnt.nuclear_block.NuclearCoreBlock;
 import com.netut.sudustrial.block.tnt.state_block.*;
 import com.netut.sudustrial.block.tnt.type.*;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -45,6 +47,9 @@ public class ModBlocks {
 
     public static Block POTION_CAULDRON_BLOCK;
     public static Item POTION_CAULDRON_ITEM;
+
+    public static Block DRAGON_NEST_BLOCK;
+    public static Item DRAGON_NEST_ITEM;
 
     public static void registerModBlocks() {
         for (TntType type : TntType.values()) {
@@ -190,5 +195,22 @@ public class ModBlocks {
         Item.Properties cauldronItemProperties = new Item.Properties().setId(cauldronItemKey);
         POTION_CAULDRON_ITEM = new BlockItem(POTION_CAULDRON_BLOCK, cauldronItemProperties);
         Registry.register(BuiltInRegistries.ITEM, cauldronItemKey, POTION_CAULDRON_ITEM);
+
+        //Гнездо дракона
+        Identifier nestLoc = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "dragon_nest");
+        ResourceKey<Block> nestBlockKey = ResourceKey.create(Registries.BLOCK, nestLoc);
+        ResourceKey<Item> nestItemKey = ResourceKey.create(Registries.ITEM, nestLoc);
+
+        BlockBehaviour.Properties nestProperties = BlockBehaviour.Properties.of()
+                .strength(2.0F, 5.0F)
+                .noOcclusion()
+                .setId(nestBlockKey);
+        DRAGON_NEST_BLOCK = new DragonNestBlock(nestProperties);
+        Registry.register(BuiltInRegistries.BLOCK, nestBlockKey, DRAGON_NEST_BLOCK);
+        FlammableBlockRegistry.getDefaultInstance().add(DRAGON_NEST_BLOCK, 30, 60);
+
+        Item.Properties nestItemProperties = new Item.Properties().setId(nestItemKey);
+        DRAGON_NEST_ITEM = new BlockItem(DRAGON_NEST_BLOCK, nestItemProperties);
+        Registry.register(BuiltInRegistries.ITEM, nestItemKey, DRAGON_NEST_ITEM);
     }
 }

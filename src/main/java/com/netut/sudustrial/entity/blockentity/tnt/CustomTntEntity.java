@@ -1,4 +1,4 @@
-package com.netut.sudustrial.entity.tnt;
+package com.netut.sudustrial.entity.blockentity.tnt;
 
 import com.netut.sudustrial.action.tnt.explosion.Explodes;
 import com.netut.sudustrial.block.tnt.type.*;

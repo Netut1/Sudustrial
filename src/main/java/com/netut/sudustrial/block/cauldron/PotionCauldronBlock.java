@@ -1,6 +1,6 @@
 package com.netut.sudustrial.block.cauldron;
 
-import com.netut.sudustrial.entity.cauldron.PotionCauldronBlockEntity;
+import com.netut.sudustrial.entity.blockentity.cauldron.PotionCauldronBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;

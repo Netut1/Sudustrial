@@ -1,4 +1,4 @@
-package com.netut.sudustrial.entity.tnt.nuclear;
+package com.netut.sudustrial.entity.blockentity.tnt.nuclear;
 
 import com.netut.sudustrial.register.ModBlockEntities;
 import com.netut.sudustrial.register.ModMobEffects;
