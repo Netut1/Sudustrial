@@ -4,7 +4,6 @@ import com.netut.sudustrial.action.DelayedTaskScheduler;
 import com.netut.sudustrial.action.tnt.explosion.optimization.nuclear.NuclearExplosionManager;
 import com.netut.sudustrial.action.tnt.revival.nuclear.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.*;
-import com.netut.sudustrial.register.concrete_register.ModConcreteBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,7 +22,6 @@ public class Sudustrial implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModBlocks.registerModBlocks();
-		ModConcreteBlocks.registerModConcreteBlocks();
 		ModItems.registerModItems();
 		ModMobEffects.registerModMobEffects();
 		ModAttachments.registerModAttachments();
