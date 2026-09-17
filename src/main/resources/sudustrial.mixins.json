@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.netut.mixin",
+	"package": "com.netut.sudustrial.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 		"ExampleMixin"

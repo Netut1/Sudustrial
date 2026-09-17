@@ -19,10 +19,10 @@
 			"com.netut.sudustrial.Sudustrial"
 		],
 		"client": [
-			"com.netut.client.SudustrialClient"
+			"com.netut.sudustrial.client.SudustrialClient"
 		],
 		"fabric-datagen": [
-			"com.netut.client.SudustrialDataGenerator"
+			"com.netut.sudustrial.client.SudustrialDataGenerator"
 		]
 	},
 	"mixins": [

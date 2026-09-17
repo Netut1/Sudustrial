@@ -1,4 +1,5 @@
 {
+  "parent": "sudustrial:unlock_custom_tnt_tier_1",
   "display": {
     "icon": {
       "id": "sudustrial:massive_core"

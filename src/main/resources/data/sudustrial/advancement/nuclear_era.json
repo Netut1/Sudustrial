@@ -1,4 +1,5 @@
 {
+  "parent": "sudustrial:tnt_era",
   "display": {
     "icon": {
       "id": "sudustrial:nuclear_tnt"

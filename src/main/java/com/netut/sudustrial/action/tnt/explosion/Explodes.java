@@ -99,7 +99,7 @@ public class Explodes {
         AABB damageBox = new AABB(center).inflate(radius);
         for (Entity target : level.getEntities(entity, damageBox)) {
             if (target.distanceToSqr(entity) <= rSq) {
-                target.hurt(level.damageSources().explosion(entity, entity.getOwner()), power * 3.0F);
+                target.hurtServer(level, level.damageSources().explosion(entity, entity.getOwner()), power * 3.0F);
             }
         }
 
@@ -131,7 +131,7 @@ public class Explodes {
         AABB damageBox = new AABB(center).inflate(radius);
         for (Entity target : level.getEntities(entity, damageBox)) {
             if (target.distanceToSqr(entity) <= rSq) {
-                target.hurt(level.damageSources().explosion(entity, entity.getOwner()), power * 3.0F);
+                target.hurtServer(level, level.damageSources().explosion(entity, entity.getOwner()), power * 3.0F);
             }
         }
 

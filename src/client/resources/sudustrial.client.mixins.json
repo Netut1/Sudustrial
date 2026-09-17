@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.netut.client.mixin",
+	"package": "com.netut.sudustrial.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
 		"ExampleClientMixin"

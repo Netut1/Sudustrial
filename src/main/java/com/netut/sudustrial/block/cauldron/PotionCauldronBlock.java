@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -103,7 +104,7 @@ public class PotionCauldronBlock extends Block implements EntityBlock {
                 stack.shrink(1);
                 ItemStack emptyBottle = new ItemStack(Items.GLASS_BOTTLE);
                 if (!player.getInventory().add(emptyBottle)) {
-                    player.drop(emptyBottle, false);
+                    Containers.dropItemStack(level, pos.getX(), pos.getY() + 1.0, pos.getZ(), emptyBottle);
                 }
             }
             level.setBlock(pos, level.getBlockState(pos).setValue(EFFECT_COUNT, mixed.size()), 3);
@@ -131,7 +132,7 @@ public class PotionCauldronBlock extends Block implements EntityBlock {
                 stack.shrink(1);
             }
             if (!player.getInventory().add(result)) {
-                player.drop(result, false);
+                Containers.dropItemStack(level, pos.getX(), pos.getY() + 1.0, pos.getZ(), result);
             }
 
             blockEntity.clear();
