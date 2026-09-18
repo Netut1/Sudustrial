@@ -53,7 +53,7 @@ Sudustrial adds a special cauldron for mixing potions. This allows you to combin
 types of effects into a single potion. The rest is entirely up to you, your resources, and your imagination.
 
 ## Requirements
-+ Minecraft 26.2
++ Minecraft 26.2222222
 + Fabric Loader 0.19.3
 + Fabric API
 
