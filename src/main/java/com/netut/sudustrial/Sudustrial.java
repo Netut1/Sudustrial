@@ -1,10 +1,16 @@
 package com.netut.sudustrial;
 
 import com.netut.sudustrial.action.DelayedTaskScheduler;
-import com.netut.sudustrial.action.tnt.explosion.optimization.nuclear.NuclearExplosionManager;
-import com.netut.sudustrial.action.tnt.revival.nuclear.NuclearDecayCarryOver;
-import com.netut.sudustrial.register.*;
-import com.netut.sudustrial.register.concrete_register.ModConcreteBlocks;
+import com.netut.sudustrial.tnt.action.explosion.optimization.NuclearExplosionManager;
+import com.netut.sudustrial.tnt.action.NuclearDecayCarryOver;
+import com.netut.sudustrial.register.attachment.ModAttachments;
+import com.netut.sudustrial.register.block.ModBlocks;
+import com.netut.sudustrial.register.block.concrete.ModConcreteBlocks;
+import com.netut.sudustrial.register.creative_tabs.ModCreativeTabs;
+import com.netut.sudustrial.register.effect.ModEffects;
+import com.netut.sudustrial.register.entity.ModEntities;
+import com.netut.sudustrial.register.item.ModItems;
+import com.netut.sudustrial.register.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -22,18 +28,17 @@ public class Sudustrial implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		ModBlocks.registerModBlocks();
-		ModConcreteBlocks.registerModConcreteBlocks();
-		ModItems.registerModItems();
-		ModMobEffects.registerModMobEffects();
-		ModAttachments.registerModAttachments();
-		ModBlockEntities.registerModBlockEntities();
-		ModCreativeTabs.registerCreativeTabs();
-		ModEntities.registerModEntities();
+		ModBlocks.register();
+		ModConcreteBlocks.register();
+		ModItems.register();
+		ModEffects.register();
+		ModAttachments.register();
+		ModEntities.register();
+		ModCreativeTabs.register();
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
 		DelayedTaskScheduler.init();
-		ModSounds.registerModSounds();
+		ModSounds.register();
 		LOGGER.info("Hello Fabric world!");
 	}
 

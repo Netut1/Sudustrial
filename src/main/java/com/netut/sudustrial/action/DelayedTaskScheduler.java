@@ -20,7 +20,6 @@ public class DelayedTaskScheduler {
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (PENDING.isEmpty()) return;
 
-            // Сначала только собираем, что выполнить, и удаляем это.
             List<Entry> due = new ArrayList<>();
             Iterator<Entry> iterator = PENDING.iterator();
             while (iterator.hasNext()) {
@@ -30,7 +29,6 @@ public class DelayedTaskScheduler {
                     iterator.remove();
                 }
             }
-            // Запускаем уже отдельно
             for (Entry entry : due) {
                 entry.task().run();
             }
