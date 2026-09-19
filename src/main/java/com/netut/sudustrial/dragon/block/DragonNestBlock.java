@@ -1,10 +1,14 @@
 package com.netut.sudustrial.dragon.block;
 
 import com.netut.sudustrial.dragon.entity.block.DragonNestBlockEntity;
+import com.netut.sudustrial.dragon.entity.living.CustomEnderDragon;
+import com.netut.sudustrial.register.ai.ModDragonPhases;
 import com.netut.sudustrial.register.entity.block.dragon_nest.RegisterDragonNestEntity;
+import com.netut.sudustrial.register.entity.living.dragon.RegisterCustomEnderDragonEntity;
 import com.netut.sudustrial.register.tag.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -29,15 +33,14 @@ import java.util.Map;
 public class DragonNestBlock extends Block implements EntityBlock {
     private static final int TICK_INTERVAL = 20;
 
-    // ЗАГЛУШКИ — подбирай под баланс. Сейчас: жёсткий минимум 20 мин, обычный диапазон 50-100 мин.
-    public static final int HARD_MINIMUM_TICKS = 20 * 60 * 20;
-    public static final int RANGE_MIN_TICKS = 20 * 60 * 30;
-    public static final int RANGE_MAX_TICKS = 20 * 60 * 100; // верхняя граница не меняется никогда
+    public static final int HARD_MINIMUM_TICKS = 20;// * 60 * 20;
+    public static final int RANGE_MIN_TICKS = 20;// * 60 * 30;
+    public static final int RANGE_MAX_TICKS = 20;// * 60 * 100;
 
     private static final Map<Block, Integer> HEAT_SOURCE_EFFECTIVE_MIN = Map.of(
             Blocks.CAMPFIRE, RANGE_MIN_TICKS,
             Blocks.SOUL_CAMPFIRE, 20 * 60 * 70,
-            Blocks.MAGMA_BLOCK, 20 * 60 * 40,
+            Blocks.MAGMA_BLOCK, 20,// * 60 * 40,
             Blocks.LAVA, HARD_MINIMUM_TICKS,
             Blocks.TORCH, 30*20*80,
             Blocks.SOUL_TORCH, 20*60*90,
@@ -45,11 +48,11 @@ public class DragonNestBlock extends Block implements EntityBlock {
     );
 
     public static final VoxelShape SHAPE = Shapes.or(
-            Block.box(0, 0, 0, 16, 3, 16),    // дно
-            Block.box(0, 3, 0, 2, 10, 16),    // западная стенка
-            Block.box(14, 3, 0, 16, 10, 16),  // восточная стенка
-            Block.box(2, 3, 0, 14, 10, 2),    // северная стенка
-            Block.box(2, 3, 14, 14, 10, 16)   // южная стенка
+            Block.box(0, 0, 0, 16, 3, 16),
+            Block.box(0, 3, 0, 2, 10, 16),
+            Block.box(14, 3, 0, 16, 10, 16),
+            Block.box(2, 3, 0, 14, 10, 2),
+            Block.box(2, 3, 14, 14, 10, 16)
     );
 
     public DragonNestBlock(Properties properties) {
@@ -126,7 +129,13 @@ public class DragonNestBlock extends Block implements EntityBlock {
         level.removeBlock(eggPos, false);
         blockEntity.resetIncubation();
 
-        // TODO: заспавнить Джина на eggPos — как только будет готова его сущность.
+        CustomEnderDragon dragon = RegisterCustomEnderDragonEntity.PLAYER_ENDER_DRAGON.create(level, EntitySpawnReason.TRIGGERED);
+        if (dragon != null) {
+            dragon.setPos(eggPos.getX() + 0.5D, eggPos.getY(), eggPos.getZ() + 0.5D);
+            dragon.setHomePosition(eggPos);
+            dragon.getPhaseManager().setPhase(ModDragonPhases.JEAN_IDLE);
+            level.addFreshEntity(dragon);
+        }
     }
 
     @Override
@@ -136,7 +145,6 @@ public class DragonNestBlock extends Block implements EntityBlock {
     }
 
     @Nullable
-    @SuppressWarnings("unchecked")
     private static <E extends BlockEntity, A extends BlockEntity> BlockEntityTicker<A> createTickerHelper(
             BlockEntityType<A> serverType, BlockEntityType<E> handledType, BlockEntityTicker<? super E> ticker) {
         return handledType == serverType ? (BlockEntityTicker<A>) ticker : null;

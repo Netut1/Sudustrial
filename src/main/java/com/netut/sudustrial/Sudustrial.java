@@ -1,6 +1,7 @@
 package com.netut.sudustrial;
 
 import com.netut.sudustrial.action.DelayedTaskScheduler;
+import com.netut.sudustrial.register.ai.ModDragonPhases;
 import com.netut.sudustrial.tnt.action.explosion.optimization.NuclearExplosionManager;
 import com.netut.sudustrial.tnt.action.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.attachment.ModAttachments;
@@ -34,6 +35,7 @@ public class Sudustrial implements ModInitializer {
 		ModEffects.register();
 		ModAttachments.register();
 		ModEntities.register();
+		ModDragonPhases.registerModDragonPhases();
 		ModCreativeTabs.register();
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
