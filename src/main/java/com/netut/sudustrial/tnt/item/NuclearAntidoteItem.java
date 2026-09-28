@@ -1,7 +1,8 @@
 package com.netut.sudustrial.tnt.item;
 
+import com.netut.sudustrial.register.attachment.antidote.AntidoteCycle;
+import com.netut.sudustrial.register.attachment.antidote.AntidoteUsesInCycle;
 import com.netut.sudustrial.tnt.effect.NuclearDecayEffect;
-import com.netut.sudustrial.register.attachment.ModAttachments;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -39,8 +40,8 @@ public class NuclearAntidoteItem extends Item {
 
     private void applyAntidote(Level level, LivingEntity entity) {
         long now = level.getGameTime();
-        long cycleStart = entity.getAttachedOrCreate(ModAttachments.ANTIDOTE_CYCLE_START);
-        int usesThisCycle = entity.getAttachedOrCreate(ModAttachments.ANTIDOTE_USES_THIS_CYCLE);
+        long cycleStart = entity.getAttachedOrCreate(AntidoteCycle.ANTIDOTE_CYCLE_START);
+        int usesThisCycle = entity.getAttachedOrCreate(AntidoteUsesInCycle.ANTIDOTE_USES_THIS_CYCLE);
 
         if (now - cycleStart >= CYCLE_LENGTH_TICKS) {
             cycleStart = now;
@@ -66,8 +67,8 @@ public class NuclearAntidoteItem extends Item {
             entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, MINUTE_TICKS, 2, false, true, true));
         }
 
-        entity.setAttached(ModAttachments.ANTIDOTE_CYCLE_START, cycleStart);
-        entity.setAttached(ModAttachments.ANTIDOTE_USES_THIS_CYCLE, usesThisCycle + 1);
+        entity.setAttached(AntidoteCycle.ANTIDOTE_CYCLE_START, cycleStart);
+        entity.setAttached(AntidoteUsesInCycle.ANTIDOTE_USES_THIS_CYCLE, usesThisCycle + 1);
     }
 
     private void healMaxHealth(LivingEntity entity) {

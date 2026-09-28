@@ -3,8 +3,7 @@
 	"package": "com.netut.sudustrial.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin",
-		"EnderDragonPhaseAccessor"
+		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

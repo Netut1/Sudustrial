@@ -1,7 +1,7 @@
 package com.netut.sudustrial;
 
 import com.netut.sudustrial.action.DelayedTaskScheduler;
-import com.netut.sudustrial.register.ai.ModDragonPhases;
+import com.netut.sudustrial.dragon.persistence.CustomEnderDragonPersistence;
 import com.netut.sudustrial.tnt.action.explosion.optimization.NuclearExplosionManager;
 import com.netut.sudustrial.tnt.action.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.attachment.ModAttachments;
@@ -29,17 +29,18 @@ public class Sudustrial implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		// !!!!! Blocks → Items → Effects → Entities → CreativeTabs !!!!!
 		ModBlocks.register();
 		ModConcreteBlocks.register();
 		ModItems.register();
 		ModEffects.register();
 		ModAttachments.register();
 		ModEntities.register();
-		ModDragonPhases.registerModDragonPhases();
 		ModCreativeTabs.register();
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
 		DelayedTaskScheduler.init();
+		CustomEnderDragonPersistence.init();
 		ModSounds.register();
 		LOGGER.info("Hello Fabric world!");
 	}
