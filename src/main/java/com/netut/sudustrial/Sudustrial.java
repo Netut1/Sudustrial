@@ -1,7 +1,6 @@
 package com.netut.sudustrial;
 
 import com.netut.sudustrial.action.DelayedTaskScheduler;
-import com.netut.sudustrial.dragon.persistence.CustomEnderDragonPersistence;
 import com.netut.sudustrial.tnt.action.explosion.optimization.NuclearExplosionManager;
 import com.netut.sudustrial.tnt.action.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.attachment.ModAttachments;
@@ -40,7 +39,6 @@ public class Sudustrial implements ModInitializer {
 		NuclearExplosionManager.init();
 		NuclearDecayCarryOver.init();
 		DelayedTaskScheduler.init();
-		CustomEnderDragonPersistence.init();
 		ModSounds.register();
 		LOGGER.info("Hello Fabric world!");
 	}
