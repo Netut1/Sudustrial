@@ -1,6 +1,5 @@
 package com.netut.sudustrial.tnt.block;
 
-import com.netut.sudustrial.tnt.type.block.TntType;
 import com.netut.sudustrial.tnt.entity.CustomTntEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -22,14 +21,14 @@ import org.jetbrains.annotations.Nullable;
 import org.jspecify.annotations.NonNull;
 
 public class CustomTntBlock extends Block {
-    private final TntType type;
+    private final TntVariant type;
 
-    public CustomTntBlock(TntType type, Properties properties) {
+    public CustomTntBlock(TntVariant type, Properties properties) {
         super(properties);
         this.type = type;
     }
 
-    public TntType getType() {
+    public TntVariant getType() {
         return type;
     }
 

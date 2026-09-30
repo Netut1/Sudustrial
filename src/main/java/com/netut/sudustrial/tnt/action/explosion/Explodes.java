@@ -36,47 +36,22 @@ public class Explodes {
     );
 
     public static void explode(CustomTntEntity entity) {
-        if (!(entity.level() instanceof ServerLevel serverLevel)) return;
+        if (entity.level() instanceof ServerLevel serverLevel) {
+            entity.getVariant().explode(serverLevel, entity);
+        }
+    }
 
-        if (entity.isMining()) {
-            MiningTntType type = entity.getMiningTntType();
-            if (type != null) {
-                miningExplode(serverLevel, entity, type);
-            }
-        } else if (entity.isEffect()) {
-            EffectTntType type = entity.getEffectTntType();
-            if (type != null) {
-                effectExplode(serverLevel, entity, type);
-            }
-        } else if (entity.isSpawner()) {
-            SpawnerTntType type = entity.getSpawnerTntType();
-            if (type != null) {
-                spawnerExplode(serverLevel, entity, type);
-            }
-        } else if (entity.isElemental()) {
-            ElementalTntType type = entity.getElementalTntType();
-            if (type != null) {
-                elementalExplode(serverLevel, entity, type);
-            }
-        } else if (entity.isNuclear()) {
-            NuclearTntType type = entity.getNuclearTntType();
-            if (type != null) {
-                nuclearExplode(serverLevel, entity, type);
-            }
+    public static void standardExplode(ServerLevel level, CustomTntEntity entity, TntType type) {
+        float power = type.getExplosionPower();
+
+        if (power == 0.0f) {
+            partyExplode(level, entity);
+        } else if (power > 32.0F) {
+            optimizedExplode(level, entity, power);
         } else {
-            float power = entity.getTntType() != null ? entity.getTntType().getExplosionPower() : 8.0F;
-
-            if (power == 0.0f) {
-                partyExplode(serverLevel, entity);
-            } else {
-                if (power > 32.0F) {
-                    optimizedExplode(serverLevel, entity, power);
-                } else {
-                    entity.level().explode(entity, entity.getX(), entity.getY(0.0625),
-                            entity.getZ(), power, Level.ExplosionInteraction.TNT
-                    );
-                }
-            }
+            entity.level().explode(entity, entity.getX(), entity.getY(0.0625),
+                    entity.getZ(), power, Level.ExplosionInteraction.TNT
+            );
         }
     }
 
@@ -263,7 +238,6 @@ public class Explodes {
                 4.0F, 1.0F);
 
         if (type.isColumn()) {
-            // Прямоугольная колонна вниз
             int minX = center.getX() - radius;
             int maxX = center.getX() + radius;
             int minZ = center.getZ() - radius;

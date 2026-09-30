@@ -1,10 +1,13 @@
 package com.netut.sudustrial.tnt.type.block;
 
-import net.minecraft.util.StringRepresentable;
+import com.netut.sudustrial.tnt.action.explosion.Explodes;
+import com.netut.sudustrial.tnt.block.TntVariant;
+import com.netut.sudustrial.tnt.entity.CustomTntEntity;
+import net.minecraft.server.level.ServerLevel;
 import org.jspecify.annotations.NonNull;
 
-public enum NuclearTntType implements StringRepresentable {
-    NUCLEAR("nuclear_tnt", 1000.0f);
+public enum NuclearTntType implements TntVariant {
+    NUCLEAR("nuclear_tnt", TntTiers.NUCLEAR_POWER);
 
     private final String name;
     private final float explosionPower;
@@ -16,6 +19,11 @@ public enum NuclearTntType implements StringRepresentable {
 
     public float getExplosionPower() {
         return explosionPower;
+    }
+
+    @Override
+    public void explode(ServerLevel level, CustomTntEntity tnt) {
+        Explodes.nuclearExplode(level, tnt, this);
     }
 
     @Override
