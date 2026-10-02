@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/water_breathing_tnt_bottom",
+    "side": "sudustrial:block/water_breathing_tnt_side",
+    "top": "sudustrial:block/water_breathing_tnt_top"
+  }
+}

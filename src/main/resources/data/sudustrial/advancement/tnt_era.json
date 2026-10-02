@@ -172,16 +172,16 @@
       "sudustrial:massive_tnt_tier_5", "sudustrial:massive_tnt_tier_6", "sudustrial:massive_tnt_tier_7",
       "sudustrial:massive_tnt_tier_8", "sudustrial:massive_tnt_tier_9", "sudustrial:massive_tnt_tier_10",
 
-      "sudustrial:standart_tnt_tier_3", "sudustrial:standart_tnt_tier_4", "sudustrial:standart_tnt_tier_5",
-      "sudustrial:standart_tnt_tier_6", "sudustrial:standart_tnt_tier_7", "sudustrial:standart_tnt_tier_8",
-      "sudustrial:standart_tnt_tier_9", "sudustrial:standart_tnt_tier_10",
+      "sudustrial:standard_tnt_tier_3", "sudustrial:standard_tnt_tier_4", "sudustrial:standard_tnt_tier_5",
+      "sudustrial:standard_tnt_tier_6", "sudustrial:standard_tnt_tier_7", "sudustrial:standard_tnt_tier_8",
+      "sudustrial:standard_tnt_tier_9", "sudustrial:standard_tnt_tier_10",
 
       "sudustrial:elemental_core", "sudustrial:spawner_core", "sudustrial:effect_core_alpha", "sudustrial:effect_core_omega",
       "sudustrial:mining_sphere_core", "sudustrial:mining_column_core", "sudustrial:standard_core", "sudustrial:massive_core"
     ]
   },
   "criteria": {
-    "c_tnt": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:standart_tnt_tier_2"] }] } },
+    "c_tnt": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:standard_tnt_tier_2"] }] } },
     "c_jump": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:jump_boost_tnt_tier_1"] }] } },
     "c_fire_res": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:fire_resistance_tnt_tier_1"] }] } },
     "c_speed": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": ["sudustrial:speed_tnt_tier_1"] }] } },

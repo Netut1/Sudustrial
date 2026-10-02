@@ -1,0 +1,9 @@
+{
+  "parent": "sudustrial:block/template_tnt_overlay",
+  "textures": {
+    "bottom": "sudustrial:block/night_vision_tnt_bottom",
+    "overlay": "sudustrial:block/overlay_tier_4",
+    "side": "sudustrial:block/night_vision_tnt_side",
+    "top": "sudustrial:block/night_vision_tnt_top"
+  }
+}

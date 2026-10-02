@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/shulker_tnt_bottom",
+    "side": "sudustrial:block/shulker_tnt_side",
+    "top": "sudustrial:block/shulker_tnt_top"
+  }
+}

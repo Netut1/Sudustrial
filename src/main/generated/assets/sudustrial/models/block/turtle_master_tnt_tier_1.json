@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/turtle_master_tnt_bottom",
+    "side": "sudustrial:block/turtle_master_tnt_side",
+    "top": "sudustrial:block/turtle_master_tnt_top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "sudustrial:block/template_tnt_overlay",
+  "textures": {
+    "bottom": "sudustrial:block/zombie_tnt_bottom",
+    "overlay": "sudustrial:block/overlay_tier_4",
+    "side": "sudustrial:block/zombie_tnt_side",
+    "top": "sudustrial:block/zombie_tnt_top"
+  }
+}

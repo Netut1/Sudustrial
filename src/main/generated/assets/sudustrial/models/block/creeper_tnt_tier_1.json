@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/creeper_tnt_bottom",
+    "side": "sudustrial:block/creeper_tnt_side",
+    "top": "sudustrial:block/creeper_tnt_top"
+  }
+}

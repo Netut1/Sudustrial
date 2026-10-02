@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/weakness_tnt_bottom",
+    "side": "sudustrial:block/weakness_tnt_side",
+    "top": "sudustrial:block/weakness_tnt_top"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "sudustrial:block/template_tnt",
+  "textures": {
+    "bottom": "sudustrial:block/regeneration_tnt_bottom",
+    "side": "sudustrial:block/regeneration_tnt_side",
+    "top": "sudustrial:block/regeneration_tnt_top"
+  }
+}
