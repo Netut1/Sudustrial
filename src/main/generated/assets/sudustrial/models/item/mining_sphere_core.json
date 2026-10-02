@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "sudustrial:item/mining_sphere_core"
-  }
-}

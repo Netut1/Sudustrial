@@ -18,16 +18,6 @@ import net.minecraft.world.level.block.Block;
 import java.util.HashMap;
 import java.util.Map;
 
-// Всё, что касается бетонных ступеней/полублоков.
-// В 26.3 это станет ванильной фичей — чтобы вырезать, достаточно удалить:
-//   - этот файл
-//   - concrete/ConcretePowderSlabBlock.java
-//   - concrete/ConcretePowderStairBlock.java
-//   - concrete/GetVanillaColorfulBlocks.java
-//   - RegistersSlab.java
-//   - RegistersStair.java
-//   - одну строку вызова в Sudustrial.onInitialize()
-//   - ресурсы: blockstates/models/lang/recipe/loot_table для *_concrete_*
 public class ModConcreteBlocks {
     public static final Map<DyeColor, Block> CONCRETE_STAIR = new HashMap<>();
     public static final Map<DyeColor, Item> CONCRETE_STAIR_ITEM = new HashMap<>();

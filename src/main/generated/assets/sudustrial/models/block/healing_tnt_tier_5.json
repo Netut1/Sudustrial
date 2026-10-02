@@ -1,9 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt_overlay",
-  "textures": {
-    "bottom": "sudustrial:block/healing_tnt_bottom",
-    "overlay": "sudustrial:block/overlay_tier_5",
-    "side": "sudustrial:block/healing_tnt_side",
-    "top": "sudustrial:block/healing_tnt_top"
-  }
-}

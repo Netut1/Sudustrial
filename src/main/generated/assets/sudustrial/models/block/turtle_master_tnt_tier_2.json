@@ -1,9 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt_overlay",
-  "textures": {
-    "bottom": "sudustrial:block/turtle_master_tnt_bottom",
-    "overlay": "sudustrial:block/overlay_tier_2",
-    "side": "sudustrial:block/turtle_master_tnt_side",
-    "top": "sudustrial:block/turtle_master_tnt_top"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/wood_tnt_bottom",
-    "side": "sudustrial:block/wood_tnt_side",
-    "top": "sudustrial:block/wood_tnt_top"
-  }
-}

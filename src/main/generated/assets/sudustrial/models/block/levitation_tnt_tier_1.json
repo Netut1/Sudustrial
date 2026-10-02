@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/levitation_tnt_bottom",
-    "side": "sudustrial:block/levitation_tnt_side",
-    "top": "sudustrial:block/levitation_tnt_top"
-  }
-}

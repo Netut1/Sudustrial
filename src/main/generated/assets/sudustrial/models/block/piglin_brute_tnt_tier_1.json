@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/piglin_brute_tnt_bottom",
-    "side": "sudustrial:block/piglin_brute_tnt_side",
-    "top": "sudustrial:block/piglin_brute_tnt_top"
-  }
-}

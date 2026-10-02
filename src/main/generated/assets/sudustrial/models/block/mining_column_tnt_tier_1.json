@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/mining_column_tnt_bottom",
-    "side": "sudustrial:block/mining_column_tnt_side",
-    "top": "sudustrial:block/mining_column_tnt_top"
-  }
-}

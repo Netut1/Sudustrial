@@ -1,9 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt_overlay",
-  "textures": {
-    "bottom": "sudustrial:block/fire_resistance_tnt_bottom",
-    "overlay": "sudustrial:block/overlay_tier_10",
-    "side": "sudustrial:block/fire_resistance_tnt_side",
-    "top": "sudustrial:block/fire_resistance_tnt_top"
-  }
-}

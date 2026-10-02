@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/earth_tnt_bottom",
-    "side": "sudustrial:block/earth_tnt_side",
-    "top": "sudustrial:block/earth_tnt_top"
-  }
-}

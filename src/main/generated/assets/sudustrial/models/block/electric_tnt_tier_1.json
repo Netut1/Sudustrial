@@ -1,8 +1,0 @@
-{
-  "parent": "sudustrial:block/template_tnt",
-  "textures": {
-    "bottom": "sudustrial:block/electric_tnt_bottom",
-    "side": "sudustrial:block/electric_tnt_side",
-    "top": "sudustrial:block/electric_tnt_top"
-  }
-}
