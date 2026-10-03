@@ -14,5 +14,6 @@ public class SudustrialDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(SudustrialModelProvider::new);
 		pack.addProvider(SudustrialLootTableProvider::new);
 		pack.addProvider(ConcreteProvider::new);
+		pack.addProvider(SudustrialRecipeProvider::new);
 	}
 }

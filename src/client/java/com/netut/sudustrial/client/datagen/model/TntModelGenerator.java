@@ -135,14 +135,7 @@ public final class TntModelGenerator {
         );
     }
 
-    private static void buildTntModel(
-            BlockModelGenerators generator,
-            Block block,
-            String sideTexture,
-            String topTexture,
-            String bottomTexture,
-            int tier
-    ) {
+    private static void buildTntModel(BlockModelGenerators generator, Block block, String sideTexture, String topTexture, String bottomTexture, int tier) {
         TextureMapping textures = new TextureMapping()
                 .put(TextureSlot.SIDE, blockMaterial(sideTexture))
                 .put(TextureSlot.TOP, blockMaterial(topTexture))
