@@ -1,4 +1,4 @@
-package com.netut.sudustrial.concrete;
+package com.netut.sudustrial.action;
 
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;

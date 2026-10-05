@@ -1,7 +1,7 @@
-package com.netut.sudustrial.register.block.concrete;
+package com.netut.sudustrial.register.block.texture.concrete;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.concrete.GetVanillaColorfulBlocks;
+import com.netut.sudustrial.action.GetVanillaColorfulBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.Block;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ModConcreteBlocks {
+public class RegisterConcreteBlocks {
     public static final Map<DyeColor, Block> CONCRETE_STAIR = new HashMap<>();
     public static final Map<DyeColor, Item> CONCRETE_STAIR_ITEM = new HashMap<>();
     public static final Map<DyeColor, Block> CONCRETE_SLAB = new HashMap<>();

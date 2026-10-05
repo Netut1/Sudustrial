@@ -1,6 +1,6 @@
-package com.netut.sudustrial.client.datagen.concrete.generator;
+package com.netut.sudustrial.client.datagen.texture_block.concrete.generator;
 
-import com.netut.sudustrial.register.block.concrete.ModConcreteBlocks;
+import com.netut.sudustrial.register.block.texture.concrete.RegisterConcreteBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
@@ -18,10 +18,10 @@ public class ConcreteLootGenerator extends FabricBlockLootSubProvider {
 
     @Override
     public void generate() {
-        generateSelfDrops(ModConcreteBlocks.CONCRETE_STAIR);
-        generateSelfDrops(ModConcreteBlocks.CONCRETE_SLAB);
-        generateSelfDrops(ModConcreteBlocks.CONCRETE_POWDER_STAIR);
-        generateSelfDrops(ModConcreteBlocks.CONCRETE_POWDER_SLAB);
+        generateSelfDrops(RegisterConcreteBlocks.CONCRETE_STAIR);
+        generateSelfDrops(RegisterConcreteBlocks.CONCRETE_SLAB);
+        generateSelfDrops(RegisterConcreteBlocks.CONCRETE_POWDER_STAIR);
+        generateSelfDrops(RegisterConcreteBlocks.CONCRETE_POWDER_SLAB);
     }
 
     private void generateSelfDrops(Map<?, Block> blocks) {

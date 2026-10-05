@@ -3,6 +3,7 @@ package com.netut.sudustrial.register.block;
 import com.netut.sudustrial.register.block.nuclear_block.RegisterNuclearAir;
 import com.netut.sudustrial.register.block.nuclear_block.RegisterNuclearCore;
 import com.netut.sudustrial.register.block.potion_cauldron.RegisterPotionCauldron;
+import com.netut.sudustrial.register.block.texture.RegisterTextureBlocks;
 import com.netut.sudustrial.register.block.tnt.*;
 
 public class ModBlocks {
@@ -16,5 +17,6 @@ public class ModBlocks {
         RegisterNuclearAir.register();
         RegisterNuclearCore.register();
         RegisterPotionCauldron.register();
+        RegisterTextureBlocks.register();
     }
 }

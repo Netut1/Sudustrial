@@ -1,6 +1,6 @@
-package com.netut.sudustrial.client.datagen.concrete.generator;
+package com.netut.sudustrial.client.datagen.texture_block.concrete.generator;
 
-import com.netut.sudustrial.concrete.GetVanillaColorfulBlocks;
+import com.netut.sudustrial.action.GetVanillaColorfulBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancements.Advancement;

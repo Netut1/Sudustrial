@@ -1,7 +1,7 @@
-package com.netut.sudustrial.client.datagen.concrete.generator;
+package com.netut.sudustrial.client.datagen.texture_block.concrete.generator;
 
-import com.netut.sudustrial.concrete.GetVanillaColorfulBlocks;
-import com.netut.sudustrial.register.block.concrete.ModConcreteBlocks;
+import com.netut.sudustrial.action.GetVanillaColorfulBlocks;
+import com.netut.sudustrial.register.block.texture.concrete.RegisterConcreteBlocks;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -57,14 +57,14 @@ public class ConcreteRecipeGenerator extends FabricRecipeProvider {
                         GetVanillaColorfulBlocks.getVanillaConcretePowder(color);
 
                 var concreteStairs =
-                        ModConcreteBlocks.CONCRETE_STAIR.get(color);
+                        RegisterConcreteBlocks.CONCRETE_STAIR.get(color);
                 var concreteSlab =
-                        ModConcreteBlocks.CONCRETE_SLAB.get(color);
+                        RegisterConcreteBlocks.CONCRETE_SLAB.get(color);
 
                 var concretePowderStairs =
-                        ModConcreteBlocks.CONCRETE_POWDER_STAIR.get(color);
+                        RegisterConcreteBlocks.CONCRETE_POWDER_STAIR.get(color);
                 var concretePowderSlab =
-                        ModConcreteBlocks.CONCRETE_POWDER_SLAB.get(color);
+                        RegisterConcreteBlocks.CONCRETE_POWDER_SLAB.get(color);
 
                 /*
                  * CONCRETE STAIRS

@@ -1,6 +1,9 @@
-package com.netut.sudustrial.client.datagen.concrete;
+package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.concrete.generator.*;
+import com.netut.sudustrial.client.datagen.texture_block.concrete.generator.ConcreteAdvancementGenerator;
+import com.netut.sudustrial.client.datagen.texture_block.concrete.generator.ConcreteBlockModelGenerator;
+import com.netut.sudustrial.client.datagen.texture_block.concrete.generator.ConcreteLootGenerator;
+import com.netut.sudustrial.client.datagen.texture_block.concrete.generator.ConcreteRecipeGenerator;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.core.HolderLookup;
@@ -13,11 +16,11 @@ import org.jspecify.annotations.NonNull;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class ConcreteProvider implements DataProvider {
+public class TextureBlockProvider implements DataProvider {
 
     private final List<DataProvider> providers;
 
-    public ConcreteProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+    public TextureBlockProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         this.providers = List.of(
                 new ConcreteRecipeGenerator(output, registries),
                 new ConcreteAdvancementGenerator(output, registries),
@@ -28,17 +31,16 @@ public class ConcreteProvider implements DataProvider {
 
     @Override
     public @NonNull CompletableFuture<?> run(@NonNull CachedOutput output) {
-        CompletableFuture<?>[] futures = providers.stream()
-                .map(provider -> provider.run(output))
-                .toArray(CompletableFuture[]::new);
+        CompletableFuture<?>[] futures =
+                providers.stream()
+                        .map(provider -> provider.run(output))
+                        .toArray(CompletableFuture[]::new);
 
         return CompletableFuture.allOf(futures);
     }
 
     @Override
-    public @NonNull String getName() {
-        return "ConcreteProvider";
-    }
+    public @NonNull String getName() {return "TextureBlockProvider";}
 
     private static class ConcreteModelProvider extends FabricModelProvider {
 
@@ -49,16 +51,12 @@ public class ConcreteProvider implements DataProvider {
         @Override
         public void generateBlockStateModels(@NonNull BlockModelGenerators generator) {
             ConcreteBlockModelGenerator.generate(generator);
-            ConcreteItemGenerator.generate(generator);
         }
 
         @Override
-        public void generateItemModels(@NonNull ItemModelGenerators generator) {
-        }
+        public void generateItemModels(@NonNull ItemModelGenerators generator) {}
 
         @Override
-        public @NonNull String getName() {
-            return "ConcreteModelProvider";
-        }
+        public @NonNull String getName() {return "ConcreteModelProvider";}
     }
 }

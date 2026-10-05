@@ -5,7 +5,6 @@ import com.netut.sudustrial.tnt.action.explosion.optimization.NuclearExplosionMa
 import com.netut.sudustrial.tnt.action.NuclearDecayCarryOver;
 import com.netut.sudustrial.register.attachment.ModAttachments;
 import com.netut.sudustrial.register.block.ModBlocks;
-import com.netut.sudustrial.register.block.concrete.ModConcreteBlocks;
 import com.netut.sudustrial.register.creative_tabs.ModCreativeTabs;
 import com.netut.sudustrial.register.effect.ModEffects;
 import com.netut.sudustrial.register.entity.ModEntities;
@@ -30,7 +29,6 @@ public class Sudustrial implements ModInitializer {
 		// Proceed with mild caution.
 		// !!!!! Blocks → Items → Effects → Entities → CreativeTabs !!!!!
 		ModBlocks.register();
-		ModConcreteBlocks.register();
 		ModItems.register();
 		ModEffects.register();
 		ModAttachments.register();

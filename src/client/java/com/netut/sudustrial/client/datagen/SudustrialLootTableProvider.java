@@ -12,10 +12,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class SudustrialLootTableProvider extends FabricBlockLootSubProvider {
 
-    public SudustrialLootTableProvider(
-            FabricPackOutput output,
-            CompletableFuture<HolderLookup.Provider> registries
-    ) {
+    public SudustrialLootTableProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
 

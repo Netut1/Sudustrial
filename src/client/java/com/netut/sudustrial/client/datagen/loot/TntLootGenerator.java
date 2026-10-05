@@ -20,17 +20,11 @@ public final class TntLootGenerator {
         dropAll(dropSelf, NuclearTntType.values(),       RegisterNuclearTnt.NUCLEAR_TNT_BLOCKS);
     }
 
-    private static <K> void dropAll(
-            Consumer<Block> dropSelf,
-            K[] keys,
-            Map<K, Block> registry
-    ) {
+    private static <K> void dropAll(Consumer<Block> dropSelf, K[] keys, Map<K, Block> registry) {
         for (K key : keys) {
             Block block = registry.get(key);
             if (block == null) {
-                throw new IllegalStateException(
-                        "No block registered for TNT type: " + key
-                );
+                throw new IllegalStateException("No block registered for TNT type: " + key);
             }
             dropSelf.accept(block);
         }

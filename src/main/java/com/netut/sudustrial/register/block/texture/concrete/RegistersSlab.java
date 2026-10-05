@@ -1,4 +1,4 @@
-package com.netut.sudustrial.register.block.concrete;
+package com.netut.sudustrial.register.block.texture.concrete;
 
 import com.netut.sudustrial.Sudustrial;
 import com.netut.sudustrial.concrete.ConcretePowderSlabBlock;
