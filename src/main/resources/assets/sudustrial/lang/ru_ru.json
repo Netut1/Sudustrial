@@ -10,6 +10,12 @@
   "advancement.sudustrial.nuclear_era.title" : "-КАБУМ? -Да, Рико, КАБУМ",
   "advancement.sudustrial.nuclear_era.description": "Это самолет? Нет, это бомба, большая бомба.",
 
+  "soviet_architecture_tab.sudustrial": "Советская архитектура",
+  "block.sudustrial.po_2_panel": "Плита ограждения ПО-2",
+  "item.sudustrial.po_2_panel": "Плита ограждения ПО-2",
+  "block.sudustrial.po_2_corner": "Угловая стойка ПО-2",
+  "item.sudustrial.po_2_corner": "Угловая стойка ПО-2",
+
   "block.sudustrial.jump_boost_tnt_tier_1": "Динамит прыгучести",
   "item.sudustrial.jump_boost_tnt_tier_1": "Динамит прыгучести",
   "block.sudustrial.jump_boost_tnt_tier_2": "Динамит прыгучести II",

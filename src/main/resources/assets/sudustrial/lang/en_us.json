@@ -10,6 +10,12 @@
   "advancement.sudustrial.nuclear_era.title" : "-KABOOM? -Yes, Rico, KABOOM",
   "advancement.sudustrial.nuclear_era.description": "Is it a plane? No? it's a bomb? big bomb.",
 
+  "soviet_architecture_tab.sudustrial": "Soviet Architecture",
+  "block.sudustrial.po_2_panel": "PO-2 Fence Panel",
+  "item.sudustrial.po_2_panel": "PO-2 Fence Panel",
+  "block.sudustrial.po_2_corner": "PO-2 Fence Corner Post",
+  "item.sudustrial.po_2_corner": "PO-2 Fence Corner Post",
+
   "block.sudustrial.jump_boost_tnt_tier_1": "Jump Boost TNT",
   "item.sudustrial.jump_boost_tnt_tier_1": "Jump Boost TNT",
   "block.sudustrial.jump_boost_tnt_tier_2": "Jump Boost TNT II",
