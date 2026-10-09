@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [ { "type": "minecraft:item", "name": "sudustrial:po_2_panel" } ],
+      "conditions": [
+        { "condition": "minecraft:survives_explosion" },
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "sudustrial:po_2_panel",
+          "properties": { "column": "0", "row": "2" }
+        }
+      ]
+    }
+  ]
+}

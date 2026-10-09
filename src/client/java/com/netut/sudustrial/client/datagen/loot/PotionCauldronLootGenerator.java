@@ -16,7 +16,6 @@ public final class PotionCauldronLootGenerator {
     public static void generate(BiConsumer<Block, LootTable.Builder> add) {
         Block cauldron = RegisterPotionCauldron.POTION_CAULDRON_BLOCK;
 
-        add.accept(cauldron, LootTable.lootTable().withPool(
-                LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(cauldron))));
+        add.accept(cauldron, LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(cauldron))));
     }
 }

@@ -21,6 +21,7 @@ public class SudustrialModelProvider extends FabricModelProvider {
         TntModelGenerator.generate(generator);
         NuclearModelGenerator.generate(generator);
         PotionCauldronModelGenerator.generate(generator);
+        Po2ModelGenerator.generate(generator);
     }
 
     @Override

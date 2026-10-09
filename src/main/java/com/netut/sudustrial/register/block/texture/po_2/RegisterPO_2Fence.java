@@ -1,7 +1,6 @@
 package com.netut.sudustrial.register.block.texture.po_2;
 
 import com.netut.sudustrial.Sudustrial;
-import com.netut.sudustrial.texture_block.soviet_architecture.po_2.Po2CornerBlock;
 import com.netut.sudustrial.texture_block.soviet_architecture.po_2.Po2PanelBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -15,24 +14,16 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
-import java.util.function.Function;
-
-
-public class RegisterPO_2Fence {
+public final class RegisterPO_2Fence {
     public static Block PO_2_PANEL_BLOCK;
     public static Item PO_2_PANEL_ITEM;
-    public static Block PO_2_CORNER_BLOCK;
+
+    private RegisterPO_2Fence() {}
 
     public static void register() {
-        PO_2_PANEL_BLOCK = registerBlock("po_2_panel", Po2PanelBlock::new);
-        PO_2_PANEL_ITEM = registerItem(PO_2_PANEL_BLOCK);
+        Identifier blockId = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "po_2_panel");
 
-        PO_2_CORNER_BLOCK = registerBlock("po_2_corner", Po2CornerBlock::new);
-    }
-
-    private static Block registerBlock(String path, Function<BlockBehaviour.Properties, Block> factory) {
-        Identifier loc = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, path);
-        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, loc);
+        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, blockId);
 
         BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE)
@@ -41,14 +32,18 @@ public class RegisterPO_2Fence {
                 .noOcclusion()
                 .setId(blockKey);
 
-        return Registry.register(BuiltInRegistries.BLOCK, blockKey, factory.apply(properties));
-    }
+        PO_2_PANEL_BLOCK = Registry.register(
+                BuiltInRegistries.BLOCK,
+                blockKey,
+                new Po2PanelBlock(properties)
+        );
 
-    private static Item registerItem(Block block) {
-        Identifier loc = Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "po_2_panel");
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, loc);
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, blockId);
 
-        Item.Properties properties = new Item.Properties().setId(itemKey);
-        return Registry.register(BuiltInRegistries.ITEM, itemKey, new BlockItem(block, properties));
+        PO_2_PANEL_ITEM = Registry.register(
+                BuiltInRegistries.ITEM,
+                itemKey,
+                new BlockItem(PO_2_PANEL_BLOCK, new Item.Properties().setId(itemKey))
+        );
     }
 }
