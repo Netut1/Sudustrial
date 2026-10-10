@@ -1,6 +1,10 @@
 package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.model.*;
+import com.netut.sudustrial.client.datagen.model.cauldron.PotionCauldronModelGenerator;
+import com.netut.sudustrial.client.datagen.model.po_2.Po2ModelGenerator;
+import com.netut.sudustrial.client.datagen.model.tnt.CoreItemModelGenerator;
+import com.netut.sudustrial.client.datagen.model.tnt.NuclearModelGenerator;
+import com.netut.sudustrial.client.datagen.model.tnt.TntModelGenerator;
 import com.netut.sudustrial.register.block.potion_cauldron.RegisterPotionCauldron;
 import com.netut.sudustrial.register.item.nuclear_antidote.RegisterNuclearAntidote;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;

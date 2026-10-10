@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.model;
+package com.netut.sudustrial.client.datagen.model.tnt;
 
 import com.netut.sudustrial.register.item.core.RegisterCore;
 import net.minecraft.client.data.models.ItemModelGenerators;

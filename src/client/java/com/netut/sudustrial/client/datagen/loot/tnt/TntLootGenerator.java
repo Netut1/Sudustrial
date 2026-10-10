@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.loot;
+package com.netut.sudustrial.client.datagen.loot.tnt;
 
 import com.netut.sudustrial.register.block.tnt.*;
 import com.netut.sudustrial.tnt.type.block.*;

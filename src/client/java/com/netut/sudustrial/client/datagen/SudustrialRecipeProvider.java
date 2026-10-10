@@ -1,6 +1,10 @@
 package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.recipe.*;
+import com.netut.sudustrial.client.datagen.recipe.cauldron.PotionCauldronRecipeGenerator;
+import com.netut.sudustrial.client.datagen.recipe.po_2.Po2RecipeGenerator;
+import com.netut.sudustrial.client.datagen.recipe.tnt.CoreItemRecipeGenerator;
+import com.netut.sudustrial.client.datagen.recipe.tnt.NuclearRecipeGenerator;
+import com.netut.sudustrial.client.datagen.recipe.tnt.TntRecipeGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -35,6 +39,7 @@ public class SudustrialRecipeProvider extends FabricRecipeProvider {
             PotionCauldronRecipeGenerator.generate(this, output);
             CoreItemRecipeGenerator.generate(this,  output);
             NuclearRecipeGenerator.generate(this, output);
+            Po2RecipeGenerator.generate(this, output);
         }
     }
 }

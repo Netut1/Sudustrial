@@ -1,8 +1,8 @@
 package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.loot.NuclearLootGenerator;
-import com.netut.sudustrial.client.datagen.loot.PotionCauldronLootGenerator;
-import com.netut.sudustrial.client.datagen.loot.TntLootGenerator;
+import com.netut.sudustrial.client.datagen.loot.tnt.NuclearLootGenerator;
+import com.netut.sudustrial.client.datagen.loot.cauldron.PotionCauldronLootGenerator;
+import com.netut.sudustrial.client.datagen.loot.tnt.TntLootGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;

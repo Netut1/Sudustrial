@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.recipe;
+package com.netut.sudustrial.client.datagen.recipe.tnt;
 
 import net.minecraft.advancements.triggers.Criterion;
 import net.minecraft.advancements.triggers.InventoryChangeTrigger;

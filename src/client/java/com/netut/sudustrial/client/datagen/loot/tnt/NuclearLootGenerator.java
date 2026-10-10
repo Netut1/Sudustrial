@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.loot;
+package com.netut.sudustrial.client.datagen.loot.tnt;
 
 import com.netut.sudustrial.register.block.nuclear_block.RegisterNuclearCore;
 import net.minecraft.world.level.block.Block;

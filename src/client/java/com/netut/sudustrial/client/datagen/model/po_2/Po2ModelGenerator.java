@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.model;
+package com.netut.sudustrial.client.datagen.model.po_2;
 
 import com.netut.sudustrial.Sudustrial;
 import com.netut.sudustrial.register.block.texture.po_2.RegisterPO_2Fence;

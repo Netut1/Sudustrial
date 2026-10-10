@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.model;
+package com.netut.sudustrial.client.datagen.model.cauldron;
 
 import com.netut.sudustrial.potion_cauldron.block.PotionCauldronBlock;
 import com.netut.sudustrial.register.block.potion_cauldron.RegisterPotionCauldron;

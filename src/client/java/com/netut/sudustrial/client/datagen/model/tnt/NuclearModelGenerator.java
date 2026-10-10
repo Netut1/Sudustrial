@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.model;
+package com.netut.sudustrial.client.datagen.model.tnt;
 
 import com.netut.sudustrial.register.block.nuclear_block.RegisterNuclearAir;
 import com.netut.sudustrial.register.block.nuclear_block.RegisterNuclearCore;

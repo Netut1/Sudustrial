@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.loot;
+package com.netut.sudustrial.client.datagen.loot.cauldron;
 
 import com.netut.sudustrial.register.block.potion_cauldron.RegisterPotionCauldron;
 import net.minecraft.world.level.block.Block;

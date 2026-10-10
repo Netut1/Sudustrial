@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -226,12 +227,49 @@ public class Po2PanelBlock extends Block {
     @Override
     @NonNull
     protected BlockState updateShape(@NonNull BlockState state, @NonNull LevelReader level, @NonNull ScheduledTickAccess scheduledTickAccess, @NonNull BlockPos pos, @NonNull Direction direction, @NonNull BlockPos neighborPos, @NonNull BlockState neighborState, @NonNull RandomSource random) {
-        if (!isIntact(state, direction, neighborState)) {return Blocks.AIR.defaultBlockState();}
-
-        if (direction.getAxis().isHorizontal()) {
-            return withConnections(level, pos, state);
-        }
+        if (!isIntact(state, direction, neighborState)) {scheduledTickAccess.scheduleTick(pos, this, 1);}
+        if (direction.getAxis().isHorizontal()) {return withConnections(level, pos, state);}
         return super.updateShape(state, level, scheduledTickAccess, pos, direction, neighborPos, neighborState, random);
+    }
+
+    @Override
+    protected void tick(@NonNull BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, @NonNull RandomSource random) {
+        Direction right = Po2Fence.rightOf(state.getValue(FACING));
+
+        for (Direction direction : new Direction[]{right, right.getOpposite(), Direction.UP, Direction.DOWN}) {
+            if (!isIntact(state, direction, level.getBlockState(pos.relative(direction)))) {
+                collapse(level, pos, state);
+                return;
+            }
+        }
+    }
+
+    private void collapse(ServerLevel level, BlockPos pos, BlockState state) {
+        BlockPos lootPos = null;
+
+        for (int col = 0; col < Po2Fence.WIDTH; col++) {
+            for (int row = 0; row < Po2Fence.HEIGHT; row++) {
+                BlockPos p = cellPos(pos, state, col, row);
+                if (!isSameCell(level.getBlockState(p), state, col, row)) {continue;}
+
+                if (col == 0 && row == Po2Fence.HEIGHT - 1) {
+                    lootPos = p;
+                } else {
+                    level.setBlock(p, Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
+                }
+            }
+        }
+
+        if (lootPos != null) {
+            level.destroyBlock(lootPos, true);
+        }
+    }
+
+    private boolean isSameCell(BlockState other, BlockState reference, int col, int row) {
+        return other.is(this)
+                && other.getValue(FACING) == reference.getValue(FACING)
+                && other.getValue(COLUMN) == col
+                && other.getValue(ROW) == row;
     }
 
     private static boolean isIntact(BlockState self, Direction direction, BlockState neighbor) {
