@@ -1,10 +1,7 @@
 package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.recipe.cauldron.PotionCauldronRecipeGenerator;
-import com.netut.sudustrial.client.datagen.recipe.po_2.Po2RecipeGenerator;
-import com.netut.sudustrial.client.datagen.recipe.tnt.CoreItemRecipeGenerator;
-import com.netut.sudustrial.client.datagen.recipe.tnt.NuclearRecipeGenerator;
-import com.netut.sudustrial.client.datagen.recipe.tnt.TntRecipeGenerator;
+import com.netut.sudustrial.client.datagen.core.DatagenFeature;
+import com.netut.sudustrial.client.datagen.core.Features;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -15,7 +12,6 @@ import org.jspecify.annotations.NonNull;
 import java.util.concurrent.CompletableFuture;
 
 public class SudustrialRecipeProvider extends FabricRecipeProvider {
-
     public SudustrialRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
@@ -26,7 +22,9 @@ public class SudustrialRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    public @NonNull String getName() { return "SudustrialRecipeProvider"; }
+    public @NonNull String getName() {
+        return "SudustrialRecipeProvider";
+    }
 
     private static class Provider extends RecipeProvider {
         private Provider(HolderLookup.Provider registries, RecipeOutput output) {
@@ -35,11 +33,9 @@ public class SudustrialRecipeProvider extends FabricRecipeProvider {
 
         @Override
         public void buildRecipes() {
-            TntRecipeGenerator.generate(this, output);
-            PotionCauldronRecipeGenerator.generate(this, output);
-            CoreItemRecipeGenerator.generate(this,  output);
-            NuclearRecipeGenerator.generate(this, output);
-            Po2RecipeGenerator.generate(this, output);
+            for (DatagenFeature feature : Features.ALL) {
+                feature.recipes(this, output);
+            }
         }
     }
 }

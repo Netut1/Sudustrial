@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.Optional;
 
-import static com.netut.sudustrial.client.datagen.model.ModelUtils.id;
+import static com.netut.sudustrial.client.datagen.util.DatagenUtils.id;
 
 public final class DecorativeBlockModelGenerator {
 

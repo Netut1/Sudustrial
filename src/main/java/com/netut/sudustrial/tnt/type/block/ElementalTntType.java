@@ -10,7 +10,7 @@ import org.jspecify.annotations.NonNull;
 
 public enum ElementalTntType implements TntVariant {
     // Конструктор: (Имя ID, Уровень/Сила, Блок для твердых, Блок для жидкостей, Блок для воздуха)
-    FFIRE_TIER_1("fire_tnt_tier_1", 1, Blocks.NETHERRACK, Blocks.LAVA, Blocks.FIRE),
+    FIRE_TIER_1("fire_tnt_tier_1", 1, Blocks.NETHERRACK, Blocks.LAVA, Blocks.FIRE),
     FIRE_TIER_2("fire_tnt_tier_2", 2, Blocks.NETHERRACK, Blocks.LAVA, Blocks.FIRE),
     FIRE_TIER_3("fire_tnt_tier_3", 3, Blocks.NETHERRACK, Blocks.LAVA, Blocks.FIRE),
     FIRE_TIER_4("fire_tnt_tier_4", 4, Blocks.NETHERRACK, Blocks.LAVA, Blocks.FIRE),

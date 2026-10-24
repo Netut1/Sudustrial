@@ -1,6 +1,6 @@
 package com.netut.sudustrial.client.datagen.texture_block.concrete.generator;
 
-import com.netut.sudustrial.register.block.texture.concrete.RegisterConcreteBlocks;
+import com.netut.sudustrial.register.block.decorative.concrete.RegisterConcreteBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
