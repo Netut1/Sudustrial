@@ -1,23 +1,36 @@
 package com.netut.sudustrial.client.datagen.feature.tnt;
 
-import com.netut.sudustrial.client.datagen.core.DatagenFeature;
-import net.minecraft.client.data.models.BlockModelGenerators;
+import com.netut.sudustrial.client.datagen.core.DefinitionFeature;
+import com.netut.sudustrial.client.datagen.core.block.BlockDefinition;
+import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 
-public final class TntFeature implements DatagenFeature {
+import java.util.List;
+import java.util.function.Consumer;
+
+public final class TntFeature extends DefinitionFeature {
+    private TntCatalog catalog;
+
     @Override
-    public void blockModels(BlockModelGenerators generator) {
-        ModelGenerator.generate(generator, TntCatalog.load());
+    protected List<BlockDefinition> blocks() {
+        return TntBlocks.definitions(catalog());
     }
 
     @Override
     public void recipes(RecipeProvider provider, RecipeOutput output) {
-        RecipeGenerator.generate(provider, output, TntCatalog.load());
+        RecipeGenerator.generate(provider, output, catalog());
     }
 
     @Override
-    public void loot(LootSink loot) {
-        LootGenerator.generate(loot, TntCatalog.load());
+    public void advancements(Consumer<AdvancementHolder> consumer) {
+        TntStages.generate(consumer, catalog());
+    }
+
+    private TntCatalog catalog() {
+        if (catalog == null) {
+            catalog = TntCatalog.load();
+        }
+        return catalog;
     }
 }

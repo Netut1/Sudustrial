@@ -15,8 +15,8 @@ import net.minecraft.resources.Identifier;
 import java.util.Optional;
 import java.util.Arrays;
 
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.blockMaterial;
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.id;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.blockMaterial;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.id;
 
 final class ModelGenerator {
     private static final String SIDE_TEXTURE = "po-2_side_feet";

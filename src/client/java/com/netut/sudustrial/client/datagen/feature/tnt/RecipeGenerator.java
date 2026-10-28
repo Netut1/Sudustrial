@@ -1,5 +1,6 @@
 package com.netut.sudustrial.client.datagen.feature.tnt;
 
+import com.netut.sudustrial.client.datagen.core.common.RecipeVariants;
 import com.netut.sudustrial.tnt.type.block.TntType;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -7,10 +8,10 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
-
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.has;
 
 final class RecipeGenerator {
     private static final int MAX_TIER = 10;
@@ -21,15 +22,10 @@ final class RecipeGenerator {
 
     static void generate(RecipeProvider provider, RecipeOutput output, TntCatalog catalog) {
         checkFamilies(catalog);
-
-        generateStandard(provider, output, catalog);
-
-        for (TntFamilies.Family family : TntFamilies.ALL) {
-            generateTierOne(provider, output, catalog, family);
-            generateHigherTiers(provider, output, catalog, family);
-        }
-
-        generateParty(provider, output, catalog);
+        RecipeVariants recipes = new RecipeVariants(provider, output, RecipeCategory.REDSTONE);
+        generateStandard(recipes, catalog);
+        for (TntFamilies.Family family : TntFamilies.ALL) {generateFamily(recipes, catalog, family);}
+        generateParty(recipes, catalog);
     }
 
     private static void checkFamilies(TntCatalog catalog) {
@@ -37,9 +33,7 @@ final class RecipeGenerator {
         registered.removeAll(NON_FAMILY);
 
         Set<String> described = new TreeSet<>();
-        for (TntFamilies.Family family : TntFamilies.ALL) {
-            described.add(family.base());
-        }
+        for (TntFamilies.Family family : TntFamilies.ALL) {described.add(family.base());}
 
         Set<String> withoutRecipe = new TreeSet<>(registered);
         withoutRecipe.removeAll(described);
@@ -48,61 +42,32 @@ final class RecipeGenerator {
         unknown.removeAll(registered);
 
         if (!withoutRecipe.isEmpty() || !unknown.isEmpty()) {
-            throw new IllegalStateException(
-                    "TNT families mismatch. Registered but no recipe data: " + withoutRecipe
-                            + "; listed but not registered: " + unknown);
+            throw new IllegalStateException("TNT families mismatch. Registered but no recipe data: " + withoutRecipe + "; listed but not registered: " + unknown);
         }
     }
 
-    private static void generateStandard(RecipeProvider provider, RecipeOutput output, TntCatalog catalog) {
-        for (int tier = 2; tier <= MAX_TIER; tier++) {
-            provider.shaped(RecipeCategory.REDSTONE, catalog.item(STANDARD, tier), 1)
-                    .group("tnt")
-                    .pattern("###")
-                    .pattern("###")
-                    .pattern("###")
-                    .define('#', Items.TNT)
-                    .unlockedBy("has_tnt", has(Items.TNT))
-                    .save(output);
+    private static void generateStandard(RecipeVariants recipes, TntCatalog catalog) {
+        List<Item> tiers = new ArrayList<>();
+        tiers.add(Items.TNT);
+        tiers.addAll(tiers(catalog, STANDARD, 2));
+
+        recipes.chain("tnt", tiers);
+    }
+
+    private static void generateFamily(RecipeVariants recipes, TntCatalog catalog, TntFamilies.Family family) {
+        recipes.ring(family.base(), catalog.item(family.base(), 1), family.ingredient(), Items.TNT);
+        recipes.chain(family.base(), tiers(catalog, family.base(), 1));
+    }
+
+    private static void generateParty(RecipeVariants recipes, TntCatalog catalog) {
+        recipes.ring("party_tnt", catalog.item(TntType.PARTY), Items.EGG, Items.TNT);
+    }
+
+    private static List<Item> tiers(TntCatalog catalog, String base, int firstTier) {
+        List<Item> items = new ArrayList<>();
+        for (int tier = firstTier; tier <= MAX_TIER; tier++) {
+            items.add(catalog.item(base, tier));
         }
-    }
-
-    private static void generateTierOne(RecipeProvider provider, RecipeOutput output, TntCatalog catalog, TntFamilies.Family family) {
-        provider.shaped(RecipeCategory.REDSTONE, catalog.item(family.base(), 1), 1)
-                .group(family.base())
-                .pattern("###")
-                .pattern("#&#")
-                .pattern("###")
-                .define('#', family.ingredient())
-                .define('&', Items.TNT)
-                .unlockedBy("has_" + family.id() + "_ingredient", has(family.ingredient()))
-                .save(output);
-    }
-
-    private static void generateHigherTiers(RecipeProvider provider, RecipeOutput output, TntCatalog catalog, TntFamilies.Family family) {
-        for (int tier = 2; tier <= MAX_TIER; tier++) {
-            Item previous = catalog.item(family.base(), tier - 1);
-
-            provider.shaped(RecipeCategory.REDSTONE, catalog.item(family.base(), tier), 1)
-                    .group(family.base())
-                    .pattern("###")
-                    .pattern("###")
-                    .pattern("###")
-                    .define('#', previous)
-                    .unlockedBy("has_" + family.id() + "_tier_" + (tier - 1), has(previous))
-                    .save(output);
-        }
-    }
-
-    private static void generateParty(RecipeProvider provider, RecipeOutput output, TntCatalog catalog) {
-        provider.shaped(RecipeCategory.REDSTONE, catalog.item(TntType.PARTY), 1)
-                .group("party_tnt")
-                .pattern("###")
-                .pattern("#&#")
-                .pattern("###")
-                .define('#', Items.EGG)
-                .define('&', Items.TNT)
-                .unlockedBy("has_egg", has(Items.EGG))
-                .save(output);
+        return items;
     }
 }

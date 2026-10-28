@@ -1,6 +1,7 @@
 package com.netut.sudustrial.client.datagen.feature.tnt.nuclear;
 
 import com.netut.sudustrial.client.datagen.core.Registered;
+import com.netut.sudustrial.client.datagen.core.common.RecipeVariants;
 import com.netut.sudustrial.register.block.tnt.RegisterEffectTnt;
 import com.netut.sudustrial.register.block.tnt.RegisterElementalTnt;
 import com.netut.sudustrial.register.block.tnt.RegisterMiningTnt;
@@ -12,7 +13,6 @@ import com.netut.sudustrial.tnt.type.block.MiningTntType;
 import com.netut.sudustrial.tnt.type.block.SpawnerTntType;
 import com.netut.sudustrial.tnt.type.block.TntType;
 import com.netut.sudustrial.tnt.type.item.CoreItemType;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -21,7 +21,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.has;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.has;
 
 final class CoreRecipeGenerator {
     private static final String CORE_GROUP = "atomic_tnt_cores";
@@ -29,7 +29,9 @@ final class CoreRecipeGenerator {
     private CoreRecipeGenerator() {}
 
     static void generate(RecipeProvider provider, RecipeOutput output) {
-        ring(provider, output, CoreItemType.ELEMENTAL_CORE,
+        RecipeVariants recipes = new RecipeVariants(provider, output, RecipeCategory.REDSTONE);
+
+        recipes.grid(CORE_GROUP, Cores.of(CoreItemType.ELEMENTAL_CORE),
                 elemental(ElementalTntType.FIRE_TIER_10),
                 elemental(ElementalTntType.WOOD_TIER_10),
                 elemental(ElementalTntType.SWAMP_TIER_10),
@@ -40,7 +42,7 @@ final class CoreRecipeGenerator {
                 elemental(ElementalTntType.OCEAN_TIER_10),
                 elemental(ElementalTntType.ICE_TIER_10));
 
-        ring(provider, output, CoreItemType.SPAWNER_CORE,
+        recipes.grid(CORE_GROUP, Cores.of(CoreItemType.SPAWNER_CORE),
                 spawner(SpawnerTntType.ZOMBIE_TIER_10),
                 spawner(SpawnerTntType.CREEPER_TIER_10),
                 spawner(SpawnerTntType.SHEEP_TIER_10),
@@ -51,7 +53,7 @@ final class CoreRecipeGenerator {
                 spawner(SpawnerTntType.CHICKEN_TIER_10),
                 spawner(SpawnerTntType.BEE_TIER_10));
 
-        ring(provider, output, CoreItemType.EFFECT_CORE_ALPHA,
+        recipes.grid(CORE_GROUP, Cores.of(CoreItemType.EFFECT_CORE_ALPHA),
                 effect(EffectTntType.JUMP_BOOST_TIER_10),
                 effect(EffectTntType.FIRE_RESISTANCE_TIER_10),
                 effect(EffectTntType.SPEED_TIER_10),
@@ -62,7 +64,7 @@ final class CoreRecipeGenerator {
                 effect(EffectTntType.STRENGTH_TIER_10),
                 effect(EffectTntType.WEAKNESS_TIER_10));
 
-        ring(provider, output, CoreItemType.EFFECT_CORE_OMEGA,
+        recipes.grid(CORE_GROUP, Cores.of(CoreItemType.EFFECT_CORE_OMEGA),
                 effect(EffectTntType.INVISIBILITY_TIER_10),
                 effect(EffectTntType.TURTLE_MASTER_TIER_10),
                 effect(EffectTntType.HEALING_TIER_10),
@@ -73,31 +75,10 @@ final class CoreRecipeGenerator {
                 effect(EffectTntType.LEVITATION_TIER_10),
                 effect(EffectTntType.WITHER_TIER_10));
 
-        // Остальные ядра: переплавка одного TNT десятого уровня
         smelt(provider, output, mining(MiningTntType.SPHERE_TIER_10), CoreItemType.MINING_SPHERE_CORE);
         smelt(provider, output, mining(MiningTntType.COLUMN_TIER_10), CoreItemType.MINING_COLUMN_CORE);
         smelt(provider, output, standard(TntType.STANDARD_TIER_10), CoreItemType.STANDARD_CORE);
         smelt(provider, output, standard(TntType.MASSIVE_TIER_10), CoreItemType.MASSIVE_CORE);
-    }
-
-    private static void ring(RecipeProvider provider, RecipeOutput output, CoreItemType result, Item... ingredients) {
-        if (ingredients.length != 9) {
-            throw new IllegalArgumentException("Core recipe needs 9 ingredients: " + result);
-        }
-
-        var builder = provider.shaped(RecipeCategory.REDSTONE, Cores.of(result), 1)
-                .group(CORE_GROUP)
-                .pattern("ABC")
-                .pattern("DEF")
-                .pattern("GHI");
-
-        for (int i = 0; i < ingredients.length; i++) {
-            builder.define((char) ('A' + i), ingredients[i]);
-        }
-
-        Item first = ingredients[0];
-        builder.unlockedBy("has_" + BuiltInRegistries.ITEM.getKey(first).getPath(), has(first))
-                .save(output);
     }
 
     private static void smelt(RecipeProvider provider, RecipeOutput output, Item ingredient, CoreItemType result) {

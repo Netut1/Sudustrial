@@ -1,22 +1,24 @@
 package com.netut.sudustrial.client.datagen.feature.potion_cauldron;
 
-import com.netut.sudustrial.client.datagen.core.DatagenFeature;
+import com.netut.sudustrial.client.datagen.core.DefinitionFeature;
+import com.netut.sudustrial.client.datagen.core.item.ItemDefinition;
 import com.netut.sudustrial.register.block.potion_cauldron.RegisterPotionCauldron;
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 
-public final class PotionCauldronFeature implements DatagenFeature {
+import java.util.List;
+
+public final class PotionCauldronFeature extends DefinitionFeature {
     @Override
-    public void blockModels(BlockModelGenerators generator) {
-        ModelGenerator.generate(generator);
+    protected List<ItemDefinition> items() {
+        return List.of(ItemDefinition.flat(RegisterPotionCauldron.POTION_CAULDRON_ITEM));
     }
 
     @Override
-    public void itemModels(ItemModelGenerators generator) {
-        generator.generateFlatItem(RegisterPotionCauldron.POTION_CAULDRON_ITEM, ModelTemplates.FLAT_ITEM);
+    public void blockModels(BlockModelGenerators generator) {
+        super.blockModels(generator);
+        ModelGenerator.generate(generator);
     }
 
     @Override
@@ -26,6 +28,7 @@ public final class PotionCauldronFeature implements DatagenFeature {
 
     @Override
     public void loot(LootSink loot) {
-        LootGenerator.generate(loot);
+        super.loot(loot);
+        loot.dropSelf(RegisterPotionCauldron.POTION_CAULDRON_BLOCK);
     }
 }

@@ -10,10 +10,9 @@ public class SudustrialDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(@NonNull FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(SudustrialModelProvider::new);
-		pack.addProvider(SudustrialLootTableProvider::new);
-		pack.addProvider(TextureBlockProvider::new);
-		pack.addProvider(SudustrialRecipeProvider::new);
-		pack.addProvider(SudustrialAdvancementProvider::new);
+		pack.addProvider(ModelProvider::new);
+		pack.addProvider(LootTableProvider::new);
+		pack.addProvider(RecipeProvider::new);
+		pack.addProvider(AdvancementProvider::new);
 	}
 }

@@ -6,7 +6,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.has;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.has;
 
 final class RecipeGenerator {
     private RecipeGenerator() {}

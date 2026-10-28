@@ -6,7 +6,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 
-import static com.netut.sudustrial.client.datagen.util.DatagenUtils.id;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.id;
 
 final class ModelGenerator {
     private ModelGenerator() {}
