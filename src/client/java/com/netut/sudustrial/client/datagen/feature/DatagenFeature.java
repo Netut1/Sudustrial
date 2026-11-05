@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.core;
+package com.netut.sudustrial.client.datagen.feature;
 
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.client.data.models.BlockModelGenerators;

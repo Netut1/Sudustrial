@@ -1,6 +1,5 @@
 package com.netut.sudustrial.client.datagen.core.block;
 
-import com.netut.sudustrial.Sudustrial;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplate;
@@ -13,7 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.Optional;
 
-import static com.netut.sudustrial.client.datagen.core.DatagenUtils.id;
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.blockId;
 
 public final class BlockModelGenerator {
     private static final TextureSlot NORTH = TextureSlot.create("north");
@@ -22,61 +21,28 @@ public final class BlockModelGenerator {
     private static final TextureSlot WEST = TextureSlot.create("west");
     private static final TextureSlot OVERLAY = TextureSlot.create("overlay");
 
-    private static final ModelTemplate FULL_BLOCK_TEMPLATE =
-            new ModelTemplate(
-                    Optional.of(id("block/template_decorative_full")),
-                    Optional.empty(),
-                    TextureSlot.BOTTOM,
-                    TextureSlot.TOP,
-                    NORTH,
-                    EAST,
-                    SOUTH,
-                    WEST,
-                    TextureSlot.PARTICLE
-            );
-    private static final ModelTemplate FULL_BLOCK_OVERLAY_TEMPLATE =
-            new ModelTemplate(
-                    Optional.of(id("block/template_decorative_full_overlay")),
-                    Optional.empty(),
-                    TextureSlot.BOTTOM,
-                    TextureSlot.TOP,
-                    NORTH,
-                    EAST,
-                    SOUTH,
-                    WEST,
-                    TextureSlot.PARTICLE,
-                    OVERLAY
-            );
-
-    private static final ModelTemplate FULL_BLOCK_TRANSLUCENT_TEMPLATE =
-            new ModelTemplate(
-                    Optional.of(id("block/template_decorative_full_translucent")),
-                    Optional.empty(),
-                    TextureSlot.BOTTOM,
-                    TextureSlot.TOP,
-                    NORTH,
-                    EAST,
-                    SOUTH,
-                    WEST,
-                    TextureSlot.PARTICLE
-            );
+    private static final ModelTemplate FULL_BLOCK_TEMPLATE = fullBlockTemplate("template_decorative_full", false);
+    private static final ModelTemplate FULL_BLOCK_OVERLAY_TEMPLATE = fullBlockTemplate("template_decorative_full_overlay", true);
+    private static final ModelTemplate FULL_BLOCK_TRANSLUCENT_TEMPLATE = fullBlockTemplate("template_decorative_full_translucent", false);
 
     private BlockModelGenerator() {}
 
     public static void generate(BlockModelGenerators generator, BlockDefinition definition) {
-        Block block = definition.block();
-        validateOptions(definition);
-        switch (definition.type()) {
-            case FULL_BLOCK -> generateFullBlock(generator, block, definition);
-            case STAIRS -> generateStairs(generator, block, definition);
-            case SLAB -> generateSlab(generator, block, definition);
-            case CUSTOM -> generateCustom(generator, block, definition);
+        Identifier itemModel = switch (definition.type()) {
+            case FULL_BLOCK -> generateFullBlock(generator, definition);
+            case STAIRS -> generateStairs(generator, definition);
+            case SLAB -> generateSlab(generator, definition);
+            case CUSTOM -> generateCustom(generator, definition);
+        };
+
+        if (definition.hasItem()) {
+            generator.registerSimpleItemModel(definition.block(), itemModel);
         }
     }
 
-    private static void generateFullBlock(BlockModelGenerators generator, Block block, BlockDefinition definition) {
+    private static Identifier generateFullBlock(BlockModelGenerators generator, BlockDefinition definition) {
         BlockTextures textures = definition.requireTextures();
-        Identifier modelId = id("block/" + definition.id());
+        Identifier model = blockId(definition.block());
 
         TextureMapping mapping = new TextureMapping()
                 .put(TextureSlot.BOTTOM, material(textures.bottom()))
@@ -99,60 +65,48 @@ public final class BlockModelGenerator {
             template = FULL_BLOCK_TEMPLATE;
         }
 
-        template.create(modelId, mapping, generator.modelOutput);
-        generator.blockStateOutput.accept(MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(modelId)));
-        registerItem(generator, block, modelId, definition);
+        template.create(model, mapping, generator.modelOutput);
+        generator.blockStateOutput.accept(MultiVariantGenerator.dispatch(definition.block(), BlockModelGenerators.plainVariant(model)));
+        return model;
     }
 
-    private static void generateStairs(BlockModelGenerators generator, Block block, BlockDefinition definition) {
-        BlockTextures textures = definition.requireTextures();
+    private static Identifier generateStairs(BlockModelGenerators generator, BlockDefinition definition) {
+        Block block = definition.block();
+        Identifier straight = blockId(block);
+        String stem = withoutSuffix(definition.id(), "_stairs");
+        Identifier inner = sibling(straight, stem + "_inner_stairs");
+        Identifier outer = sibling(straight, stem + "_outer_stairs");
 
-        validateVanillaSideTextures(definition);
-        Identifier stairsModel = id("block/" + definition.id());
-        Identifier innerStairsModel = id("block/" + definition.id().replace("_stairs", "") + "_inner_stairs");
-        Identifier outerStairsModel = id("block/" + definition.id().replace("_stairs", "") + "_outer_stairs");
+        TextureMapping mapping = stairSlabMapping(definition.requireTextures());
+        ModelTemplates.STAIRS_STRAIGHT.create(straight, mapping, generator.modelOutput);
+        ModelTemplates.STAIRS_INNER.create(inner, mapping, generator.modelOutput);
+        ModelTemplates.STAIRS_OUTER.create(outer, mapping, generator.modelOutput);
 
-        TextureMapping mapping = stairSlabMapping(textures);
-
-        ModelTemplates.STAIRS_STRAIGHT.create(stairsModel, mapping, generator.modelOutput);
-        ModelTemplates.STAIRS_INNER.create(innerStairsModel, mapping, generator.modelOutput);
-        ModelTemplates.STAIRS_OUTER.create(outerStairsModel, mapping, generator.modelOutput);
-
-        generator.blockStateOutput.accept(BlockModelGenerators.createStairs(block, BlockModelGenerators.plainVariant(innerStairsModel),
-                BlockModelGenerators.plainVariant(stairsModel), BlockModelGenerators.plainVariant(outerStairsModel)));
-        registerItem(generator, block, stairsModel, definition);
+        generator.blockStateOutput.accept(BlockModelGenerators.createStairs(block, BlockModelGenerators.plainVariant(inner),
+                BlockModelGenerators.plainVariant(straight), BlockModelGenerators.plainVariant(outer)));
+        return straight;
     }
 
-    private static void generateSlab(BlockModelGenerators generator, Block block, BlockDefinition definition) {
-        BlockTextures textures = definition.requireTextures();
+    private static Identifier generateSlab(BlockModelGenerators generator, BlockDefinition definition) {
+        Block block = definition.block();
+        Identifier bottom = blockId(block);
+        Identifier top = sibling(bottom, definition.id() + "_top");
+        Identifier full = definition.requireBaseModel();
 
-        validateVanillaSideTextures(definition);
-        String baseModelId = requireBaseModelId(definition);
-        Identifier slabModel = id("block/" + definition.id());
-        Identifier slabTopModel = id("block/" + definition.id() + "_top");
-        Identifier baseBlockModel = resolveModel(baseModelId);
+        TextureMapping mapping = stairSlabMapping(definition.requireTextures());
+        ModelTemplates.SLAB_BOTTOM.create(bottom, mapping, generator.modelOutput);
+        ModelTemplates.SLAB_TOP.create(top, mapping, generator.modelOutput);
 
-        TextureMapping mapping = stairSlabMapping(textures);
-        ModelTemplates.SLAB_BOTTOM.create(slabModel, mapping, generator.modelOutput);
-        ModelTemplates.SLAB_TOP.create(slabTopModel, mapping, generator.modelOutput);
-        generator.blockStateOutput.accept(BlockModelGenerators.createSlab(block, BlockModelGenerators.plainVariant(slabModel),
-                BlockModelGenerators.plainVariant(slabTopModel), BlockModelGenerators.plainVariant(baseBlockModel))
-        );
-        registerItem(generator, block, slabModel, definition);
+        generator.blockStateOutput.accept(BlockModelGenerators.createSlab(block, BlockModelGenerators.plainVariant(bottom),
+                BlockModelGenerators.plainVariant(top), BlockModelGenerators.plainVariant(full)));
+        return bottom;
     }
 
-    /** Модель уже написана вручную: генерируем только blockstate и (если нужно) модель предмета. */
-    private static void generateCustom(BlockModelGenerators generator, Block block, BlockDefinition definition) {
-        Identifier modelId = resolveModel(requireBaseModelId(definition));
+    private static Identifier generateCustom(BlockModelGenerators generator, BlockDefinition definition) {
+        Identifier model = definition.requireBaseModel();
 
-        generator.blockStateOutput.accept(MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(modelId)));
-        registerItem(generator, block, modelId, definition);
-    }
-
-    private static void registerItem(BlockModelGenerators generator, Block block, Identifier model, BlockDefinition definition) {
-        if (definition.hasItem()) {
-            generator.registerSimpleItemModel(block, model);
-        }
+        generator.blockStateOutput.accept(MultiVariantGenerator.dispatch(definition.block(), BlockModelGenerators.plainVariant(model)));
+        return model;
     }
 
     private static TextureMapping stairSlabMapping(BlockTextures textures) {
@@ -162,61 +116,22 @@ public final class BlockModelGenerator {
                 .put(TextureSlot.SIDE, material(textures.north()));
     }
 
-    private static void validateOptions(BlockDefinition definition) {
-        if (!definition.translucent()) {return;}
-
-        if (definition.type() != BlockModelType.FULL_BLOCK) {
-            throw new IllegalArgumentException("Block " + definition.id() + ": translucent is implemented only for FULL_BLOCK, not for " + definition.type());
-        }
-        if (definition.requireTextures().hasOverlay()) {
-            throw new IllegalArgumentException("Block " + definition.id() + ": translucent together with overlay is not implemented");
-        }
+    private static ModelTemplate fullBlockTemplate(String parentName, boolean withOverlay) {
+        TextureSlot[] required = withOverlay
+                ? new TextureSlot[]{TextureSlot.BOTTOM, TextureSlot.TOP, NORTH, EAST, SOUTH, WEST, TextureSlot.PARTICLE, OVERLAY}
+                : new TextureSlot[]{TextureSlot.BOTTOM, TextureSlot.TOP, NORTH, EAST, SOUTH, WEST, TextureSlot.PARTICLE};
+        return new ModelTemplate(Optional.of(blockId(parentName)), Optional.empty(), required);
     }
 
-    private static void validateVanillaSideTextures(BlockDefinition definition) {
-        BlockTextures textures = definition.requireTextures();
-        if (!textures.north().equals(textures.east()) || !textures.north().equals(textures.south()) || !textures.north().equals(textures.west())) {
-            throw new IllegalArgumentException("Block " + definition.id() + " uses different side textures for " + definition.type() + ". Vanilla stair/slab templates " + "currently support one SIDE texture.");
-        }
-        if (textures.hasOverlay()) {
-            throw new IllegalArgumentException("Block " + definition.id() + " uses overlay, but overlay is not " + "implemented for " + definition.type());
-        }
+    private static Identifier sibling(Identifier model, String name) {
+        return Identifier.fromNamespaceAndPath(model.getNamespace(), "block/" + name);
     }
 
-    private static String requireBaseModelId(BlockDefinition definition) {
-        String baseModelId = definition.baseModelId();
-
-        if (baseModelId == null || baseModelId.isBlank()) {
-            throw new IllegalArgumentException("Block " + definition.id() + " of type " + definition.type() + " requires baseModelId");
-        }
-        return baseModelId;
+    private static String withoutSuffix(String value, String suffix) {
+        return value.endsWith(suffix) ? value.substring(0, value.length() - suffix.length()) : value;
     }
 
-    private static Material material(String path) {
-        return new Material(resolveTexture(path));
-    }
-
-    private static Identifier resolveTexture(String path) {
-        if (path.contains(":")) {
-            Identifier identifier = Identifier.tryParse(path);
-            if (identifier == null) {
-                throw new IllegalArgumentException("Invalid texture identifier: " + path);
-            }
-            return identifier;
-        }
-        return Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, path);
-    }
-
-    private static Identifier resolveModel(String path) {
-        if (path.contains(":")) {
-            Identifier identifier = Identifier.tryParse(path);
-
-            if (identifier == null) {
-                throw new IllegalArgumentException("Invalid model identifier: " + path);
-            }
-            return identifier;
-        }
-
-        return Identifier.fromNamespaceAndPath(Sudustrial.MOD_ID, "block/" + path);
+    private static Material material(Identifier texture) {
+        return new Material(texture);
     }
 }

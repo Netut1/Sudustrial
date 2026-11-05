@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-final class TntCatalog {
+public final class TntCatalog {
     private static final String TIER_MARKER = "_tier_";
 
     record Entry(TntVariant variant, Block block, Item item, String base, int tier) {
@@ -45,25 +45,31 @@ final class TntCatalog {
     }
 
     private final List<Entry> entries;
-    private final Map<TntVariant, Item> itemByVariant = new HashMap<>();
-    private final Map<String, Map<Integer, Item>> itemByBaseAndTier = new HashMap<>();
+    private final Map<TntVariant, Item> itemByVariant;
+    private final Map<String, Map<Integer, Item>> itemByBaseAndTier;
 
     private TntCatalog(List<Entry> entries) {
-        this.entries = entries;
+        Map<TntVariant, Item> byVariant = new HashMap<>();
+        Map<String, Map<Integer, Item>> byBaseAndTier = new HashMap<>();
 
         for (Entry entry : entries) {
-            itemByVariant.put(entry.variant(), entry.item());
+            byVariant.put(entry.variant(), entry.item());
 
-            Item previous = itemByBaseAndTier
+            Item previous = byBaseAndTier
                     .computeIfAbsent(entry.base(), base -> new HashMap<>())
                     .put(entry.tier(), entry.item());
             if (previous != null) {
                 throw new IllegalStateException("Duplicate TNT: " + entry.base() + " tier " + entry.tier());
             }
         }
+        byBaseAndTier.replaceAll((base, tiers) -> Map.copyOf(tiers));
+
+        this.entries = List.copyOf(entries);
+        this.itemByVariant = Map.copyOf(byVariant);
+        this.itemByBaseAndTier = Map.copyOf(byBaseAndTier);
     }
 
-    static TntCatalog load() {
+    public static TntCatalog load() {
         List<Entry> entries = new ArrayList<>();
 
         collect(entries, TntType.values(),          RegisterTnt.TNT_BLOCKS,                    RegisterTnt.TNT_ITEMS);
@@ -73,7 +79,7 @@ final class TntCatalog {
         collect(entries, MiningTntType.values(),    RegisterMiningTnt.MINING_TNT_BLOCKS,       RegisterMiningTnt.MINING_TNT_ITEMS);
         collect(entries, NuclearTntType.values(),   RegisterNuclearTnt.NUCLEAR_TNT_BLOCKS,     RegisterNuclearTnt.NUCLEAR_TNT_ITEMS);
 
-        return new TntCatalog(List.copyOf(entries));
+        return new TntCatalog(entries);
     }
 
     private static <K extends TntVariant> void collect(List<Entry> out, K[] keys, Map<K, Block> blocks, Map<K, Item> items) {
@@ -86,11 +92,11 @@ final class TntCatalog {
         return entries;
     }
 
-    Item item(TntVariant variant) {
+    public Item item(TntVariant variant) {
         return Registered.require(itemByVariant, variant);
     }
 
-    Item item(String base, int tier) {
+    public Item item(String base, int tier) {
         Map<Integer, Item> tiers = itemByBaseAndTier.get(base);
         Item item = tiers == null ? null : tiers.get(tier);
         if (item == null) {

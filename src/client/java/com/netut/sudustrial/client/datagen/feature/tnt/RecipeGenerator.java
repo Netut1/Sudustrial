@@ -1,6 +1,6 @@
 package com.netut.sudustrial.client.datagen.feature.tnt;
 
-import com.netut.sudustrial.client.datagen.core.common.RecipeVariants;
+import com.netut.sudustrial.client.datagen.core.recipe.RecipeVariants;
 import com.netut.sudustrial.tnt.type.block.TntType;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;

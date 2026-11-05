@@ -3,9 +3,12 @@ package com.netut.sudustrial.client.datagen.feature.tnt;
 import com.netut.sudustrial.client.datagen.core.block.BlockDefinition;
 import com.netut.sudustrial.client.datagen.core.block.BlockTextures;
 import com.netut.sudustrial.tnt.type.block.TntType;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
 import java.util.List;
+
+import static com.netut.sudustrial.client.datagen.core.DatagenUtils.blockId;
 
 final class TntBlocks {
     private TntBlocks() {}
@@ -22,7 +25,7 @@ final class TntBlocks {
     }
 
     private static BlockDefinition definition(Block block, String side, String top, String bottom, int tier) {
-        String overlay = tier >= 2 ? "block/overlay_tier_" + tier : null;
-        return BlockDefinition.fullBlock(block, BlockTextures.sides("block/" + bottom, "block/" + top, "block/" + side, overlay));
+        Identifier overlay = tier >= 2 ? blockId("overlay_tier_" + tier) : null;
+        return BlockDefinition.fullBlock(block, BlockTextures.sides(blockId(bottom), blockId(top), blockId(side), overlay));
     }
 }

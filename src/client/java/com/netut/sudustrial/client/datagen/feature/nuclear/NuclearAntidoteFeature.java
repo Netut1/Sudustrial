@@ -1,6 +1,6 @@
-package com.netut.sudustrial.client.datagen.feature.tnt.nuclear.antidote;
+package com.netut.sudustrial.client.datagen.feature.nuclear;
 
-import com.netut.sudustrial.client.datagen.core.DefinitionFeature;
+import com.netut.sudustrial.client.datagen.feature.DefinitionFeature;
 import com.netut.sudustrial.client.datagen.core.item.ItemDefinition;
 import com.netut.sudustrial.register.item.nuclear_antidote.RegisterNuclearAntidote;
 import net.fabricmc.fabric.api.recipe.v1.ingredient.DefaultCustomIngredients;

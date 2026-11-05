@@ -1,7 +1,7 @@
 package com.netut.sudustrial.client.datagen;
 
-import com.netut.sudustrial.client.datagen.core.DatagenFeature;
-import com.netut.sudustrial.client.datagen.core.Features;
+import com.netut.sudustrial.client.datagen.feature.DatagenFeature;
+import com.netut.sudustrial.client.datagen.feature.Features;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;

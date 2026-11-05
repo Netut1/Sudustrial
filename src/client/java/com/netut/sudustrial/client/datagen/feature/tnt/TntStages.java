@@ -1,7 +1,7 @@
 package com.netut.sudustrial.client.datagen.feature.tnt;
 
 import com.netut.sudustrial.client.datagen.core.Registered;
-import com.netut.sudustrial.client.datagen.core.common.Stage;
+import com.netut.sudustrial.client.datagen.core.advancement.Stage;
 import com.netut.sudustrial.register.item.core.RegisterCore;
 import com.netut.sudustrial.tnt.type.item.CoreItemType;
 import net.minecraft.advancements.AdvancementHolder;

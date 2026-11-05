@@ -1,4 +1,4 @@
-package com.netut.sudustrial.client.datagen.core;
+package com.netut.sudustrial.client.datagen.feature;
 
 import com.netut.sudustrial.client.datagen.core.block.BlockDefinition;
 import com.netut.sudustrial.client.datagen.core.block.BlockModelGenerator;
@@ -12,30 +12,24 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class DefinitionFeature implements DatagenFeature {
     protected List<BlockDefinition> blocks() {
         return List.of();
     }
-
     protected List<BlockSet> blockSets() {
         return List.of();
     }
-
     protected List<ItemDefinition> items() {
         return List.of();
     }
 
     @Override
     public void blockModels(BlockModelGenerators generator) {
-        for (BlockDefinition definition : blocks()) {
+        for (BlockDefinition definition : allBlockDefinitions()) {
             BlockModelGenerator.generate(generator, definition);
-        }
-        for (BlockSet set : blockSets()) {
-            for (BlockVariant variant : set.variants()) {
-                BlockModelGenerator.generate(generator, set.definition(variant));
-            }
         }
     }
 
@@ -55,15 +49,20 @@ public abstract class DefinitionFeature implements DatagenFeature {
 
     @Override
     public void loot(LootSink loot) {
-        for (BlockDefinition definition : blocks()) {
+        for (BlockDefinition definition : allBlockDefinitions()) {
             if (definition.hasItem()) {
                 loot.dropSelf(definition.block());
             }
         }
+    }
+
+    private List<BlockDefinition> allBlockDefinitions() {
+        List<BlockDefinition> all = new ArrayList<>(blocks());
         for (BlockSet set : blockSets()) {
             for (BlockVariant variant : set.variants()) {
-                loot.dropSelf(set.block(variant));
+                all.add(set.definition(variant));
             }
         }
+        return all;
     }
 }

@@ -1,13 +1,16 @@
 package com.netut.sudustrial.client.datagen.feature.po_2;
 
-import com.netut.sudustrial.client.datagen.core.DatagenFeature;
+import com.netut.sudustrial.client.datagen.core.recipe.RecipeVariants;
+import com.netut.sudustrial.client.datagen.feature.DatagenFeature;
 import com.netut.sudustrial.decorative.soviet_architecture.po_2.Po2Fence;
 import com.netut.sudustrial.decorative.soviet_architecture.po_2.Po2PanelBlock;
 import com.netut.sudustrial.register.block.decorative.po_2.RegisterPO_2Fence;
 import net.minecraft.advancements.predicates.StatePropertiesPredicate;
 import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -24,7 +27,8 @@ public final class Po2Feature implements DatagenFeature {
 
     @Override
     public void recipes(RecipeProvider provider, RecipeOutput output) {
-        RecipeGenerator.generate(provider, output);
+        new RecipeVariants(provider, output, RecipeCategory.BUILDING_BLOCKS)
+                .ring(null, RegisterPO_2Fence.PO_2_PANEL_ITEM, Items.COBBLESTONE, Items.IRON_INGOT);
     }
 
     @Override
