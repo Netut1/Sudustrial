@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "sudustrial",
 	"version": "${version}",
-	"name": "Sudustrial",
+	"name": "sudustrial",
 	"description": "This mode ia about some things that I would like to see in Minecraft and what I can programming on my own.",
 	"authors": [
-		"Netut!"
+		"Netut"
 	],
 	"contact": {
 		"homepage": "https://github.com/Netut1/Sudustrial",
