@@ -1,19 +1,15 @@
 package com.netut.sudustrial.client.datagen.core.advancement;
 
 import com.netut.sudustrial.client.datagen.core.DatagenUtils;
-import net.minecraft.advancements.Advancement;
-import net.minecraft.advancements.AdvancementHolder;
-import net.minecraft.advancements.AdvancementRequirements;
-import net.minecraft.advancements.AdvancementType;
+import net.minecraft.advancements.*;
+import net.minecraft.core.ClientAsset;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStackTemplate;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Collection;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Consumer;
 
 import static com.netut.sudustrial.client.datagen.core.DatagenUtils.has;
@@ -43,14 +39,18 @@ public record Stage(String id, Item icon, @Nullable String parent, Collection<It
             builder.parent(Advancement.Builder.advancement().build(DatagenUtils.id(parent)));
         }
 
-        builder.display(icon,
+        Identifier background = parent == null ? DatagenUtils.id("gui/advancements/backgrounds/background") : null;
+
+        builder.display(new DisplayInfo(
+                new ItemStackTemplate(icon),
                 Component.translatable(langKey + ".title"),
                 Component.translatable(langKey + ".description"),
-                null,
+                Optional.ofNullable(background).map(ClientAsset.ResourceTexture::new),
                 AdvancementType.TASK,
-                true,
-                true,
-                false);
+                true,   // showToast
+                true,   // announceChat
+                false   // hidden
+        ));
 
         for (Item item : triggers) {
             builder.addCriterion("has_" + path(item), has(item));
